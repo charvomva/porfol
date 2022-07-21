@@ -137,7 +137,7 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
 
     .s2_cont {}
 
-        .s2_item_title {position:absolute;  top:130px ; left:50%; transform: translateX(-50%); font-size:1vw;  font-weight: 700; color:#fff;}
+        .s2_item_title {position:absolute;  top:130px ; left:50%; transform: translateX(-50%); font-size:1vw;  font-weight: 700; color:#fff; }
         .s2_item_cont {font-size: 0.85vw; margin-top:40px; position:absolute; top:150px; left:50%; transform: translateX(-50%); }
 
         .s2_list {display:table; text-align:left;}
@@ -154,7 +154,7 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
 
     .s3_w {margin:100px 12vw; color:#fff; }
     .s3_title {font-size:1.7vw; font-weight:700; transform:translateX(150px); opacity:0; transition-delay:0.8s ; transition-duration: 1s;} 
-    .s3_main {font-size: 4.8vw; font-weight: 700; font-family:'Merriweather'; line-height:1.25; letter-spacing: -1.8px; margin-top:30px;}
+    .s3_main {font-size: 4.8vw; font-weight: 700; font-family:'Merriweather'; line-height:1.25; letter-spacing: -1.8px; margin-top:30px; text-shadow: 4px 0px 5px rgba(0,0,0,0.5);}
 
 #s3.active .s3_title {transform:translateY(0); opacity: 1;}
 #s3.active .s3_main {transform:translateY(0); opacity: 1;}
