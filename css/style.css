@@ -127,7 +127,7 @@ img {
 
 #s2 {position:relative;  min-height:475px; overflow: hidden; }
     .s2_img {background:url('../img/about.jpg') no-repeat 50% 50% / cover; top:0; right:0; left:0; height:500px; width:100%;  align-items: center; }
-    .s2_title_w {border: 1px solid blue; }
+    .s2_title_w { }
         .s2_title h1 { position:absolute; top:35px; left:50%; font-size:35px; text-align:center; transform: translateX(-50%); color:red;  z-index: 1000;} 
         .s2_title_sub {position:absolute; top:85px; left:50%; transform: translateX(-50%); font-size: 15px; color:#fff; font-weight: 700; z-index: 1000; }
 
@@ -189,3 +189,6 @@ img {
     .prevA::before, .nextA::before  {content:''; display:inline-block; width:8px; height:8px; border-top:1px solid #dbdbdb; border-left:1px solid #dbdbdb; transform:rotate(-45deg); margin-right:5px;}
     .prevA::before {}
     .nextA::before {}
+
+
+
