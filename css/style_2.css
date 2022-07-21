@@ -131,7 +131,7 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
 #s2 {position:relative;  min-height:475px; overflow: hidden; }
     .s2_img {background:url('../img/porfol_busan-station.jpeg') no-repeat 50% 50% / cover; top:0; right:0; left:0; height:500px; width:100%;  align-items: center; }
     .s2_title_w { }
-        .s2_title h1 { position:absolute; top:35px; left:50%; font-size:35px; text-align:center; transform: translateX(-50%); color:red;  z-index: 1000;} 
+        .s2_title h1 { position:absolute; top:55px; left:50%; font-size:35px; text-align:center; transform: translateX(-50%); color:red;  z-index: 1000;} 
         .s2_title_sub {position:absolute; top:85px; left:50%; transform: translateX(-50%); font-size: 15px; color:#fff; font-weight: 700; z-index: 1000; }
 
 
