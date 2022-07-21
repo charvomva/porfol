@@ -115,7 +115,7 @@ img {
        z-index:3;}
 
 .s1_w {position:relative;  z-index: 5; color: #fff; padding:50px 0 0 12vw;}
-.s1_main {font-size: 3.8vw; font-weight: 700; font-family:'Merriweather'; line-height:1.25; letter-spacing: -1.8px; transform:translateX(250px); opacity:0; transition-duration: 1.5s;}
+.s1_main {font-size: 3.8vw; font-weight: 700; font-family:'Merriweather'; line-height:1.25; letter-spacing: -1.8px; transform:translateX(250px); }
 .s1_w span {display: block; font-size: 4.8vw;}
 .s1_sub {font-size: 1.5vw; margin-top:15px;}
 
@@ -123,43 +123,24 @@ img {
 #s1.active .s1_sub {transform:translateX(0); opacity:1;}
 
 
-.s1_sns {position:absolute; bottom:50px; left:6vw; z-index: 5; }
-.s1_sns ul {}
-.s1_sns li {margin-bottom:25px}
-.s1_sns li a {width:25px; height:25px; display:inline-block; background: no-repeat 0 0 / cover; text-indent: -99999px;}
-.s1_sns li:nth-child(1) a {background-image: url('../img/total_blog_m.png');}
-.s1_sns li:nth-child(2) a {background-image: url('../img/total_insta_m.png');}
-.s1_sns li:nth-child(3) a {background-image: url('../img/total_youtube_m.png');}
-.s1_sns li:nth-child(4) a {background-image: url('../img/total_face_m.png');}
 
 
 #s2 {position:relative;  min-height:475px; overflow: hidden; }
-    .s2_img {position:absolute; top:0; right:0; left:0; height:100%; width:100%; display:flex; align-items: center; }
-    .s2_w {position:relative; margin: 100px 12vw; z-index:5;}
-    .s2_in {width:100%;}
-
-    .s2_title_w {}
-        .s2_title {max-width:45%; position:absolute; top:10px; left:50%; font-size:25px; text-align:center; transform: translateX(-50%); color:#fff;  } 
-        .s2_title_sub {position:absolute; top:30px; left:50%; transform: translateX(-50%); font-size: 18px; color:#ffffff; font-weight: 700; }
+    .s2_img {background:url('../img/about.jpg') no-repeat 50% 50% / cover; top:0; right:0; left:0; height:500px; width:100%;  align-items: center; }
+    .s2_title_w {border: 1px solid blue; }
+        .s2_title h1 { position:absolute; top:35px; left:50%; font-size:35px; text-align:center; transform: translateX(-50%); color:red;  z-index: 1000;} 
+        .s2_title_sub {position:absolute; top:85px; left:50%; transform: translateX(-50%); font-size: 15px; color:#fff; font-weight: 700; z-index: 1000; }
 
 
-    .s2_cont {color:#fff;}
+    .s2_cont {color:#fff; }
 
-        .s2_item_title {position:absolute;  top:40px ; left:50%; transform: translateX(-50%); font-size:1vw;  font-weight: 700;}
-        .s2_item_cont {font-size: 0.85vw; margin-top:40px; position:absolute; top:200px; left:50%; transform: translateX(-50%); }
+        .s2_item_title {position:absolute;  top:130px ; left:50%; transform: translateX(-50%); font-size:1vw;  font-weight: 700;}
+        .s2_item_cont {font-size: 0.85vw; margin-top:40px; position:absolute; top:150px; left:50%; transform: translateX(-50%); }
 
         .s2_list {display:table; text-align:left;}
         .s2_list > li {display:table-cell; padding-right:70px; vertical-align:top;}
 
 
-        .s2_item {text-align: center;}
-        .s2_item:before {display:block; content:''; width:90px; height:90px; background: url('../img/mc_eff_m.png') no-repeat 0 0 / cover;}
-        .s2_item p {margin-top:25px; text-align: left; display:inline-block}
-
-        .s2_item01:before {background-position: 0 0;}
-        .s2_item02:before {background-position: 0 -90px;}
-        .s2_item03:before {background-position: 0 -180px; }
-        .s2_item04:before {background-position: 0 -270px; }
 
         .s2_more {padding-top:50px;}
         .s2_more a {position:relative; display:inline-block; height:54px; line-height: 54px; padding-right:67px; font-size: 14px; font-family: 'Merriweather'; color:#334A51;  }
