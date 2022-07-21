@@ -122,11 +122,14 @@ img {
 #s1.active .s1_main {transform:translateX(0);opacity:1;}
 #s1.active .s1_sub {transform:translateX(0); opacity:1;}
 
+.s1_btn_w {margin-top:100px;}
+.s1_btn span {font-size:0.84vw; display:block; color:#fff; padding-right:70px;}
+a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; padding: 13px 23px; border-radius: 100px; }
 
 
 
 #s2 {position:relative;  min-height:475px; overflow: hidden; }
-    .s2_img {background:url('../img/about.jpg') no-repeat 50% 50% / cover; top:0; right:0; left:0; height:500px; width:100%;  align-items: center; }
+    .s2_img {background:url('../img/porfol_busan-station.jpeg') no-repeat 50% 50% / cover; top:0; right:0; left:0; height:500px; width:100%;  align-items: center; }
     .s2_title_w { }
         .s2_title h1 { position:absolute; top:35px; left:50%; font-size:35px; text-align:center; transform: translateX(-50%); color:red;  z-index: 1000;} 
         .s2_title_sub {position:absolute; top:85px; left:50%; transform: translateX(-50%); font-size: 15px; color:#fff; font-weight: 700; z-index: 1000; }
@@ -147,7 +150,7 @@ img {
         .s2_more a:after {position:absolute; content:''; top:0; right:0; height:54px; width:54px; background: #d5d5d5 url('../img/linkgo_allow.png') no-repeat 50% 50%; border-radius: 50%;;}
         
         
-    #s3 {position:relative; background: url('../img/mc_geda_bg_pc.png') no-repeat 50% 50% / cover; z-index: 3;}
+    #s3 {position:relative; background: url('../img/porfol_seoul.jpeg') no-repeat 50% 50% / cover; z-index: 3;}
 
     .s3_w {margin:100px 12vw; color:#fff; }
     .s3_title {font-size:1.7vw; font-weight:700; transform:translateX(150px); opacity:0; transition-delay:0.8s ; transition-duration: 1s;} 
