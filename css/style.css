@@ -128,7 +128,7 @@ img {
 
 
 #s2 {position:relative;  min-height:475px; overflow: hidden; color:#fff}
-    .s2_img {background:url('../img/about.jpg') no-repeat 50% 50% / cover; top:0; right:0; left:0; height:500px; width:100%;  align-items: center; }
+    .s2_img {background:url('../img/about.jpg') no-repeat 50% 50% / cover; top:0; right:0; left:0; height:500px; width:100%;  align-items: center;  z-index: 1000000;}
     .s2_title_w { }
         .s2_title h1 { position:absolute; top:150px; left:50%; font-size:3.5vw; text-align:center; transform: translateX(-50%); color:#fff;  z-index: 1000;} 
         .s2_title_sub {position:absolute; top:210px; left:50%; transform: translateX(-50%); font-size: 15px; color:#fff; font-weight: 700; z-index: 1000; }
