@@ -8,14 +8,14 @@ a {color:#111;}
 img {max-width:100%;}
 
 /* header */
-header {position:absolute; top:0; left:0; width:100%; min-height:80px; height:4.2vw; border-bottom:1px solid #d8d8d8; z-index:50;  }
-.header_in {max-width: 1920px; margin:auto; height:100%;}
-header h1 {display:flex; margin-left:1.3vw; align-items:center;  width:172px; height:100%; }
+header {position:fixed; top:0;  left:0; width:100%; min-height:80px; height:4.2vw; border-bottom:1px solid #fff; z-index:50;  }
+.header_in { max-width: 1920px; margin:auto; height:100%;}
+header h1 { display:flex; margin-left:1.3vw; align-items:center;  width:172px; height:100%; }
 header h1 a { display:inline-block; width:172px; height:100%; background: url('../img/logo.png') no-repeat center center / 40px ; text-indent: -9999px; }
 
-.gnb_wrap {position:absolute; top:0; left:0; width:100%; height:100%; display:flex; justify-content:flex-end; }
+.gnb_wrap {}
 
-.gnb_list_w { height:100%;}
+.gnb_list_w {position:fixed; display: inline-block; top:25px; right:0; }
 .gnb_list {display:table; height:100%;  padding-right: 1.1vw;}
 .gnb_list > li {display:table-cell; height:100%; padding:0 37px; position:relative;} /* table-cell은 항상 가운데 정렬됨 */
 .mitem {display:flex; align-items: center; font-size: 16px; height:100%; color:#fff;}
@@ -179,10 +179,12 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
     .s3_btn span:after { width:6px; height:6px; border: 1px solid #fff; border-bottom:0; border-left:0; transform:rotate(45deg) translateY(calc(-50% - 1px )); right:3px; }
 
     #s4 {position:relative; background: url('../img/motionArray.jpeg') no-repeat 50% 50% / cover; z-index: 3;}
-    #s4 .s4_title {position:absolute; top:25%; left:10%; color:#fff;font-size: 4.5vw; font-family: 'Merriweather'; font-weight: 700;; }
+    #s4 .s4_title {position:absolute; top:25%; left:10%; color:#fff; font-size: 4.5vw; font-family: 'Merriweather'; font-weight: 700;; }
     #s4 .vid_w video {position:absolute; top:100px; right:0;  height:32vw;}
 
-    .s4_btn_w {position:absolute; left: 10%; margin-top:80px; transform:translateY(100px); }
+    .s4_title_sub {position:absolute; top:35%; left:10%; color:#7A71DC; font-size: 5vw; font-weight: 700;}
+
+    .s4_btn_w {position:absolute; left: 10%; margin-top:80px; }
 
     #s4.active .s4_sub_w {transform:translateY(0); opacity:1;}
     #s4.active .s4_btn_w {transform:translateY(0); opacity:1;}
@@ -196,9 +198,20 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
 
 
 
-    #s5 {background: #65d8f8;}
-    .s5_w {margin:100px 12vw;}
-    .s5_title {font-size:1.7vw; font-weight:700; margin-bottom:30px; }
+    #s5 {}
+    #s5 video {width:100%; height:100%; object-fit: cover; }
+
+    .s5_title {position:absolute; top:50%; left:150px; font-size:1.7vw; font-weight:700;}
+
+    .s5_btn_w {position:absolute; left:0; margin-top:20px;}
+    .s5_btn {}
+
+    a.s5_btn {display:inline-block; margin-right:0px; border:1px solid #FFF; padding: 13px 23px; border-radius: 100px; }
+    .s5_btn span {position:relative; font-size:1vw; display:block; color:#FFF; padding-right:70px;}
+
+    .s5_btn span:before, .s5_btn span:after {position:absolute; content: ''; top:50%; right:0}
+    .s5_btn span:before {width:25px; height:1px; background: #fff; }
+    .s5_btn span:after { width:6px; height:6px; border: 1px solid #fff; border-bottom:0; border-left:0; transform:rotate(45deg) translateY(calc(-50% - 1px )); right:3px; }
 
     .arrow {position:fixed; bottom:50px; right:50px; z-index: 20;  }
     .prevA,  .nextA {display:block; font-size: 14px; font-family:'Merriweather', serif; color:#dbdbdb}
