@@ -11,7 +11,7 @@ img {max-width:100%;}
 header {position:fixed; top:0;  left:0; width:100%; min-height:80px; height:4.2vw; border-bottom:1px solid #fff; z-index:50;  }
 .header_in { max-width: 1920px; margin:auto; height:100%;}
 header h1 { display:flex; margin-left:1.3vw; align-items:center;  width:172px; height:100%; }
-header h1 a { display:inline-block; width:172px; height:100%; background: url('../img/logo.png') no-repeat center center / 40px ; text-indent: -9999px; }
+header h1 a { display:inline-block; width:172px; height:100%; background: url('../img/logo.png') no-repeat center center / 40px ; text-indent: -9999px;}
 
 .gnb_wrap {}
 
@@ -203,7 +203,7 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
 
     .s5_title {position:absolute; top:50%; left:150px; font-size:1.7vw; font-weight:700;}
 
-    .s5_btn_w {position:absolute; left:0; margin-top:20px;}
+    .s5_btn_w {position:absolute; left:0; margin-top:20px; z-index: 10;}
     .s5_btn {}
 
     a.s5_btn {display:inline-block; margin-right:0px; border:1px solid #FFF; padding: 13px 23px; border-radius: 100px; }
