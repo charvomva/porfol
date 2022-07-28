@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body>  
+  <style>
+    img {max-height: 600px; overflow-y: hidden;}
+  </style>
 
 
     <header>
@@ -45,7 +48,7 @@
                     </div>
                 </div>
 
-                <div class="carousel justify-item-center border border-info">
+                <div class="carousel justify-item-center border border-info yoon">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active" data-bs-interval="9000000">
@@ -193,8 +196,8 @@
     <!--  네번째 section START -->
     <section class="border-bottom">
       <div class="">
-        <div class="row border align-items-center">
-        <div class="col-xl-6">
+        <div class="d-flex">
+        <div class="ms-4 border border-danger">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active"  data-bs-interval="9999999999999">
@@ -208,18 +211,18 @@
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="carousel-control-prev-icon bg-info" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="carousel-control-next-icon bg-info" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
       </div>
         
-          <div class="col-xl-6 text-center text-lg-start ps-3">
-                  <h2>  <strong>영상편집</strong></h2>
+          <div class="text-lg-start ps-4 border">
+                  <h2> <strong>영상편집</strong></h2>
                   <p>Set the status of multiple projects in a single clever panel <br>
                     Simply drag a project to the appropriate group and its status will change <br> automatically!
                   </p> 
