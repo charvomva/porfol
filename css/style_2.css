@@ -125,12 +125,13 @@ img {
 
 
 
-.s1_btn_w {margin-top:50px;}
+.s1_btn_w {margin-top:50px; opacity:0; transform:translateY(150px); transition-delay:1.3s ; transition-duration: 1s; }
 .s1_btn span {font-size:0.84vw; display:block; color:#fff; padding-right:70px;}
 a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; padding: 13px 23px; border-radius: 100px; }
 
-a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; padding: 13px 23px; border-radius: 100px; }
 .s1_btn span {position:relative; font-size:0.84vw; display:block; color:#fff; padding-right:70px;}
+
+#s1.active .s1_btn_w {transform:translateY(0); opacity: 1;}
 
 .s1_btn span:before, .s1_btn span:after {position:absolute; content: ''; top:50%; right:0}
 .s1_btn span:before {width:25px; height:1px; background: #fff; }
@@ -144,10 +145,16 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
     .s2_img {background:url('../img/porfol_busan-station.jpeg') no-repeat 50% 50% / cover; top:0; right:0; left:0; height:500px; width:100%;  align-items: center;  }
     
     .s2_title_w { position:absolute; top: 30%; left:10%; padding: 200px 0 0 50vw; z-index:5;}
-        .s2_title { position:absolute; top:25px; left:0; font-size:4.8vw; text-align:center; color:#fff; font-family: 'Merriweather'; font-weight: 700;} 
-        .s2_title_sub {position:absolute; top:85px; left:5px; margin-top:25px;  font-size: 15px; color:#fff; line-height: 1.6;}
+        .s2_title { position:absolute; top:25px; left:0; font-size:4.8vw; text-align:center; color:#fff; font-family: 'Merriweather'; font-weight: 700;
+                    transform:translateY(150px); opacity:0; transition-delay:0.8s ; transition-duration: 1s;} 
+        .s2_title_sub {position:absolute; top:85px; left:5px; margin-top:25px;  font-size: 15px; color:#fff; line-height: 1.6;
+                        transform:translateY(150px); opacity:0; transition-delay:0.8s ; transition-duration: 1s;}
 
-        .s2_btn_w {position:absolute; top:150px; left:0; margin-top:50px;} 
+        #s2.active .s2_title {transform:translateY(0); opacity: 1;}
+        #s2.active .s2_title_sub {transform:translateY(0); opacity: 1;}
+
+
+        .s2_btn_w {position:absolute; top:150px; left:0; margin-top:50px; transform:translateY(150px); opacity:0; transition-delay:1.3s ; transition-duration: 1s;} 
 
         #s2.active .s2_btn_w {transform:translateY(0); opacity:1;}
     
@@ -190,16 +197,22 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
     .s3_btn span:before {width:25px; height:1px; background: #fff; }
     .s3_btn span:after { width:6px; height:6px; border: 1px solid #fff; border-bottom:0; border-left:0; transform:rotate(45deg) translateY(calc(-50% - 1px )); right:3px; }
 
+
+
+
     #s4 {position:relative; background: url('../img/motionArray.jpeg') no-repeat 50% 50% / cover; z-index: 3;}
-    #s4 .s4_title {position:absolute; top:25%; left:10%; color:#7A71DC; font-size: 5vw; font-weight: 700;}
     #s4 .vid_w video {position:absolute; top:100px; right:0;  height:32vw;}
 
-    .s4_title_sub {position:absolute; top:38%; left:10%; color:#fff; font-size: 3vw; font-family: 'Merriweather'; font-weight: 700; }
+    #s4 .s4_title {position:absolute; top:25%; left:10%; color:#7A71DC; font-size: 5vw; font-weight: 700; transform:translateY(100px); transition-duration: 1s; transition-delay: .8s}
+    .s4_title_sub {position:absolute; top:38%; left:10%; color:#fff; font-size: 3vw; font-family: 'Merriweather'; font-weight: 700; transform:translateY(100px); transition-duration: 1s; transition-delay: .8s;}
 
     .s4_btn_w {position:absolute; left: 10%; margin-top:80px; }
 
+    #s4.active .s4_title {transform:translateY(0); opacity:1;}
+    #s4.active .s4_title_sub {transform:translateY(0); opacity:1;}
 
-    .s4_sub_w {transform:translateY(100px); opacity:0; transition-duration: 1s; transition-delay: .8s;}
+
+    .s4_sub_w {transform:translateY(100px); opacity:0; transition-duration: 1s; transition-delay: 1.3s;}
     .s4_sub { margin-top:20px; margin-left: 11vw; color:#fff; }
     .s4_item_cont {font-size: 0.95vw; }
     .s4_item_title {font-size: 1.3vw; font-family:'Merriweather'; margin-bottom:10px; }
@@ -221,9 +234,12 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
     #s5 {}
     #s5 video {width:100%; height:100%; object-fit: cover; }
 
-    .s5_title {position:absolute; top:50%; left:150px; font-size:1.7vw; font-weight:700;}
+    .s5_title {position:absolute; top:50%; left:150px; font-size:1.7vw; font-weight:700; transform:translateY(20px); transition-duration: 1s; transition-delay: .5s;}
 
-    .s5_btn_w {position:absolute; left:0; margin-top:20px; z-index: 10;}
+    #s5.active .s5_title {transform:translateY(0); opacity:1;}
+    #s5.active .s5_btn_w {transform:translateY(0); opacity:1;}
+
+    .s5_btn_w {position:absolute; left:0; margin-top:20px; z-index: 10; transform:translateY(50px); transition-duration: 1s; transition-delay: .8s;}
     .s5_btn {}
 
     a.s5_btn {display:inline-block; margin-right:0px; border:1px solid #FFF; padding: 13px 23px; border-radius: 100px; }
