@@ -116,7 +116,7 @@ img {
        z-index:3;}
 
 .s1_w {position:relative;  z-index: 5; color: #fff; padding:50px 0 0 12vw;}
-.s1_main {font-size: 3.8vw; font-weight: 700; font-family:'Merriweather'; line-height:1.25; letter-spacing: -1.8px; transform:translateX(250px); }
+.s1_main {font-size: 3.8vw; font-weight: 700; font-family:'Merriweather'; line-height:1.25; letter-spacing: -1.8px;  }
 .s1_w span {display: block; font-size: 4.8vw;}
 .s1_sub {font-size: 1.5vw; margin-top:15px;}
 
