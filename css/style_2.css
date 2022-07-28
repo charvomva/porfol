@@ -114,15 +114,18 @@ img {
       background-size: contain;
        z-index:3;}
 
-.s1_w {position:relative;  z-index: 5; color: #fff; padding:50px 0 0 12vw;}
-.s1_main {font-size: 3.8vw; font-weight: 700; font-family:'Merriweather'; line-height:1.25; letter-spacing: -1.8px; transform:translateX(250px); opacity:0; transition-duration: 1s; transition-delay:1.3s }
-.s1_w span {display: block; font-size: 4.8vw;}
-.s1_sub {font-size: 1.5vw; margin-top:15px;}
+.s1_w {position:relative;  z-index: 5; color: #fff; padding:50px 0 0 12vw; }
+.s1_main {font-size: 3.6vw; font-weight: 700; font-family:'Merriweather'; line-height:1.25; letter-spacing: -1.8px; 
+            transform:translateY(150px); opacity:0; transition-delay:0.8s ; transition-duration: 1s;}
+.s1_w span {display:block; font-size: 4.8vw;}
+.s1_sub {font-size: 0.95vw; margin-top:20px; margin-right:20px; color:#fff; line-height:1.6; transform:translateY(150px); opacity:0; transition-delay:0.8s ; transition-duration: 1s; }
 
-#s1.active .s1_main {transform:translateX(0);opacity:1;}
-#s1.active .s1_sub {transform:translateX(0); opacity:1;}
+#s1.active .s1_main {transform:translateY(0); opacity: 1;}
+#s1.active .s1_sub {transform:translateY(0); opacity: 1;}
 
-.s1_btn_w {margin-top:100px;}
+
+
+.s1_btn_w {margin-top:50px;}
 .s1_btn span {font-size:0.84vw; display:block; color:#fff; padding-right:70px;}
 a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; padding: 13px 23px; border-radius: 100px; }
 
@@ -162,8 +165,10 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
     #s3 {position:relative; background: url('../img/porfol_seoul.jpeg') no-repeat 50% 50% / cover; z-index: 3;}
 
     .s3_w {margin:100px 12vw; color:#fff; }
-    .s3_title {font-size:1.7vw; font-weight:700; transform:translateX(150px); opacity:0; transition-delay:0.8s ; transition-duration: 1s;} 
-    .s3_main {font-size: 4.8vw; font-weight: 700; font-family:'Merriweather'; line-height:1.25; letter-spacing: -1.8px; margin-top:30px; text-shadow: 4px 0px 5px rgba(0,0,0,0.5);}
+    .s3_title {font-size:1.7vw; font-weight:700;} 
+    .s3_main {font-size: 4.8vw; font-weight: 700; font-family:'Merriweather'; line-height:1.25; letter-spacing: -1.8px; 
+                transform:translateY(150px); opacity:0; transition-delay:0.8s ; transition-duration: 1s; 
+                margin-top:30px; text-shadow: 4px 0px 5px rgba(0,0,0,0.5);}
 
 #s3.active .s3_title {transform:translateY(0); opacity: 1;}
 #s3.active .s3_main {transform:translateY(0); opacity: 1;}
@@ -175,7 +180,7 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
     .s3_item_cont .type2 {}
     .s3_item_title {font-size: 1.3vw; font-family:'Merriweather'; margin-bottom:10px; }
 
-    .s3_btn_w {margin-top:100px; transform:translateY(100px); opacity:0; transition-duration: 1s; transition-delay:1.3s}
+    .s3_btn_w {margin-top:50px; transform:translateY(100px); opacity:0; transition-duration: 1s; transition-delay:1.3s}
 
     #s3.active .s3_sub_w {transform:translateY(0); opacity:1;}
     #s3.active .s3_btn_w {transform:translateY(0); opacity:1;}
