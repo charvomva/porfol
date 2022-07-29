@@ -20,7 +20,7 @@ header h1 a { display:inline-block; width:172px; height:100%; background: url('.
 .gnb_list {display:table; height:100%;  padding-right: 1.1vw;}
 .gnb_list > li {display:table-cell; height:100%; padding:0 37px; position:relative; } /* table-cell은 항상 가운데 정렬됨 */
 .gnb_list > li a:hover {color:#1FD15F}
-.mitem {display:flex; align-items: center; font-size: 14px; font-weight: 700; height:100%; color:#fff;  transition: .3s ease-in;}
+.mitem {display:flex; align-items: center; font-size: 14px; font-weight: 700; height:100%; color:#fff;  transition: .3s;}
 
 
 
@@ -49,7 +49,9 @@ img {
 .s1_w {position:relative;  z-index: 5; color: #fff; padding:50px 0 0 12vw;}
 .s1_main {font-size: 3.8vw; font-weight: 700; font-family:'Merriweather'; line-height:1.25; letter-spacing: -1.8px;  animation:s1_main_load 1s; }
 .s1_w span {display: block; font-size: 4.8vw;}
-.s1_sub {font-size: 1.5vw; margin-top:15px; animation:s1_sub_load 1.5s;}
+.s1_sub {font-size: 1.5vw; margin-top:15px; animation:s1_sub_load 1.5s; color:#1FD15F;}
+
+
 
 @keyframes s1_main_load {
     0% {transform:translateY(150px); opacity:0;}
@@ -74,11 +76,11 @@ img {
         #s2.active .s2_cont  {transform:translateX(0); opacity:1;}
 
 
-        .s2_item_title { font-size:2vw; margin-top:5px; font-weight: 700; color:#fff;}
+        .s2_item_title { font-size:2vw; margin-top:10px; font-weight: 700; color:#fff;}
         .s2_cont {opacity:0; transform:translateX(100px); transition-duration: 1s; transition-delay: 1.3s}
         .s2_item_cont {font-size: 1.5vw; margin-top:25px; line-height: 1.5;}
 
-
+        .s2_item_cont p {font-weight: 400; color:#1FD15F; display: inline-block;}
 
     .arrow {position:fixed; bottom:50px; right:50px; z-index: 20;  }
     .prevA, .nextA {display:block; font-size: 14px; font-family:'Merriweather', serif; color:#dbdbdb}
