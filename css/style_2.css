@@ -18,7 +18,8 @@ header h1 a { display:inline-block; width:172px; height:100%; background: url('.
 .gnb_list_w {position:fixed; display: inline-block; top:25px; right:0; }
 .gnb_list {display:table; height:100%;  padding-right: 1.1vw;}
 .gnb_list > li {display:table-cell; height:100%; padding:0 37px; position:relative;} /* table-cell은 항상 가운데 정렬됨 */
-.mitem {display:flex; align-items: center; font-size: 14px; font-weight:700; height:100%; color:#fff;}
+.gnb_list > li a:hover {color:#1FD15F}
+.mitem {display:flex; align-items: center; font-size: 14px; font-weight:700; height:100%; color:#fff; transition: .3s}
 
 .subItem_w {display:none; position:absolute; top:100%; left:0; width:100%; background: #fff; border-top:1px solid #d8d8d8; box-shadow: 10px 10px 30px rgb(0 0 0 /20%
     ); text-align: center;}

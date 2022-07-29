@@ -19,7 +19,8 @@ header h1 a { display:inline-block; width:172px; height:100%; background: url('.
 .gnb_list_w { height:100%;}
 .gnb_list {display:table; height:100%;  padding-right: 1.1vw;}
 .gnb_list > li {display:table-cell; height:100%; padding:0 37px; position:relative; } /* table-cell은 항상 가운데 정렬됨 */
-.mitem {display:flex; align-items: center; font-size: 14px; font-weight: 700; height:100%; color:#fff;  transition: 1s ease-in;}
+.gnb_list > li a:hover {color:#1FD15F}
+.mitem {display:flex; align-items: center; font-size: 14px; font-weight: 700; height:100%; color:#fff;  transition: .3s ease-in;}
 
 
 
