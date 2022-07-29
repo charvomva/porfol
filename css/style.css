@@ -127,17 +127,21 @@ img {
 
 
 #s2 {position:relative;  min-height:475px; overflow: hidden; color:#fff}
-    .s2_img {background:url('../img/about.jpg') no-repeat 25% 50% / contain; top:0; right:0; left:0; height:500px; width:100%;  align-items: center;  z-index: 1000000;}
+    .s2_img {background:url('../img/about.jpg') no-repeat 25% 50% / contain; top:0; right:0; left:0; height:500px; width:100%;  align-items: center; }
+    .s2_title {opacity:0; transform:translateX(100px); transition-duration: 1s; transition-delay: .8s}
     .s2_title_w {position:absolute; top:30%; left:50%; }
         .s2_title h1 { font-size:3.5vw;  color:#fff; } 
         .s2_title_sub { margin-top:10px;  font-size: 15px; color:#fff; font-weight: 700; }
 
-        .s2_item_title { font-size:2vw; margin-top:5px; font-weight: 700; color:#fff;}
-        .s2_item_cont {font-size: 1.5vw; margin-top:25px; line-height: 1.5; }
 
-  
-        
-    
+        #s2.active .s2_title {transform:translateX(0); opacity:1;}
+        #s2.active .s2_cont  {transform:translateX(0); opacity:1;}
+
+
+        .s2_item_title { font-size:2vw; margin-top:5px; font-weight: 700; color:#fff;}
+        .s2_cont {opacity:0; transform:translateX(100px); transition-duration: 1s; transition-delay: 1.3s}
+        .s2_item_cont {font-size: 1.5vw; margin-top:25px; line-height: 1.5;}
+
 
 
     .arrow {position:fixed; bottom:50px; right:50px; z-index: 20;  }
