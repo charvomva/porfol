@@ -54,8 +54,8 @@ img {
 
 
 @keyframes s1_main_load {
-    0% {transform:translateY(150px); opacity:0;}
-    100% {transform:translateY(0); opacity:1;}
+    0% {transform:translateY(150px); opacity:0; }
+    100% {transform:translateY(0); opacity:1; }
 }
 
 @keyframes s1_sub_load {
