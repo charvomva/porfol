@@ -141,10 +141,10 @@ img {
 
 
     .arrow {position:fixed; bottom:50px; right:50px; z-index: 20;  }
-    .prevA,  .nextA {display:block; font-size: 14px; font-family:'Merriweather', serif; color:#dbdbdb}
+    .prevA, .nextA {display:block; font-size: 14px; font-family:'Merriweather', serif; color:#dbdbdb}
     
     .prevA {transform:rotate(90deg)}
-    .nextA {transform:rotate(-90deg) translateY(20px)}
+    .nextA {transform:rotate(-90deg) translateY(30px)}
 
     .prevA::before, .nextA::before  {content:''; display:inline-block; width:8px; height:8px; border-top:1px solid #dbdbdb; border-left:1px solid #dbdbdb; transform:rotate(-45deg); margin-right:5px;}
     .prevA::before {}

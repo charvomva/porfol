@@ -45,12 +45,14 @@ $('.totalMitem').click(function(){
 });
 
 // 섹션이동 버튼
+document.querySelector('.prevA').addEventListener('click',function(e){
+    e.preventDefault();
+    fullpage_api.moveSectionUp();
+});
+
 document.querySelector('.nextA').addEventListener('click',function(e){
     e.preventDefault();
     fullpage_api.moveSectionDown();
 });
 
-document.querySelector('.prevA').addEventListener('click',function(e){
-    e.preventDefault();
-    fullpage_api.moveSectionUp();
-});
+
