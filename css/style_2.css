@@ -111,20 +111,20 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
 
 
 
-#s2 {position:relative;  min-height:475px; overflow: hidden; }
+#s2 {overflow: hidden; position:relative;}
     .s2_img {background:url('../img/porfol_busan-station.jpeg') no-repeat 50% 50% / cover; top:0; right:0; left:0; height:500px; width:100%;  align-items: center;  }
     
-    .s2_title_w { position:absolute; top: 30%; left:10%; padding: 200px 0 0 50vw; z-index:5;}
-        .s2_title { position:absolute; top:25px; left:0; font-size:4.8vw; text-align:center; color:#fff; font-family: 'Merriweather'; font-weight: 700;
+    .s2_w { position:absolute; top:30%; left:0; padding: 50px 0 0 12vw; z-index:5;}
+        .s2_title {  font-size:4.8vw; text-align:center; color:#fff; font-family: 'Merriweather'; font-weight: 700;
                     transform:translateY(150px); opacity:0; transition-delay:0.8s ; transition-duration: 1s;} 
-        .s2_title_sub {position:absolute; top:85px; left:5px; margin-top:25px;  font-size: 15px; color:#fff; line-height: 1.6;
+        .s2_title_sub { margin-top:15px;  font-size: 15px; color:#fff; line-height: 1.6;
                         transform:translateY(150px); opacity:0; transition-delay:0.8s ; transition-duration: 1s;}
 
         #s2.active .s2_title {transform:translateY(0); opacity: 1;}
         #s2.active .s2_title_sub {transform:translateY(0); opacity: 1;}
 
 
-        .s2_btn_w {position:absolute; top:150px; left:0; margin-top:50px; transform:translateY(150px); opacity:0; transition-delay:1.3s ; transition-duration: 1s;} 
+        .s2_btn_w { margin-top:50px; transform:translateY(150px); opacity:0; transition-delay:1.3s ; transition-duration: 1s;} 
 
         #s2.active .s2_btn_w {transform:translateY(0); opacity:1;}
     
