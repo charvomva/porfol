@@ -116,9 +116,9 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
     .s2_img {background:url('../img/porfol_busan-station.jpeg') no-repeat 50% 50% / cover; top:0; right:0; left:0; height:500px; width:100%;  align-items: center;  }
     
     .s2_w { position:absolute; top:30%; left:0; padding: 50px 0 0 12vw; z-index:5;}
-        .s2_title {  font-size:4.8vw; text-align:center; color:#fff; font-family: 'Merriweather'; font-weight: 700;
+        .s2_title {  font-size:4.8vw; text-align:center; color:#111; font-family: 'Merriweather'; font-weight: 700;
                     transform:translateY(150px); opacity:0; transition-delay:0.8s ; transition-duration: 1s;} 
-        .s2_title_sub { margin-top:15px;  font-size: 15px; color:#fff; line-height: 1.6;
+        .s2_title_sub { margin-top:15px;  font-size: 15px; color:#111; line-height: 1.6;
                         transform:translateY(150px); opacity:0; transition-delay:0.8s ; transition-duration: 1s;}
 
         #s2.active .s2_title {transform:translateY(0); opacity: 1;}
@@ -129,12 +129,12 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
 
         #s2.active .s2_btn_w {transform:translateY(0); opacity:1;}
     
-        a.s2_btn {display:inline-block; margin-right:10px; border:1px solid #fff; padding: 13px 23px; border-radius: 100px; }
-        .s2_btn span {position:relative; font-size:0.84vw; display:block; color:#fff; padding-right:70px;}
+        a.s2_btn {display:inline-block; margin-right:10px; border:1px solid #111; padding: 13px 23px; border-radius: 100px; }
+        .s2_btn span {position:relative; font-size:0.84vw; display:block; color:#111; padding-right:70px;}
         
         .s2_btn span:before, .s2_btn span:after {position:absolute; content: ''; top:50%; right:0}
-        .s2_btn span:before {width:25px; height:1px; background: #fff; }
-        .s2_btn span:after { width:6px; height:6px; border: 1px solid #fff; border-bottom:0; border-left:0; transform:rotate(45deg) translateY(calc(-50% - 1px )); right:3px; }
+        .s2_btn span:before {width:25px; height:1px; background: #111; }
+        .s2_btn span:after { width:6px; height:6px; border: 1px solid #111; border-bottom:0; border-left:0; transform:rotate(45deg) translateY(calc(-50% - 1px )); right:3px; }
         
         
         
