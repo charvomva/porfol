@@ -14,18 +14,15 @@ new fullpage('#fullpage', {
     responsiveHeight:450, //세로 높이 가 특정 수치보다 작아지면 오토스크롤링 작동 X
 });
 
-/* 햄버거 버튼 클릭*/
-$('.btn_total').click(function(){
-    $('.total_menu_z').addClass('active');
-});
+const sideOff = document.querySelector("#sideOff")
+const side = document.querySelector(".side")
 
-//메뉴 팝업 닫기 버튼
+function sideOffplz(){
+    console.log("hi")
+    side.style.display ="none"
+}
 
-$('.btn_totalClose').click(function(){
-    $('.total_menu_z').removeClass('acrive')
-
-});
-
+sideOff.addEventListener("click",sideOffplz)
 
 
 var myScroll = new IScroll('.total_menu', {
