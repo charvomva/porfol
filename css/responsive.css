@@ -42,6 +42,13 @@
 
 }
 
-@media (max-width:767px){
+@media (max-width:500px){
+    header h1 a {width:82px;}
+    .gnb_list {display:none;}
 
-}
+    .s1_main,  .s1_w span  { font-size: 6.8vw;}
+    .s1_sub {font-size: 3.8vw}
+
+
+        
+    }
