@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리포트</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <svg id="sideOnOff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            <a href="#"><img src="./img/logo.png" width="190px" onclick="location.href='../todayLearn/index.html'"></a>
+            <ul class="flx">
+                <li onclick="location.href='../todayLearn/index.html'">오늘의 학습</li>
+                <li onclick="location.href='../index.html'">학습현황</li>
+                <li class="blue">리포트</li>
+                <li onclick="location.href='../community/index.html'" style="display:none;">게시판</li>
+            </ul>
+            <div class="flx110"></div>
+            <div class="flx" style="margin-right:30px; gap:18px; align-items:center; cursor:pointer">
+                <span>사용자 가이드</span>
+                <span class="flx-col" style="justify-content: center; text-align: center;">
+                    <span onclick="location.href='../mypage/index.html'">내 정보</span>
+                </span>
+                <span onclick="location.href='../login/index.html'">로그아웃</span>
+            </div>
+        </nav>
+    </header>
+ 
+    <section class="flx">
+        <section id="sideBar">
+            <ul class="flx">
+                <li class="flx110">채팅 목록</li>
+                <li class="flx110">학습메뉴</li>
+            </ul>
+            <div id="profile">
+                <div>
+                <span id="haknyun">중학교 2학년  > </span>
+                </div>
+                <div class="flx gap">
+                    <img src="./img/profle.svg" width="40px" >
+                    <div class="flx-col" style="align-items: flex-start;">
+                        <span>이진현</span>
+                        <span>안녕하세요 :)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="aiTutorTitle">궁금한 점이 있나요?</div>
+                <div class="fontstyle" style="color:#3b3f4e;"> 대표번호 : 1688-6083 </div>
+                <div class="fontstyle"> < 질문가능 시간 안내 > </div>
+                <div class="fontstyle">월-금: 오후 7시 - 10시</div>
+                <div class="fontstyle">토요일: 오전 10시 - 오후 1시</div>
+                <div class="fontstyle">일요일 & 공휴일: 휴무</div>
+
+                <div class="flx-col"style="padding:20px 0;">
+                    <button class="askQuestion" onclick="window.open('https://pf.kakao.com/_XLsxoxj')"> 카카오톡 공식채널 </button>
+                    <button class="askQuestion" onclick="window.open('https://pf.kakao.com/_RIbxoxj')">도서관 튜터에게 질문하기</button>
+                </div>
+        </section>
+        
+        <section id="mainArea">
+            <section id="middleArea">
+                
+                <div class="flx" style="gap:6px; padding-left:10px; align-items: center;">
+                   
+                    <div class="reportbtn active">주간</div>
+                    <div class="reportbtn ">월간</div>
+                    <div>
+                        <select style="padding: 5px 20px 5px 30px; border-radius: 4px; ">
+                            
+                            <option>4주차 학습 리포트
+                            </option>
+                            <option selected>3주차 학습 리포트
+                            </option>
+                            <option>2주차 학습 리포트
+                            </option>
+                            <option>1주차 학습 리포트
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flx">
+                    <div class="container flx-col">
+                
+                            <div class="flx" style="gap:50px; border-bottom: 0.5px solid #cacaca; padding-bottom: 10px;">
+                                <div class="flx" style="gap:10px; align-items: center;">
+                                    <div style="font-size: 20px; color: #696f7c;">수강레벨</div> <div>Lv3</div>
+                                </div>
+                            </div>
+
+                            <div class="flx" style="align-items: center; gap:8px; margin:auto; padding:10px;">
+                                <div class="flx-col" style="width:140px; gap:7px; text-align: center;">
+                                    <canvas id="doughnut"></canvas>
+                                        <div>
+                                            <div class="bold">사회학습</div>
+                                            <div>50%</div>
+                                    </div>
+                                </div>
+                                <div class="flx-col" style="width:140px; gap:7px; text-align: center;">
+                                    <canvas id="doughnutofscience"></canvas>
+                                        <div>
+                                            <div class="bold">과학학습</div>
+                                            <div>76%</div>
+                                    </div>
+                                </div>
+                            </div>   
+                       
+                    </div>
+
+                    <div class="containerVer2" style="display:flex; flex-direction: column; flex: 1 1 auto;">
+                        <div class="flx-col" style="height:100%;">
+
+                            <div class="flx" style="align-items: center; padding-bottom: 10px; border-bottom: 0.5px solid #cacaca; justify-content: space-between;">
+                            <div style="font-size: 20px; color: #696f7c;">SR지수:850.59점</div>
+                            <div>(Lv3 만점 : 900점)</div>
+                            </div>
+
+                            <div class="flx-col" style="gap:10px; margin:15px 0 0 0;">
+                                <div style="margin:auto 0;">
+                                    <div class="bold" style="text-align:center;">SR지수 현황</div>
+                                    <canvas id="srScore" style="width:510px; height:130px; margin: auto 0;"></canvas>
+                                </div>
+
+                                <div class="flx-col" style="margin:0 auto; border:0.2px solid #cbcbcb; border-radius: 8px; width:94%;">
+            
+                                    <div class="flx" style="justify-content: space-around; background: #F2F7FF; border-radius: 8px 8px 0 0; padding:8px 20px;">
+                                    <div style="width:60px; text-align: center; font-family:'Noto Sans KR'; font-weight:600;">구분</div>
+                                    <div style="font-family:'Noto Sans KR'; font-weight:600;">정답률</div>
+                                    <div style="font-family:'Noto Sans KR'; font-weight:600;">SR 환산점수</div>
+                                </div>
+
+                                    <div class="flx" style="justify-content: space-around; padding:5px 20px; border-bottom: 0.5px solid #cbcbcb;" >
+                                        <div class="srstyle">어휘</div>
+                                        <div class="srstyle">90%</div>
+                                        <div class="srstyle">72점</div>
+                                    </div>
+
+                                    <div class="flx" style="justify-content: space-around; padding:5px 20px; border-bottom: 0.5px solid #cbcbcb;">
+                                        <div class="srstyle">스키마</div>
+                                        <div class="srstyle">92%</div>
+                                        <div class="srstyle">90점</div>
+                                    </div>
+
+                                    <div class="flx" style="justify-content: space-around; padding:5px 20px; border-bottom: 0.5px solid #cbcbcb;">
+                                        <div class="srstyle">리딩</div>
+                                        <div class="srstyle">90%</div>
+                                        <div class="srstyle">111점</div>
+                                    </div>
+
+                                    <div class="flx" style="justify-content: space-around; padding:5px 20px;">
+                                        <div class="srstyle">로직</div>
+                                        <div class="srstyle">84%</div>
+                                        <div class="srstyle">107점</div>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                </div>
+
+                <div class="container">
+                    <div style="border-bottom: 0.5px solid #cacaca; padding-bottom: 10px; font-size: 20px; color: #696f7c;">단계별 학습 시간
+                    </div>
+                        <div class="flx" style="justify-content: space-evenly; gap:10px; padding:20px 0 0 0;">
+                            <div class="flx-col">
+                            <div class="">
+                                <canvas id="social"></canvas>
+                            </div>
+                            <div style="margin: 0 auto; padding: 10px 0 0 0;">사회</div>
+                            </div>
+                            
+                            <div class="flx-col">
+                                <div class="">
+                                    <canvas id="science"></canvas>
+                                </div>
+                                <div style="margin: 0 auto; padding: 10px 0 0 0;">과학</div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="container">
+                    <div class="flx-col" style="gap:10px; padding-bottom:20px;">
+
+                        <div class="flx" style="justify-content: space-between; align-items: center; border-bottom: 0.5px solid #cacaca;">
+                            <div style="font-size:20px; color:#696f7c; padding-bottom:10px;">사전점검 & 실전 테스트 정답률 </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="flx" style="padding:25px 0px; border-radius: 8px; justify-content: center; align-items: center; gap:20px;">
+            
+                                <div class="flx-col" style="gap:10px;">
+                                    <div class="bold">사전점검</div> 
+
+                                        <div class="flx-col" style="padding:15px 30px; gap:20px; background-color: #F2F7FF; border-radius: 10px; font-size: 14px;">
+                                            <div class="flx" style="gap:40px; border-bottom: 0.5px solid #a5b2ce; padding-bottom: 10px;">
+                                                <div style="width:50px; font-family:'Noto Sans KR'; font-weight:600;">어휘</div>
+                                                <div>----</div>
+                                                <div style="font-family:'Noto Sans KR'; font-weight:700; color:#3180f3;">90.0%</div>
+                                            </div>
+                                            <div class="flx" style="gap:40px; align-items:center; border-bottom: 0.5px solid #a5b2ce; padding-bottom: 10px;">
+                                                <div style="width:50px; font-family:'Noto Sans KR'; font-weight:600;">스키마</div>
+                                                <div class="flx-col" style="gap:10px;">
+                                                    <div>사회</div>
+                                                    <div>과학</div>
+                                                </div>
+                                                <div class="flx-col" style="gap:10px; font-family:'Noto Sans KR'; font-weight:700; color:#3180f3;">
+                                                    <div>71.4%</div>
+                                                    <div>66.7%</div>
+                                                </div>
+                                            </div>
+                                            <div class="flx" style="gap:40px; align-items:center; border-bottom: 0.5px solid #a5b2ce; padding-bottom: 10px;">
+                                                <div style="width:50px; font-family:'Noto Sans KR'; font-weight:600;">리딩</div>
+                                                <div class="flx-col" style="gap:10px;">
+                                                    <div>사회</div>
+                                                    <div>과학</div>
+                                                </div>
+                                                <div class="flx-col" style="gap:10px; font-family:'Noto Sans KR'; font-weight:700; color:#3180f3;">
+                                                    <div>70.0%</div>
+                                                    <div>60.0%</div>
+                                                </div>
+                                            </div>
+                                            <div class="flx" style="gap:40px; align-items:center; ">
+                                                <div style="width:50px; font-family:'Noto Sans KR'; font-weight:600;">로직</div>
+                                                <div class="flx-col" style="gap:10px;">
+                                                    <div>사회</div>
+                                                    <div>과학</div>
+                                                </div>
+                                                <div class="flx-col" style="gap:10px; font-family:'Noto Sans KR'; font-weight:700; color:#3180f3;">
+                                                    <div>55.7%</div>
+                                                    <div>66.0%</div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                </div>
+
+                                <div class="flx-col" style="gap:10px;">
+                                    <div class="bold">실전 테스트</div>
+                                        <div class="flx-col" style="padding:15px 30px; gap:20px; background-color: #F2F7FF; border-radius: 10px; font-size: 14px;">
+                                            <div class="flx" style="gap:40px; border-bottom: 0.5px solid #a5b2ce; padding-bottom: 10px;">
+                                                <div style="width:50px; font-family:'Noto Sans KR'; font-weight:600;">어휘</div>
+                                                <div>----</div>
+                                                <div style="font-family:'Noto Sans KR'; font-weight:700; color:#173C73;">90.0%</div>
+                                            </div>
+                                            <div class="flx" style="gap:40px; align-items:center; border-bottom: 0.5px solid #a5b2ce; padding-bottom: 10px;">
+                                                <div style="width:50px; font-family:'Noto Sans KR'; font-weight:600;">스키마</div>
+                                                <div class="flx-col" style="gap:10px;">
+                                                    <div>사회</div>
+                                                    <div>과학</div>
+                                                </div>
+                                                <div class="flx-col" style="gap:10px;font-family:'Noto Sans KR'; font-weight:700; color:#173C73;">
+                                                    <div>71.4%</div>
+                                                    <div>66.7%</div>
+                                                </div>
+                                            </div>
+                                            <div class="flx" style="gap:40px; align-items:center; border-bottom: 0.5px solid #a5b2ce; padding-bottom: 10px;">
+                                                <div style="width:50px; font-family:'Noto Sans KR'; font-weight:600;">리딩</div>
+                                                <div class="flx-col" style="gap:10px;">
+                                                    <div>사회</div>
+                                                    <div>과학</div>
+                                                </div>
+                                                <div class="flx-col" style="gap:10px;font-family:'Noto Sans KR'; font-weight:700; color:#173C73;">
+                                                    <div>70.0%</div>
+                                                    <div>60.0%</div>
+                                                </div>
+                                            </div>
+                                            <div class="flx" style="gap:40px; align-items:center;">
+                                                <div style="width:50px; font-family:'Noto Sans KR'; font-weight:600;">로직</div>
+                                                <div class="flx-col" style="gap:10px;">
+                                                    <div>사회</div>
+                                                    <div>과학</div>
+                                                </div>
+                                                <div class="flx-col" style="gap:10px; font-family:'Noto Sans KR'; font-weight:700; color:#173C73;">
+                                                    <div>55.7%</div>
+                                                    <div>66.0%</div>
+                                                </div>
+                                            </div>
+                                        </div>           
+                                </div>
+                                
+                                <div class="flx-col" style="gap:10px;">
+                                    <div class="bold" style="text-align: center">전체 정답률 비교</div>
+                                    <div class="box" style="margin:0 auto ;">
+                                        <canvas id="rador"></canvas>
+                                    </div>
+                                </div>
+                        </div>        
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="flx-col" style="gap:10px; padding-bottom:20px;">
+                        <div class="flx" style="justify-content: space-between; align-items: center; border-bottom: 0.5px solid #cacaca;">
+                            <div style="font-size: 20px; color:#696f7c; padding-bottom:10px;">
+                                학습 내역 및 취약 영역 분석 </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                    </svg>
+                                </div>
+                        </div>
+
+                        <div class="flx-col" style="gap:20px;">
+                            <div class="flx" style="gap:20px; padding:15px 0;">
+                                <div class="flx-col" style="gap:10px; padding:0 20px; width: 25%;">
+                                    <div style="font-family: 'Noto Sans KR'; font-weight: 700; color:#173C73;">이번 주 학습 내역</div> 
+                                        <div class="flx-col" style="gap:20px; border:0.5px solid #cbcbcb; border-radius: 10px;">
+                                            <div class="flx" style="gap:20px; padding: 11px 0; justify-content: space-evenly; background: #F2F7FF; border-radius:10px 10px 0 0; ">
+                                                    <div style="font-family: 'Noto Sans KR'; font-weight: 600;">구분</div>
+                                                    
+                                                    <div style="font-family: 'Noto Sans KR'; font-weight: 600;">내역</div>
+
+                                            </div>
+                                            <div class="flx" style="gap:20px; align-items:center; justify-content: space-evenly; border-bottom: 0.5px solid #cbcbcb; padding-bottom:10px;">
+                                                <div>어휘</div>
+                                                <div>10개</div>
+                                            </div>
+                                            <div class="flx" style="gap:20px; align-items:center; justify-content: space-evenly;border-bottom: 0.5px solid #cbcbcb; padding-bottom:10px;">
+                                                <div>스키마</div>
+                                                <div>13개</div>
+                                            </div>
+                                            <div class="flx" style="gap:20px; align-items:center; justify-content: space-evenly; border-bottom: 0.5px solid #cbcbcb; padding-bottom:10px;">
+                                                <div>리딩</div>
+                                                <div>20개</div>
+                                            </div>
+                                            <div class="flx" style="gap:20px; align-items:center; justify-content: space-evenly; padding-bottom:10px;">
+                                                <div>로직</div>
+                                                <div>6개</div>
+                                            </div>
+                                        </div>    
+                                </div>
+
+                                <div class="flx-col" style="gap:10px; position:relative; flex: 1 1 auto;">
+                                    <div style="font-family: 'Noto Sans KR'; font-weight: 700; color:#173C73;">학습키워드</div> 
+                                        <div class="flx-col" style="gap:20px; height:100%;">
+                                            <div class="flx box" style="gap:20px; align-items:center; flex:1 1 auto">
+                                                    <div class="flx-col" style="gap:20px;" > 
+                                                        
+                                                        <div class="flx-col" style="gap:5px;">
+                                                        <div class="bold">어휘</div>
+                                                        <div>각각, 간접, 개발, 결과, 결정</div>
+                                                        </div>
+
+                                                        <div class="flx-col" style="gap:5px;">
+                                                            <div class="bold">사회 스키마</div>
+                                                            <div>사회화, 재사회화, 또래집단…
+                                                            </div>
+                                                            </div>
+
+                                                            <div class="flx-col" style="gap:5px;">
+                                                                <div class="bold">과학 스키마</div>
+                                                                <div>질량, 무게, 중력, …
+                                                                </div>
+                                                                </div>
+
+                                                    </div>
+                                            </div>
+                                        </div>    
+
+                                        <div style="position:absolute; top:0; left:-20px;  background-color: #cacaca; height:100%; width:1px;"> </div>
+                                </div>
+                            </div>   
+
+                            <div class="flx" style="gap:20px; padding:15px 0;">
+                                <div class="flx-col" style="gap:10px; padding:0 20px; width: 25%;">
+                                    <div style="font-family: 'Noto Sans KR'; font-weight: 700; color:#173C73;">오답 내역</div> 
+                                    <div class="flx-col" style="gap:20px; border:0.5px solid #cbcbcb; border-radius: 10px;">
+                                        <div class="flx" style="gap:20px; padding: 11px 0; justify-content: space-evenly; background: #F2F7FF; border-radius:10px 10px 0 0; ">
+                                                <div style="font-family: 'Noto Sans KR'; font-weight: 600;">구분</div>
+                                                
+                                                <div style="font-family: 'Noto Sans KR'; font-weight: 600;">내역</div>
+
+                                        </div>
+                                        <div class="flx" style="gap:20px; align-items:center; justify-content: space-evenly; border-bottom: 0.5px solid #cbcbcb; padding-bottom:10px;">
+                                            <div>어휘</div>
+                                            <div>10개</div>
+                                        </div>
+                                        <div class="flx" style="gap:20px; align-items:center; justify-content: space-evenly;border-bottom: 0.5px solid #cbcbcb; padding-bottom:10px;">
+                                            <div>스키마</div>
+                                            <div>13개</div>
+                                        </div>
+                                        <div class="flx" style="gap:20px; align-items:center; justify-content: space-evenly; border-bottom: 0.5px solid #cbcbcb; padding-bottom:10px;">
+                                            <div>리딩</div>
+                                            <div>20개</div>
+                                        </div>
+                                        <div class="flx" style="gap:20px; align-items:center; justify-content: space-evenly; padding-bottom:10px;">
+                                            <div>로직</div>
+                                            <div>6개</div>
+                                        </div>
+                                    </div>    
+                                        <div class="reportbtn active" style="text-align:center;" onclick="window.open('https://schemareading.net/feedback/')">자세히 보기</div>
+                                </div>
+
+                                <div class="flx-col" style="gap:10px; position:relative; flex:1 1 auto;">
+                                    <div style="font-family: 'Noto Sans KR'; font-weight: 700; color:#173C73;">취약영역</div> 
+                                        <div class="flx-col" style="gap:20px; height:100%;">
+                                            <div class="flx box" style="gap:20px; align-items:center; flex: 1 1 auto;">
+                                                    <div>독해 영역에서 객관식 문제 유형의 풀이에 어려움을 겪고 있습니다. </div>
+                                            </div>
+                                        </div>    
+
+                                        <div style="position:absolute; top:0; left:-20px;  background-color: #cacaca; height:100%; width:1px;"> </div>
+                                </div>
+                            </div>  
+                        </div> 
+                        
+                    </div>
+                </div>
+            </div>
+            </section>
+        </section>
+    </section>
+
+    <script src="./app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const socialSchema = document.querySelector("#social")
+        const scienceSchema = document.querySelector("#science")
+        const rador = document.querySelector("#rador")
+        const doughnut = document.querySelector("#doughnut")
+        const doughnutofscience = document.querySelector("#doughnutofscience")
+        const srScore = document.querySelector("#srScore")
+        
+
+        new Chart(socialSchema, {
+            type: 'bar',
+            data: {
+                labels: ['사전점검', '스키마학습', '오답클리닉', '실전테스트'],
+                datasets: [{    
+                            backgroundColor:["#B5ADFF", "#9EAAE8","#BBD9FF","#ADFCFF"],
+                            data: [20, 19, 3, 5],
+                            borderWidth: 1
+                            }]
+            },
+            options: {
+                scales: { y: {beginAtZero: true,suggestedMax: 60} },
+                plugins:{
+                legend: {display:false},
+                        },
+                    }
+                    
+                });
+
+                new Chart(scienceSchema, {
+            type: 'bar',
+            data: {
+                labels: ['사전점검', '스키마학습','오답클리닉','실전테스트'],
+                datasets: [{    
+                            backgroundColor:["#B5ADFF", "#9EAAE8","#BBD9FF","#ADFCFF"],
+                            data: [20, 19, 3, 5],
+                            borderWidth: 1
+                            }]
+            },
+            options: {
+                scales: { y: {beginAtZero: true, suggestedMax: 60}},
+                plugins:{
+                legend: {display:false},
+                        },
+                    }
+                    
+                });
+
+
+        new Chart(rador, {
+            type: 'radar',
+            data: {
+                labels: ['어휘', '스키마(사회)', '스키마(과학)', '리딩(사회)','리딩(과학)','로직(사회)','로직(과학)' ],
+                datasets: [{    
+                            borderColor:"#3e95cd",
+                            backgroundColor: "transparent",
+                            data: [99, 80, 77, 94, 99, 70, 80],
+                            borderWidth: 1,
+                            label: '사전점검',
+                            },
+                        
+                        {
+                            borderColor:"#8e5ea2",
+                            backgroundColor: "transparent",
+                            data: [70, 69, 33, 85, 50, 44, 70],
+                            borderWidth: 1,
+                            label: '실전테스트',
+                        },
+                        {
+                            borderColor:"#e8c3b9",
+                            backgroundColor: "transparent",
+                            data: [20, 19, 3, 5, 10, 20, 40],
+                            borderWidth: 1,
+                            label: '평균', 
+                        }]
+            },
+            options: {
+                    }
+                    
+                });
+        
+        new Chart(doughnut, {
+            type: 'doughnut',
+            data: {
+                labels: ['진행률'],
+                datasets: [{    
+                    backgroundColor: [
+                                        'rgb(255, 99, 132)',
+                                        '#f7f7f9'],
+
+                            data: [50,50],
+                            borderWidth: 1,
+                            label: '',
+                            }
+                        ]
+            },
+            options: { plugins:{
+                legend: {display:false},
+                        },
+                    }
+                    
+                });
+
+                new Chart(doughnutofscience, {
+            type: 'doughnut',
+            data: {
+                labels: ['진행률'],
+                datasets: [{    
+                    backgroundColor: [
+                                        'rgb(45,142,229)',
+                                        '#f7f7f9'],
+
+                            data: [76,24],
+                            borderWidth: 1,
+                            label: '',
+                            }
+                        ]
+            },
+            options: { plugins:{
+                legend: {display:false},
+                        },
+                    }
+                    
+                });
+
+
+                new Chart(srScore, {
+                   
+                    type: 'bar',
+            data: {
+                labels: ['Lv3 SR 지수 비율'],
+                datasets: [{    
+                            backgroundColor:["#9EAAE8","#BBD9FF","#ADFCFF"],
+                            data: [94.49],
+                            borderWidth: 1
+                            }]
+            },
+            options: {
+                scales: { 
+                    x: {beginAtZero: true,
+                        suggestedMax: 100,
+                    
+                    }, 
+                    },
+                plugins:{
+                legend: {display:false},
+                        },
+                        indexAxis: 'y',
+                    }
+                    
+                });
+
+    </script>
+</body>
+</html>
