@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+html{scroll-behavior: smooth;}
+
+body { width:100vw; height:100vh; margin:0; font-family:'Pretendard-Regular'; overflow-y: scroll; display:flex; flex-direction: column;}
+
+
+
+ul , li {text-decoration: none; list-style: none; padding:0; margin:0; cursor:pointer}
+
+.flx110 {flex:1 1 auto;}
+.flx {display:flex;}
+.flx-col{display:flex; flex-direction: column;}
+.gap{ gap:5px;}
+.container {background-color: white; width:200px; border-radius: 8px; height:30px; margin:4px 0; border: 0.2px solid #cbcbcb; padding: 0 10px;}
+.none {display:none;}
+a{all:unset;}
+
+.head {position:fixed; top:0; left:0%; width:100%; background-color: white; z-index: 2;}
+
+header {margin:0 auto; max-width: 650px; padding:24px 0 24px 30px;}
+#menu {display:flex; gap:45px; font-family: 'GmarketSansMedium'; color:#1f1f1f;}
+header li:hover {color:#3180f3;}
+
+.mobileMenu{display:none; justify-content: end; color:white; cursor:pointer; padding: 10px 15px 0 0;}
+
+#mobileCloseBtn {display:none;}
+
+.positionStyle {position:absolute; top:52vw; left:50%; transform: translate(-50%, -50%); padding:20px 0px; border-radius: 50px; width:82%;}
+
+.video {height:477px; width:60%;}
+
+#showAnswer{cursor: pointer; height:60%; width:30%; margin:0 auto; }
+.freeleveltest {cursor: pointer; height:60%; width:40%; margin:0 auto 80px;}
+
+.floatingButton {background:#3180f3; width:50%; text-align:center; cursor:pointer; font-family: 'GmarketSansMedium'; font-size: 30px; color:#101020;}
+
+
+footer {border-top:0.5px solid #cacaca; padding:20px 50px 100px 50px;}
+.footerContainer { align-items: center; gap:12px; font-size: 14px; color:#696f7c;}
+
+.pc {width:100%;}
+.mob{display:none;}
+
+.dimed {position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    left: 0;
+    top: 0;
+    right: 0;
+    }
+
+@media (max-width:1700px){
+        .applybtn{height:150px; margin: 5px 10px 60px 10px; }
+        .leveltestbtn2 {height:150px; margin: 5px 10px 60px 10px;}
+    
+    }
+
+@media (max-width:1300px){
+    .applybtn{height:130px; margin: 5px 10px 60px 10px; }
+    .leveltestbtn2 {height:130px; margin: 5px 10px 60px 10px;}
+
+}
+
+@media (max-width:700px){
+    .applybtn{height:90px; margin: 5px 10px 60px 10px; }
+    .leveltestbtn2 {height:90px; margin: 5px 10px 60px 10px;}
+
+}
+
+@media (max-width: 500px) {
+
+    .head {background: 0;}
+    header {padding:0;}
+    
+    #menu {flex-direction: column; position:absolute; right:0; top:0; padding:30px 0 0 20px; max-width: 60%; width:100%; background: white; height: 100vh; }
+    .menu {transform: translate(320px,0); transition: ease-in-out 0.5s;}
+    .on {transform: translate(0,0);}
+
+    .mobileMenu{display:flex;}
+    #mobileCloseBtn {display:flex;}
+
+    .answerInput {padding:9px 40px; top:93vw;}
+    .positionStyle {top:92vw; width:100%;}
+
+    .benefitBnt{font-size:13px; padding: 12px 18px;}
+    .schemaTestBtn {font-size:30px; }
+    .buttonContainer {gap:20px;}
+
+    .video {height:280px; width:100%;}
+
+    .applybtn{height:70px; margin: 5px 10px 60px 10px; }
+    .leveltestbtn2 {height:70px; margin: 5px 10px 60px 10px;}
+
+    #showAnswer{height:30%; width:40%; margin:0 auto;}
+    .freeleveltest {height:30%; width:60%; margin:0 auto 50px;;}
+
+    .pc{display:none;}
+    .mob{display:block;}
+
+    .mobileLayOut{display: flex; flex-direction:column;}
+
+    .footerContainer{font-size: 12px;}
+
+    .floatingButton {font-size: 20px;}
+}
