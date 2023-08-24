@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aili - Today Learn</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <svg id="sideOnOff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            <a href="#"><img src="./img/logo.png" width="190px"></a>
+            <ul class="flx">
+                <li class="blue">오늘의 학습</li>
+                <li onclick="location.href='../index.html'">학습현황</li>
+                <li onclick="location.href='../feedback/index.html'">학습피드백</li>
+                <li onclick="location.href='../community/index.html'" style="display:none;">게시판</li>
+            </ul>
+            <div class="flx110"></div>
+            <div class="flx" style="margin-right:30px; gap:18px; align-items:center; cursor:pointer">
+                <span>사용자 가이드</span>
+                <span class="flx-col" style="justify-content: center; text-align: center;">
+                    <span onclick="location.href='../mypage/index.html'">내 정보</span>
+                </span>
+                <span onclick="location.href='../login/index.html'">로그아웃</span>
+            </div>
+        </nav>
+    </header>
+    <div id="subMenu" class="off">
+        <ul class="flx">
+            <li>이번 주 학습</li>
+            <li>복습 과제</li>
+        </ul>
+    </div>
+    <section class="flx" style="height:103%;">
+        <section id="sideBar">
+            <ul class="flx">
+                <li class="flx110">채팅 목록</li>
+                <li class="flx110">학습메뉴</li>
+            </ul>
+            <div id="profile">
+                <div>
+                <span id="haknyun">중학교 2학년  > </span>
+                </div>
+                <div class="flx gap">
+                    <img src="./img/profle.svg" width="40px" >
+                    <div class="flx-col" style="align-items: flex-start;">
+                        <span>이진현</span>
+                        <span>안녕하세요 :)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="aiTutorTitle">궁금한 점이 있나요?</div>
+                <div class="fontstyle" style="color:#3b3f4e;"> 대표번호 : 1688-6083 </div>
+                <div class="fontstyle"> < 질문가능 시간 안내 > </div>
+                <div class="fontstyle">월-금: 오후 7시 - 10시</div>
+                <div class="fontstyle">토요일: 오전 10시 - 오후 1시</div>
+                <div class="fontstyle">일요일 & 공휴일: 휴무</div>
+
+                <div class="flx-col"style="padding:20px 0;">
+                    <button class="askQuestion" onclick="window.open('https://pf.kakao.com/_XLsxoxj')"> 카카오톡 공식채널 </button>
+                    <button class="askQuestion" onclick="window.open('https://pf.kakao.com/_RIbxoxj')">도서관 튜터에게 질문하기</button>
+                </div>
+        </section>
+        
+        <section id="mainArea">     
+            <section id="middleArea">
+                <div class="levelsection">
+                <span class="level">레벨</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-3-square-fill" viewBox="0 0 16 16" color="#3b3f4e">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm5.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"/>
+                </svg>
+                <span class="part">Part 1</span>
+                </div>
+                <div class="weeklySection">
+                    <span class="weeklyTitle">1주차 학습진도</span>
+                    <div class="flx110"></div>
+                    <div class="flx" style="gap:8px; align-items: center; color:#3b3f4e;">
+                        
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#3180f3" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8"/>
+                            </svg> 완료
+                        </div>  
+                
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#bbd9ff" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8"/>
+                            </svg> 학습 중
+                        </div> 
+
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#cacaca" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8"/>
+                            </svg> 학습 전
+                        </div>
+                        
+                    </div>
+                </div>
+                    <div class="flx" style="padding-top: 10px; gap:10px; width:100%;">
+                        <div class="flx-col" style="width:100%;">
+                            <div class="layerContainerSubMenu">
+                                <span class="buttonstyle">
+                                    <div class="flx" style="gap:7px; margin: 0 auto; padding:10px 0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                                        </svg> 
+                                        사회 스키마
+                                    </div>
+                                    <div style="display:flex; flex-direction: column; gap:30px">
+                                        <span id="socialSchemaTest" class="buttonstyle02">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                        </svg> 사전 점검</span>
+                                        <span  id="socialSchemaLearn" class="buttonstyle02" >
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-easel" viewBox="0 0 16 16">
+                                                <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0zM2 3v7h12V3H2z"/>
+                                            </svg> 스키마 학습</span>
+                                    </div>
+                                </span>
+
+                                <span class="buttonstyle">
+                                    <div class="flx" style="gap:7px; margin: 0 auto; padding:10px 0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                                        </svg>과학 스키마
+                                    </div>
+                                    <div style="display:flex; flex-direction: column; gap:30px">
+                                        <span class="buttonstyle02"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                        </svg> 사전 점검</span>
+                                        <span class="buttonstyle02">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-easel" viewBox="0 0 16 16">
+                                                <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0zM2 3v7h12V3H2z"/>
+                                            </svg> 스키마 학습</span>
+                                    </div>    
+                                </span>
+
+                                <span class="buttonstyle">
+                                    <div class="flx" style="gap:7px; margin: 0 auto; padding:10px 0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                                        </svg> 실전 테스트
+                
+                                    </div>
+
+                                    <div style="display:flex; flex-direction: column; gap:30px">
+                                        <span class="buttonstyle02" id="finalTest"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                        </svg> 테스트</span>
+                                    </div>
+
+                                    <div class="flx110"></div>
+                                </span>
+                                
+                                <span class="buttonstyle">
+                                    <div class="flx" style="gap:7px; margin: 0 auto; padding:10px 0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                                        </svg> 복습
+                                    </div>
+
+                                    <div style="display:flex; flex-direction: column; gap:30px">
+                                        <span class="buttonstyle02"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                                            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+                                        </svg> 오답 클리닉</span>
+                                    </div>
+                                    <div class="flx110"></div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <section class="popup">
+        <div class="layerContainer" id="mainpop">
+                <div class="flx" style="align-items:center; margin-bottom:6px;">
+                    <div class="flx" id="stateContainer" style="cursor:pointer; padding-bottom: 5px;">
+                        
+                        <div id="titleSocail">
+                            <div class=" selectBack">사회 스키마</div>
+                        </div>
+
+                        <div id="titleTest">
+                            > <div class=" selectBack">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                </svg>
+                             사전 점검</div>
+                        </div>
+    
+                    <div id="tagLearn" style="gap:5px; "> 
+                         <div class="selectBack">사회 스키마</div>
+                        > <div class="selectBack">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-easel" viewBox="0 0 16 16">
+                                <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0zM2 3v7h12V3H2z"/>
+                            </svg>
+                            스키마 학습
+                        </div>
+                    </div>
+
+                    <div id="tagSecondTest">
+                         <div class="selectBack">실전 테스트</div>
+
+                    </div>
+                    </div>
+
+
+                    <div class="flx110"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="closePopUp" width="16" height="16" fill="#3b3f4e" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                    </svg>
+                </div>
+
+                <div class="layerContainerSub scroll">
+                    <div id="wrap">
+                        <div class="layerContainerSubMenu">
+                            <span class="buttonstyle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                    <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                    <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                                </svg> 사회 스키마</span>
+                            <span class="buttonstyle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                    <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                    <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                                </svg> 과학 스키마</span>
+                            <span class="buttonstyle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                    <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                    <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                                </svg> 2차 테스트</span>
+                            <span class="buttonstyle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                    <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                    <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                                </svg> 복습</span>
+                        </div>
+                        <div class="testLearnMenu" style="display:flex; justify-content: center; gap:10px;">
+                            <div style="display:flex; flex-direction: column; gap:30px">
+                                <span id="socialSchemaTest" class="buttonstyle02">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                </svg> 테스트</span>
+                                <span  id="socialSchemaLearn" class="buttonstyle02" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-easel" viewBox="0 0 16 16">
+                                        <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0zM2 3v7h12V3H2z"/>
+                                    </svg> 학습</span>
+                            </div>
+
+                            <div style="display:flex; flex-direction: column; gap:30px">
+                                <span class="buttonstyle02"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                </svg> 테스트</span>
+                                <span class="buttonstyle02">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-easel" viewBox="0 0 16 16">
+                                        <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0zM2 3v7h12V3H2z"/>
+                                    </svg> 학습</span>
+                            </div>
+
+                            <div style="display:flex; flex-direction: column; gap:30px">
+                                <span class="buttonstyle02" id="finalTest"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                </svg> 테스트</span>
+                            </div>
+
+                            <div style="display:flex; flex-direction: column; gap:30px">
+                                <span class="buttonstyle02"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                                    <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+                                </svg> 오답 클리닉</span>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="test">
+                        <div class="progresscontainer">
+                            <div class="progressWrap">
+                                진행
+                                    <div class="linewrap">
+                                        
+                                        <div class="flx-col" style="justify-content: center; align-items: center; cursor: pointer; gap:3px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"/>
+                                        </svg>
+                                        <div>어휘</div>
+                                        </div>
+
+                                        <div class="flx-col" style="justify-content: center; align-items: center; cursor: pointer; gap:3px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                <circle cx="8" cy="8" r="8"/>
+                                            </svg>
+                                            <div>스키마</div>
+                                            </div>
+
+                                            <div class="flx-col" style="justify-content: center; align-items: center; cursor: pointer; gap:3px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                    <circle cx="8" cy="8" r="8"/>
+                                                </svg>
+                                                <div>리딩</div>
+                                                </div>
+
+                                                <div class="flx-col" style="justify-content: center; align-items: center; cursor: pointer; gap:3px;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                        <circle cx="8" cy="8" r="8"/>
+                                                    </svg>
+                                                    <div>로직</div>
+                                                    </div>
+                               
+                               
+                                    </div>
+                            </div>
+                        </div>
+
+                            <div id="runningtime" class="flx">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                                    <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                                    <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                                </svg>
+                                <span>00:00</span>
+                            </div>
+
+                        <div class="flx">
+                                <div class="articlecontainer">
+                                    <div class="articleSetting">
+                                        <p class="articlehead">다음 제시문을 읽고 오른쪽 칸에 답하세요</p> <hr>
+                                        <p>또래집단은 사회화 과정에서 핵심적 역할을 담당한다. 이를 통해 개인은 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 재사회화를 겪게 된다. 또래집단은 고등학교 시절에 특히 중요한데, 이 때 자아정체성이 형성되기 때문이다.
+
+                                            한 연구에 따르면, 고등학생들은 또래집단 내에서 다양한 역할과 위치를 차지하며, 그 과정에서 자아정체성을 발견한다. 이 때, 또래집단은 개인의 사회적 기능과 가치를 인식하게 하고, 스스로의 정체성을 확립하는 데 도움을 준다. 그러나 또래집단의 영향력은 긍정적이기만 한 것은 아니다. 부정적 영향도 주의해야 한다.
+                                            
+                                            예를 들어, 또래집단에서 약간의 불일치가 발생하면, 해당 개인은 집단 소속감을 유지하기 위해 본래의 가치관이나 행동 양식을 포기하곤 한다. 이처럼 또래집단의 압력은 자아정체성 형성에 영향을 미칠 수 있다. 그렇다면 어떻게 또래집단의 부정적 영향을 줄이고, 긍정적인 사회화 과정을 추구할 수 있을까?
+                                            
+                                            여러 연구자들은 고등학교 시절의 또래집단 관리가 중요하다고 강조한다. 교육자들은 학생들이 또래 압력에 굴복하지 않고, 자신만의 가치와 정체성을 지키며 성장할 수 있도록 도와야 한다. 이를 위해 교육자들은 다양한 방법을 사용한다.
+                                            
+                                            일례로, 학교에서는 또래 압력에 대한 교육을 실시하며, 개인의 선택과 가치를 존중하도록 가르친다. 또한, 학생들에게 다양한 동아리나 활동을 제공하여, 또래 압력을 피할 수 있는 공간을 마련한다. 이러한 활동들을 통해 학생들은 또래집단의 부정적 영향을 극복하고, 건강한 자아정체성을 형성하는 데 도움을 받을 수 있다. 뿐만 아니라, 교육자들은 학생들 간의 상호 작용을 적극 지원하여 서로 다른 가치관과 경험을 공유하며 성장할 수 있는 기회를 제공한다.
+                                            
+                                            더 나아가, 부모와 학교가 협력하여 또래집단의 영향력을 적절히 관리할 필요가 있다. 부모는 자녀에게 또래집단에서 겪는 어려움을 이야기할 수 있는 환경을 조성하고, 교육자와 소통하여 적절한 지원을 제공해야 한다. 이를 통해 학생들은 또래 압력에 따른 부정적 영향을 극복하고, 긍정적인 사회화 과정을 거치게 된다.</p>
+                                    </div>
+                                    
+                                </div>
+
+                                
+                                <div class="articlecontainer">
+                                        <span class="questionwrap">
+                                            <span>1. 다음 중 사회화와 재사회화에 대한 설명으로 올바른 것은?</span>
+                                            <div class="flx">
+                                            <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우는 과정이고, 재사회화는 이미 배운 사회의 규범과 가치를 다시 배우는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 배우는 
+                                                    과정이고, 재사회화는 사회에서 일어난 변화에 
+                                                    적응하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우고 이해하는 
+                                                    과정이고, 재사회화는 이러한 규범과 가치를 다른 
+                                                    사람에게 전달하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 받아들이는 
+                                                    과정이고, 재사회화는 이러한 규범과 가치를 다시 
+                                                    배우거나 수정하는 과정이다.</label>
+                                            </div>
+                                        </span>
+
+                                        <span class="questionwrap">
+                                            <span>2. 다음 중 사회화와 재사회화에 대한 설명으로 올바른 것은?</span>
+                                            <div class="flx">
+                                            <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우는 과정이고, 재사회화는 이미 배운 사회의 규범과 가치를 다시 배우는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 배우는 
+                                                    과정이고, 재사회화는 사회에서 일어난 변화에 
+                                                    적응하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우고 이해하는 
+                                                    과정이고, 재사회화는 이러한 규범과 가치를 다른 
+                                                    사람에게 전달하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 받아들이는 
+                                                    과정이고, 재사회화는 이러한 규범과 가치를 다시 
+                                                    배우거나 수정하는 과정이다.</label>
+                                            </div>
+                                        </span>
+
+                                        <span class="questionwrap">
+                                            <span>3. 다음 중 사회화와 재사회화에 대한 설명으로 올바른 것은?</span>
+                                            <div class="flx">
+                                            <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우는 과정이고, 재사회화는 이미 배운 사회의 규범과 가치를 다시 배우는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 배우는 
+                                                    과정이고, 재사회화는 사회에서 일어난 변화에 
+                                                    적응하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우고 이해하는 
+                                                    과정이고, 재사회화는 이러한 규범과 가치를 다른 
+                                                    사람에게 전달하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 받아들이는 
+                                                    과정이고, 재사회화는 이러한 규범과 가치를 다시 
+                                                    배우거나 수정하는 과정이다.</label>
+                                            </div>
+                                        </span>
+
+                                        <span class="questionwrap">
+                                            <span>4. 다음 중 사회화와 재사회화에 대한 설명으로 올바른 것은?</span>
+                                            <div class="flx">
+                                            <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우는 과정이고, 재사회화는 이미 배운 사회의 규범과 가치를 다시 배우는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 배우는 과정이고, 재사회화는 사회에서 일어난 변화에 적응하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우고 이해하는 과정이고, 재사회화는 이러한 규범과 가치를 다른 사람에게 전달하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 받아들이는 과정이고, 재사회화는 이러한 규범과 가치를 다시 배우거나 수정하는 과정이다.</label>
+                                            </div>
+                                        </span>
+
+                                        <span class="quizTitle">OX퀴즈</span>
+                                    
+                                        <span class="questionwrap">
+                                            <span> 문제 1: 사회화 과정에서 또래집단의 역할이 중요한 이유 중 하나는 자아정체성 형성이 이루어지는 것이다.</span>
+                                            <div class="oxquizwrap">
+                                                <button class="oxquiz">O</button> <button class="oxquiz">X</button>
+                                            </div>
+                                        </span>
+
+                                        <span class="questionwrap">
+                                            <span> 문제 2: 또래집단의 영향력은 긍정적인 측면만 존재한다.</span>
+                                            <div class="oxquizwrap">
+                                                <button class="oxquiz">O</button> <button class="oxquiz">X</button>
+                                            </div>
+                                        </span>
+
+                                        <span class="questionwrap">
+                                            <span> 문제 3: 학교에서는 또래 압력에 대한 교육을 실시하며, 개인의 선택과 가치를 존중하도록 가르치는 것이 핵심이다.</span>
+                                            <div class="oxquizwrap">
+                                                <button class="oxquiz">O</button> <button class="oxquiz">X</button>
+                                            </div>
+                                        </span>
+
+                                        <span class="questionwrap">
+                                            <span> 문제 4: 부모와 학교의 협력 없이 학생들은 또래 압력에 따른 부정적 영향을 극복하고, 긍정적인 사회화 과정을 거칠 수 있다.</span>
+                                            <div class="oxquizwrap">
+                                                <button class="oxquiz">O</button> <button class="oxquiz">X</button>
+                                            </div>
+                                        </span>
+
+                                        <span class="questionwrap">
+                                            <span> 문제 5: 또래집단 관리를 통해 학생들은 자신만의 정체성을 확립하고, 사회 구성원으로서 건강한 가치관을 갖추게 되는 발판이 된다.</span>
+                                            <div class="oxquizwrap">
+                                                <button class="oxquiz">O</button> <button class="oxquiz">X</button>
+                                            </div>
+                                        </span>
+
+                                        <span class="quizTitle">단답식</span>
+
+                                        <span class="questionwrap">
+                                            <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                            <div class="oxquizwrap">
+                                                <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #cbcbcb;" id="">
+                                            </div>
+                                        </span>
+
+                                        <span class="questionwrap">
+                                            <span>문제 2: 또래집단은 고등학교 시절에 특히 중요한데, 이 때 ______이 형성되기 때문이다.</span>
+                                            <div class="oxquizwrap">
+                                                <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #cbcbcb;" id="">
+                                            </div>
+                                        </span>
+
+                                        <span class="questionwrap">
+                                            <span>문제 3: 한 연구에 따르면, 고등학생들은 ______ 내에서 다양한 역할과 위치를 차지하며, 그 과정에서 자아정체성을 발견한다.</span>
+                                            <div class="oxquizwrap">
+                                                <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #cbcbcb;" id="">
+                                            </div>
+                                        </span>
+
+                                        <span class="quizTitle">심화문제</span>
+
+                                        <span class="questionwrap">기존 제시문과 비교하여 또래집단의 긍정적 및 부정적 영향력을 다루는 방식에 대한 비판적 분석을 수행하십시오. 또한 또래집단의 부정적 영향력을 줄이고 긍정적인 영향력을 강화하기 위한 구체적인 대안을 제시하십시오. 
+                                            <span style="color:#696f7c;"> (답안의 글자 수는 약 1,200자 내외로 제한합니다.) </span>
+
+                                            <div class="textContainer">
+                                                <span>
+                                                    
+                                                            심화 제시문: 최근 연구들은 또래집단의 영향력을 단순히 긍정적이거나 부정적으로 구분하는 것이 아니라, 또래집단의 다양한 구성원과 그들의 역할에 따라 영향력이 다르게 작용한다고 지적하고 있다. 이러한 연구들은 또래집단에서 리더십 역할을 하는 학생들이 그룹의 가치와 행동을 결정하는 데 큰 영향을 미치며, 이에 따라 또래집단의 영향력이 긍정적이거나 부정적일 수 있다고 주장한다.
+
+                                                            또한, 각 학생들이 그들의 인간관계와 가치관에 따라 또래집단의 영향력을 받는 정도가 다르다는 점도 강조된다. 이를 바탕으로, 학교와 부모가 또래집단의 영향력을 관리하기 위해서는 또래집단 내의 다양한 구성원과 그들의 역할을 고려한 접근이 필요하다는 주장이 제기되고 있다. 이를 위해 학교와 부모는 개개인의 가치관과 인간관계를 이해하고 존중하는 환경을 조성하는 것이 중요하다.
+                                                </span>
+                                            </div>
+                                            <textarea type="text" rows="20" style="border:0.5px solid #cbcbcb; border-radius: 8px; padding: 5px 10px; margin: 10px;"></textarea>
+                                        </span>
+
+                                            <button id="btnNextArticle" class="nextArticle">채점 결과보기</button>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div id="testResult">
+                
+                        <div class="flx" style="padding: 20px 0 0 0;">
+                            <div class="flx110"></div>
+                            <span>사회스키마 테스트 결과입니다</span>
+                            <div class="flx110"></div>
+                        </div>
+
+                        <div class="flx">
+                            <div class="flx110"></div>
+                            <div class="flx" style="padding:20px 0px; width:70%;">
+                                        <span>•영역별 점수</span>
+                            </div>
+                        </div>
+                                    <div class="articleSetting">
+                                        <div class="flx" style="gap:100px; justify-content: center; color:#3180f3; text-align: center;">
+                                            <div class="flx-col">어휘
+                                                <span >80점</span>
+                                                <span>10/15</span>
+                                            </div>
+                                            <div class="flx-col">스키마
+                                                <span>80점</span>
+                                                <span>12/15</span>
+                                            </div>
+                                            <div class="flx-col">리딩
+                                                <span>80점</span>
+                                                <span>13/15</span>
+                                            </div>
+                                            <div class="flx-col">로직
+                                                <span>80점</span>
+                                                <span>10/15</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                        <div class="flx">
+                            <div class="flx110"></div>
+                            <div class="flx" style="padding:20px 0px; width:70%;">
+                                        <span>•오답문항</span>
+                            </div>
+                        </div>
+
+                                    <div class="articleSetting">
+                                    <div class="flx">
+                                        <div class="flx110"></div>
+                                        <div class="flx-col" style="gap:20px;">
+                                            <span class="flx" style="gap:34px;">
+                                                <span>어휘</span>
+                                                <div class="flx" style="gap:130px;">
+                                                <span>2</span>
+                                                <span>5</span>
+                                                <span>8</span>
+                                                <span>10</span>
+                                                </div>
+                                            </span>
+
+                                            <span class="flx" style="gap:20px;">
+                                            <span>스키마</span>
+                                            <div class="flx" style="gap:130px;">
+                                                <span>2</span>
+                                                <span>5</span>
+                                                <span>8</span>
+                                                <span>10</span>
+                                                </div>
+                                            </span>    
+
+                                            <span class="flx" style="gap:34px;">
+                                            <span>리딩</span>
+                                            <div class="flx" style="gap:130px;">
+                                                <span>2</span>
+                                                <span>5</span>
+                                                <span>8</span>
+                                                <span>10</span>
+                                            </div>
+                                            </span>
+
+                                            <span class="flx" style="gap:34px;">
+                                            <span>로직</span>
+                                            <div class="flx" style="gap:130px;">
+                                                <span>2</span>
+                                                <span>5</span>
+                                                <span>8</span>
+                                                <span>10</span>
+                                            </div>
+                                            </span>
+                                        </div>
+                                        <div class="flx110"></div>
+                                    </div>
+                                    </div>
+
+                            <div style= "display:flex; gap:5px; padding:10px;">
+                                <div class="flx110"></div>
+                                <button  id="toPopUpHome" style="all:unset; padding:10px 30px; background-color:#3180f3; color:white; border-radius: 4px; cursor:pointer;"></button>
+                                <button style="all:unset; padding:10px 30px; background-color:#3180f3; color:white; border-radius: 4px; cursor:pointer;">사회 스키마 학습하기</button>
+                                <div class="flx110"></div>
+                            </div>
+                    </div>
+
+                    <div id="learn">
+                        <div class="menucontainer">
+                            <div class="flx" style="justify-content: flex-end; cursor:pointer; padding: 0 20px 10px 0; ">
+                                <svg id="listFold" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                                </svg>
+                            </div>
+                            <div class="menuStyle" id="vocaDropDwon">
+                                <div class="flx">
+                                <span>어휘 학습</span>
+                                <div class="flx110"></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                </svg>
+                                </div>
+                            </div>
+                            <div class="menuWrap selected" id="voca">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#73c6c1" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+                                  </svg>
+                                어휘퀴즈
+                            </div>
+                            <div class="menuStyle" id="schemaDropDwon">
+                                <div class="flx">    
+                                    <span>스키마 학습</span>                                
+                                    <div class="flx110"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="menuWrap" id="concept">
+                            
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#dc6481" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                      </svg>
+                                개념 강의 듣기
+                            </div>
+                            <div class="menuWrap" id="schema">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#73c6c1" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+                                  </svg>
+                                스키마 퀴즈
+                            </div>
+                            <div class="menuStyle" id="readingDropDwon">
+                                <div class="flx"> 
+                                <span>리딩 학습</span>
+                                <div class="flx110"></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                </svg>
+                                </div>
+                            </div>
+                            <div class="menuWrap" id="Paragraph">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#73c6c1" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+                                  </svg>
+                                문단 요약 퀴즈
+                            </div>
+                            <div class="menuWrap" id="lectureVid">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#dc6481" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                  </svg>
+                                리딩 오답 해설 강의
+                            </div>
+                            <div class="menuWrap" id="analysis" style="display:none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="8"/>
+                                </svg>
+                                오답분석
+                            </div>
+                            <div class="menuStyle" id="logicDropDwon">
+                                <div class="flx"> 
+                                <span>로직 학습</span>
+                                <div class="flx110"></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                </svg>
+                                </div>
+                            </div>
+                            <div class="menuWrap" id="logicLecVid">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#dc6481" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                  </svg>
+                                로직 오답 해설 강의
+                            </div>
+                            <div class="menuWrap" id="deep">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#73c6c1" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+                                </svg>
+                                심화문제
+                            </div>
+                            <div class="flx110"></div>
+                        </div>
+
+                        <div class="listIcon">
+                            <svg id="openlist" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layout-sidebar" viewBox="0 0 16 16">
+                                <path d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3zm5-1v12h9a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H5zM4 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h2V2z"/>
+                            </svg>
+                        </div>    
+
+                        <div id="vocaQuiz">
+                        
+                            <div class="articlecontainer" style="margin:auto;">
+                                <span class="questionwrap">
+                                    <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                    <div class="oxquizwrap">
+                                        <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                    </div>
+                                </span>
+                                <span class="questionwrap">
+                                    <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                    <div class="oxquizwrap">
+                                        <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                    </div>
+                                </span>
+                                <span class="questionwrap">
+                                    <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                    <div class="oxquizwrap">
+                                        <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                    </div>
+                                </span>
+                                <span class="questionwrap">
+                                    <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                    <div class="oxquizwrap">
+                                        <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                    </div>
+                                </span>
+                                <span class="questionwrap">
+                                    <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                    <div class="oxquizwrap">
+                                        <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                    </div>
+                                </span>
+                                <span class="questionwrap">
+                                    <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                    <div class="oxquizwrap">
+                                        <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                    </div>
+                                </span>
+                                <button id="btnNextArticle" class="nextArticle">채점 결과보기</button>
+                            </div>
+                            <div></div>
+                        </div>
+
+                        <div id="conceptLecture">
+                            <div class="flx-col" style="padding-top: 40px; gap:10px; margin:auto;">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_8KhTOoup6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <div class="container"></div>
+                                </div>
+                        </div>
+
+                        <div id="schemaQuiz">
+
+                            <div id="runningtime" class="flx">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                                    <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                                    <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                                </svg>
+                                <span>00:00</span>
+                            </div>
+
+                            <div class="flx">
+                                <div class="articlecontainer">
+                                    <div class="articleSetting">
+                                    <p class="articlehead">다음 제시문을 읽고 오른쪽 칸에 답하세요</p> <hr>
+                                    <p>사회화는 인간이 태어나서부터 주변 사회와 상호작용하면서 그들의 가치관, 행동 패턴, 언어 등을 습득하는 과정이다. 이 과정은 개인의 성격, 인지 능력, 유전적 요소, 문화적 배경 등에 따라 차이가 있을 수 있다. 대개 어린 시절에 가장 큰 영향을 받고, 성인이 되면서도 계속적으로 발전하며 변화한다. 이 과정은 인간이 사회적 존재로서 적응하고 생존하기 위해 필수적인 과정이다.
+
+                                        재사회화는 어떤 이유로 기존의 사회 관계에서 벗어나 다른 사회적 관계로 이행할 때, 이전의 관계에서 얻은 인식과 행동을 바꾸는 과정이다. 이 과정에서는 기존의 사회적 지위나 가치관 등을 버리고, 새로운 문화와 가치관, 행동 패턴 등을 습득해야 한다. 이 과정은 이민, 복귀, 전쟁, 감옥 생활 등 다양한 이유로 발생할 수 있으며, 이에 대한 적응과정이 필요하다.
+                                        
+                                        예를 들어, 이민을 간 한국인들은 새로운 나라에서 적응해야 하는 과정을 겪게 된다. 이때, 이민자들은 새로운 문화, 언어, 가치관 등을 습득하고, 이전에 가지고 있던 것들을 조정해야 한다. 이 과정에서는 자신의 문화적 배경과 새로운 환경에서의 요구사항을 맞추는 작업이 필요하다. 이를 통해 이민자들은 새로운 사회에 적응하며 새로운 관계를 형성할 수 있게 된다.
+                                        
+                                        이와 같이 사회화와 재사회화는 인간이 사회적 존재로서 적응하고 생존하기 위해 필수적인 과정이다. 또한 이러한 과정은 인간의 성격과 행동, 문화적 배경 등을 형성하는 중요한 역할을 한다.</p>
+                                    </div>
+                                </div>
+                                <div class="articlecontainer">
+                                    <span class="questionwrap">
+                                        <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                        <div class="oxquizwrap">
+                                            <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                        </div>
+                                    </span>
+                                    <span class="questionwrap">
+                                        <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                        <div class="oxquizwrap">
+                                            <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                        </div>
+                                    </span>
+                                    <span class="questionwrap">
+                                        <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                        <div class="oxquizwrap">
+                                            <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                        </div>
+                                    </span>
+                                    <span class="questionwrap">
+                                        <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                        <div class="oxquizwrap">
+                                            <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                        </div>
+                                    </span>
+                                    <span class="questionwrap">
+                                        <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                        <div class="oxquizwrap">
+                                            <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                        </div>
+                                    </span>
+                                    <span class="questionwrap">
+                                        <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                        <div class="oxquizwrap">
+                                            <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                        </div>
+                                    </span>
+                                    <button id="btnNextArticle" class="nextArticle">채점 결과보기</button>
+                                </div>
+                            </div>    
+                        </div>
+
+                        <div id="paragraphQuiz">
+
+                            <div id="runningtime" class="flx">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                                    <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                                    <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                                </svg>
+                                <span>00:00</span>
+                            </div>
+
+                            <div class="flx">
+                                <div class="articlecontainer">
+                                    <div class="articleSetting">
+                                    <p class="articlehead">다음 제시문을 읽고 오른쪽 칸에 답하세요</p> <hr>
+                                    <p>사회적 지위, 역할, 역할 갈등은 사회학에서 중요한 개념어이다. 사회적 지위는 개인이 사회 안에서 차지하는 위치이다. 이는 개인의 소득, 교육, 직업, 성별, 인종, 종교 등 다양한 요인에 영향을 받는다. 사회적 지위가 높을수록 개인은 사회 안에서 더 많은 권한과 특권을 가지게 된다.
+
+                                        역할은 사회적 지위와 밀접하게 관련되어 있으며, 개인이 사회적 지위에 따라 수행해야 하는 기대되는 행동이다. 예를 들어, 부모는 자녀를 양육하고 가르치는 역할을 수행해야 하며, 회사의 CEO는 조직을 이끌어 가는 역할을 수행해야 한다.
+                                        
+                                        역할 갈등은 여러 역할들 간에 상충하는 요구 사항이 존재할 때 발생한다. 이러한 갈등은 개인의 역할 수행에 대한 압박과 스트레스를 초래할 수 있다. 예를 들어, 부모는 가정에서 자녀를 돌보는 역할을 수행해야 하지만, 동시에 직장에서도 일을 해야 한다면 어려움을 겪을 수 있다.
+                                        
+                                        예시로는 대학교에서 학생들은 학생으로서의 역할을 수행하면서 동시에 사회적인 책임도 가지고 있어 역할 갈등을 겪을 수 있다. 또한, 직장에서 상사의 지시에 따라 업무를 수행해야 하지만, 동시에 동료와의 관계를 유지하기 위한 역할도 수행해야 하기 때문에 역할 갈등을 겪을 수 있다.
+                                        
+                                        사회적 지위, 역할, 역할 갈등은 우리의 일상에서 빼놓을 수 없는 중요한 개념어이며, 이를 이해하고 적절하게 대처하는 것은 개인의 사회성과 삶의 질을 높이는 데 중요한 역할을 할 것이다.</p>
+                                    </div>
+                                </div>
+                                <div class="articlecontainer">
+                                    <span class="questionwrap">
+                                        <span>문제 1: 인간이 태어나서부터 주변 사회와 상호작용하면서 그들의 가치관, 행동 패턴, 언어 등을 습득하는 과정을 ______라고 한다.</span>
+                                        <div class="oxquizwrap">
+                                            <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                        </div>
+                                    </span>
+                                    <span class="questionwrap">
+                                        <span>문제 2: 기존의 사회 관계에서 벗어나 다른 사회적 관계로 이행할 때, 이전의 관계에서 얻은 인식과 행동을 바꾸는 과정을 ______이라고 한다.</span>
+                                        <div class="oxquizwrap">
+                                            <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                        </div>
+                                    </span>
+                                    <span class="questionwrap">
+                                        <span>문제 3: 개인이 사회 안에서 차지하는 위치를 ______이라고 하며, 이는 개인의 소득, 교육, 직업, 성별, 인종, 종교 등 다양한 요인에 영향을 받는다.</span>
+                                        <div class="oxquizwrap">
+                                            <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                        </div>
+                                    </span>
+                                    <span class="questionwrap">
+                                        <span>문제 4: 개인이 사회적 지위에 따라 수행해야 하는 기대되는 행동을 ______이라고 한다.</span>
+                                        <div class="oxquizwrap">
+                                            <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                        </div>
+                                    </span>
+                                    <span class="questionwrap">
+                                        <span>문제 5: 여러 역할들 간에 상충하는 요구 사항이 존재할 때 발생하는 것을 ______이라고 하며, 이는 개인의 역할 수행에 대한 압박과 스트레스를 초래할 수 있다.</span>
+                                        <div class="oxquizwrap">
+                                            <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                        </div>
+                                    </span>
+                                    <span class="questionwrap">
+                                        <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                        <div class="oxquizwrap">
+                                            <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                        </div>
+                                    </span>
+                                    <button id="btnNextArticle" class="nextArticle">채점 결과보기</button>
+                                </div>
+                            </div>    
+                        </div>
+
+                        <div id="incorrectLecture">
+                            
+                            <div id="runningtime" class="flx">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                                    <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                                    <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                                </svg>
+                                <span>00:00</span>
+                            </div>
+
+                            <div class="flx">
+                                <div class="articlecontainer">
+                                    <div class="articleSetting">
+                                    <p class="articlehead">다음 제시문을 읽고 오른쪽 칸에 답하세요</p> <hr>
+                                    <p>사회화는 인간이 태어나서부터 주변 사회와 상호작용하면서 그들의 가치관, 행동 패턴, 언어 등을 습득하는 과정이다. 이 과정은 개인의 성격, 인지 능력, 유전적 요소, 문화적 배경 등에 따라 차이가 있을 수 있다. 대개 어린 시절에 가장 큰 영향을 받고, 성인이 되면서도 계속적으로 발전하며 변화한다. 이 과정은 인간이 사회적 존재로서 적응하고 생존하기 위해 필수적인 과정이다.
+
+                                        재사회화는 어떤 이유로 기존의 사회 관계에서 벗어나 다른 사회적 관계로 이행할 때, 이전의 관계에서 얻은 인식과 행동을 바꾸는 과정이다. 이 과정에서는 기존의 사회적 지위나 가치관 등을 버리고, 새로운 문화와 가치관, 행동 패턴 등을 습득해야 한다. 이 과정은 이민, 복귀, 전쟁, 감옥 생활 등 다양한 이유로 발생할 수 있으며, 이에 대한 적응과정이 필요하다.
+                                        
+                                        예를 들어, 이민을 간 한국인들은 새로운 나라에서 적응해야 하는 과정을 겪게 된다. 이때, 이민자들은 새로운 문화, 언어, 가치관 등을 습득하고, 이전에 가지고 있던 것들을 조정해야 한다. 이 과정에서는 자신의 문화적 배경과 새로운 환경에서의 요구사항을 맞추는 작업이 필요하다. 이를 통해 이민자들은 새로운 사회에 적응하며 새로운 관계를 형성할 수 있게 된다.
+                                        
+                                        이와 같이 사회화와 재사회화는 인간이 사회적 존재로서 적응하고 생존하기 위해 필수적인 과정이다. 또한 이러한 과정은 인간의 성격과 행동, 문화적 배경 등을 형성하는 중요한 역할을 한다.</p>
+                                    </div>
+                                </div>
+                                <div class="articlecontainer">
+                                    <div class="questionwrap">
+                                        <div class="flx">
+                                            <span>
+                                                문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.
+                                                <svg id="explainVid" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+                                                    <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                                </svg>
+                                            </span> 
+                                            
+                                        </div>
+                                            
+                                        <div class="oxquizwrap">
+                                            <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>  
+
+                        </div>
+
+                        <div id="answerAnalysis">
+                            <div class="container">오답분석</div>
+                        </div>
+
+                        <div id="logicLectureVid">
+                            <div id="runningtime" class="flx">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                                    <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                                    <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                                </svg>
+                                <span>00:00</span>
+                            </div>
+
+                            <div class="flx">
+                                <div class="articlecontainer">
+                                    <div class="articleSetting">
+                                    <p class="articlehead">다음 제시문을 읽고 오른쪽 칸에 답하세요</p> <hr>
+                                    <p>사회화는 인간이 태어나서부터 주변 사회와 상호작용하면서 그들의 가치관, 행동 패턴, 언어 등을 습득하는 과정이다. 이 과정은 개인의 성격, 인지 능력, 유전적 요소, 문화적 배경 등에 따라 차이가 있을 수 있다. 대개 어린 시절에 가장 큰 영향을 받고, 성인이 되면서도 계속적으로 발전하며 변화한다. 이 과정은 인간이 사회적 존재로서 적응하고 생존하기 위해 필수적인 과정이다.
+
+                                        재사회화는 어떤 이유로 기존의 사회 관계에서 벗어나 다른 사회적 관계로 이행할 때, 이전의 관계에서 얻은 인식과 행동을 바꾸는 과정이다. 이 과정에서는 기존의 사회적 지위나 가치관 등을 버리고, 새로운 문화와 가치관, 행동 패턴 등을 습득해야 한다. 이 과정은 이민, 복귀, 전쟁, 감옥 생활 등 다양한 이유로 발생할 수 있으며, 이에 대한 적응과정이 필요하다.
+                                        
+                                        예를 들어, 이민을 간 한국인들은 새로운 나라에서 적응해야 하는 과정을 겪게 된다. 이때, 이민자들은 새로운 문화, 언어, 가치관 등을 습득하고, 이전에 가지고 있던 것들을 조정해야 한다. 이 과정에서는 자신의 문화적 배경과 새로운 환경에서의 요구사항을 맞추는 작업이 필요하다. 이를 통해 이민자들은 새로운 사회에 적응하며 새로운 관계를 형성할 수 있게 된다.
+                                        
+                                        이와 같이 사회화와 재사회화는 인간이 사회적 존재로서 적응하고 생존하기 위해 필수적인 과정이다. 또한 이러한 과정은 인간의 성격과 행동, 문화적 배경 등을 형성하는 중요한 역할을 한다.</p>
+                                    </div>
+                                </div>
+                                <div class="articlecontainer">
+                                    <div class="questionwrap">
+                                        <div class="flx">
+                                            <span>
+                                                문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.
+                                                <svg id="explainVid" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+                                                    <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                                </svg>
+                                            </span> 
+                                            
+                                        </div>
+                                            
+                                        <div class="oxquizwrap">
+                                            <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>  
+                        </div>
+
+                        <div id="deepProblem">
+                            <div id="runningtime" class="flx">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                                    <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                                    <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                                </svg>
+                                <span>00:00</span>
+                            </div>
+
+                            <div class="flx">
+                                <div class="articlecontainer">
+                                    <div class="articleSetting">
+                                    <p class="articlehead">다음 제시문을 읽고 오른쪽 칸에 답하세요</p> <hr>
+                                    <p>사회화는 인간이 태어나서부터 주변 사회와 상호작용하면서 그들의 가치관, 행동 패턴, 언어 등을 습득하는 과정이다. 이 과정은 개인의 성격, 인지 능력, 유전적 요소, 문화적 배경 등에 따라 차이가 있을 수 있다. 대개 어린 시절에 가장 큰 영향을 받고, 성인이 되면서도 계속적으로 발전하며 변화한다. 이 과정은 인간이 사회적 존재로서 적응하고 생존하기 위해 필수적인 과정이다.
+
+                                        재사회화는 어떤 이유로 기존의 사회 관계에서 벗어나 다른 사회적 관계로 이행할 때, 이전의 관계에서 얻은 인식과 행동을 바꾸는 과정이다. 이 과정에서는 기존의 사회적 지위나 가치관 등을 버리고, 새로운 문화와 가치관, 행동 패턴 등을 습득해야 한다. 이 과정은 이민, 복귀, 전쟁, 감옥 생활 등 다양한 이유로 발생할 수 있으며, 이에 대한 적응과정이 필요하다.
+                                        
+                                        예를 들어, 이민을 간 한국인들은 새로운 나라에서 적응해야 하는 과정을 겪게 된다. 이때, 이민자들은 새로운 문화, 언어, 가치관 등을 습득하고, 이전에 가지고 있던 것들을 조정해야 한다. 이 과정에서는 자신의 문화적 배경과 새로운 환경에서의 요구사항을 맞추는 작업이 필요하다. 이를 통해 이민자들은 새로운 사회에 적응하며 새로운 관계를 형성할 수 있게 된다.
+                                        
+                                        이와 같이 사회화와 재사회화는 인간이 사회적 존재로서 적응하고 생존하기 위해 필수적인 과정이다. 또한 이러한 과정은 인간의 성격과 행동, 문화적 배경 등을 형성하는 중요한 역할을 한다.</p>
+                                    </div>
+                                </div>
+                                <div class="articlecontainer">
+                                        <span class="quizTitle">심화문제</span>
+
+                                        <span class="questionwrap">기존 제시문과 비교하여 또래집단의 긍정적 및 부정적 영향력을 다루는 방식에 대한 비판적 분석을 수행하십시오. 또한 또래집단의 부정적 영향력을 줄이고 긍정적인 영향력을 강화하기 위한 구체적인 대안을 제시하십시오. 
+                                            <span style="color:#696f7c;"> (답안의 글자 수는 약 1,200자 내외로 제한합니다.) </span>
+
+                                            <div class="textContainer">
+                                                <span>
+                                                    
+                                                            심화 제시문: 최근 연구들은 또래집단의 영향력을 단순히 긍정적이거나 부정적으로 구분하는 것이 아니라, 또래집단의 다양한 구성원과 그들의 역할에 따라 영향력이 다르게 작용한다고 지적하고 있다. 이러한 연구들은 또래집단에서 리더십 역할을 하는 학생들이 그룹의 가치와 행동을 결정하는 데 큰 영향을 미치며, 이에 따라 또래집단의 영향력이 긍정적이거나 부정적일 수 있다고 주장한다.
+
+                                                            또한, 각 학생들이 그들의 인간관계와 가치관에 따라 또래집단의 영향력을 받는 정도가 다르다는 점도 강조된다. 이를 바탕으로, 학교와 부모가 또래집단의 영향력을 관리하기 위해서는 또래집단 내의 다양한 구성원과 그들의 역할을 고려한 접근이 필요하다는 주장이 제기되고 있다. 이를 위해 학교와 부모는 개개인의 가치관과 인간관계를 이해하고 존중하는 환경을 조성하는 것이 중요하다.
+                                                </span>
+                                            </div>
+                                            <textarea type="text" rows="20" style="border:0.5px solid #cbcbcb; border-radius: 8px; padding: 5px 10px; margin: 10px;"></textarea>
+                                        </span>
+                                    <button id="btnNextArticle" class="nextArticle">채점 결과보기</button>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div id="final">
+                        <div class="progresscontainer">
+                            <div class="progressWrap">
+                                진행
+                                    <div class="linewrap">
+                                        
+                                        <div class="flx-col" style="justify-content: center; align-items: center; cursor: pointer; gap:3px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"/>
+                                        </svg>
+                                        <div>어휘</div>
+                                        </div>
+
+                                        <div class="flx-col" style="justify-content: center; align-items: center; cursor: pointer; gap:3px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                <circle cx="8" cy="8" r="8"/>
+                                            </svg>
+                                            <div>스키마</div>
+                                            </div>
+
+                                            <div class="flx-col" style="justify-content: center; align-items: center; cursor: pointer; gap:3px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                    <circle cx="8" cy="8" r="8"/>
+                                                </svg>
+                                                <div>리딩</div>
+                                                </div>
+
+                                                <div class="flx-col" style="justify-content: center; align-items: center; cursor: pointer; gap:3px;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                        <circle cx="8" cy="8" r="8"/>
+                                                    </svg>
+                                                    <div>로직</div>
+                                                    </div>
+                               
+                               
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div id="runningtime" class="flx">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                                <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                            </svg>
+                            <span>00:00</span>
+                        </div>
+
+                        <div class="flx">
+                                <div class="articlecontainer">
+                                    <div class="articleSetting">
+                                        <p class="articlehead">다음 제시문을 읽고 오른쪽 칸에 답하세요</p> <hr>
+                                        <p>
+                                            고등학교 시절, 청소년들은 또래 집단의 영향을 크게 받으며 자아정체성을 찾아가는 과정을 겪습니다. 그러나 이러한 과정에서 청소년들은 사회적 지위와 역할에 대한 이해를 점차 확립해야 하는데, 이 때 발생하는 역할 갈등이 청소년 기간의 주요한 특징 중 하나로 여겨집니다.
+
+또래 집단에서의 사회적 지위는 일반적으로 가시적인 요소, 예를 들어 외모, 학업 성적, 경제적 상황 등에 의해 형성됩니다. 이러한 사회적 지위는 청소년들의 행동에 영향을 주며, 그들이 어떤 역할을 수행할지에 대한 기대치를 결정합니다. 하지만 이러한 기대치는 때로 청소년들의 개인적 가치관과 상충할 수 있으며, 이로 인해 역할 갈등이 발생할 수 있습니다.
+
+예를 들어, 우수한 학업 성적을 거두고 또래들로부터 존경을 받는 청소년 A의 경우, 다른 학생들에게 학문적인 지식과 기술을 전달하는 역할이 기대됩니다. 그러나 A는 학문적 성취와 별개로 미술에 관심을 갖고 이를 추구하고 싶어하는데, 이러한 개인적 취향은 주변의 기대치와 상충하는 것으로 인식될 수 있습니다.
+
+역할 갈등이 발생할 때, 청소년들은 사회화와 재사회화 과정을 통해 이를 해결하게 됩니다. 사회화 과정에서 청소년들은 사회적 역할의 기대치와 자신의 가치관 사이에서 균형을 찾으려 노력하며, 재사회화 과정에서는 새로운 사회적 역할을 받아들이며 자신의 정체성을 다시 구축합니다.
+
+이렇게 역할 갈등을 극복하는 과정에서 청소년들은 자신의 사회적 지위와 역할을 더욱 명확하게 인식하게 됩니다. 이를 통해 청소년들은 사회적 지위와 역할에 따른 기대치를 인식하고, 이에 따라 자신의 행동을 조절하며 성장하게 됩니다.
+
+그러나 청소년들이 사회적 지위와 역할에 따른 기대치를 인식하고 이에 따라 자신의 행동을 조절하며 성장하는 과정은 때로는 부정적인 결과를 초래할 수 있습니다. 이러한 결과는 특히 역할 기대치와 개인적 가치관이 크게 상충할 경우 발생할 수 있습니다. 이럴 때, 청소년들은 혼란스러운 마음을 감추려고 노력하며, 그 과정에서 본인의 진실된 감정을 억압하게 됩니다.
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+    
+                                
+                                <div class="articlecontainer">
+                                        <span class="questionwrap">
+                                            <span>1. 다음 중 사회화와 재사회화에 대한 설명으로 올바른 것은?</span>
+                                            <div class="flx">
+                                            <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우는 과정이고, 재사회화는 이미 배운 사회의 규범과 가치를 다시 배우는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 배우는 
+                                                    과정이고, 재사회화는 사회에서 일어난 변화에 
+                                                    적응하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우고 이해하는 
+                                                    과정이고, 재사회화는 이러한 규범과 가치를 다른 
+                                                    사람에게 전달하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 받아들이는 
+                                                    과정이고, 재사회화는 이러한 규범과 가치를 다시 
+                                                    배우거나 수정하는 과정이다.</label>
+                                            </div>
+                                        </span>
+    
+                                        <span class="questionwrap">
+                                            <span>2. 다음 중 사회화와 재사회화에 대한 설명으로 올바른 것은?</span>
+                                            <div class="flx">
+                                            <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우는 과정이고, 재사회화는 이미 배운 사회의 규범과 가치를 다시 배우는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 배우는 
+                                                    과정이고, 재사회화는 사회에서 일어난 변화에 
+                                                    적응하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우고 이해하는 
+                                                    과정이고, 재사회화는 이러한 규범과 가치를 다른 
+                                                    사람에게 전달하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 받아들이는 
+                                                    과정이고, 재사회화는 이러한 규범과 가치를 다시 
+                                                    배우거나 수정하는 과정이다.</label>
+                                            </div>
+                                        </span>
+    
+                                        <span class="questionwrap">
+                                            <span>3. 다음 중 사회화와 재사회화에 대한 설명으로 올바른 것은?</span>
+                                            <div class="flx">
+                                            <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우는 과정이고, 재사회화는 이미 배운 사회의 규범과 가치를 다시 배우는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 배우는 
+                                                    과정이고, 재사회화는 사회에서 일어난 변화에 
+                                                    적응하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우고 이해하는 
+                                                    과정이고, 재사회화는 이러한 규범과 가치를 다른 
+                                                    사람에게 전달하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 받아들이는 
+                                                    과정이고, 재사회화는 이러한 규범과 가치를 다시 
+                                                    배우거나 수정하는 과정이다.</label>
+                                            </div>
+                                        </span>
+    
+                                        <span class="questionwrap">
+                                            <span>4. 다음 중 사회화와 재사회화에 대한 설명으로 올바른 것은?</span>
+                                            <div class="flx">
+                                            <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우는 과정이고, 재사회화는 이미 배운 사회의 규범과 가치를 다시 배우는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사람이 사회의 규범과 가치를 받아들이는 과정이고, 재사회화는 사회의 규범과 가치를 재평가하고 조정하는 과정이다.</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 배우는 과정이고, 재사회화는 사회에서 일어난 변화에 적응하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 규범과 가치를 배우고 이해하는 과정이고, 재사회화는 이러한 규범과 가치를 다른 사람에게 전달하는 과정이다</label>
+                                            </div>
+                                            <div class="flx">
+                                                <input type="checkbox" id="question01"><label for="question01">사회화는 사회의 기본적인 규범과 가치를 받아들이는 과정이고, 재사회화는 이러한 규범과 가치를 다시 배우거나 수정하는 과정이다.</label>
+                                            </div>
+                                        </span>
+    
+                                        <span class="quizTitle">OX퀴즈</span>
+                                    
+                                        <span class="questionwrap">
+                                            <span> 문제 1: 사회화 과정에서 또래집단의 역할이 중요한 이유 중 하나는 자아정체성 형성이 이루어지는 것이다.</span>
+                                            <div class="oxquizwrap">
+                                                <button class="oxquiz">O</button> <button class="oxquiz">X</button>
+                                            </div>
+                                        </span>
+    
+                                        <span class="questionwrap">
+                                            <span> 문제 2: 또래집단의 영향력은 긍정적인 측면만 존재한다.</span>
+                                            <div class="oxquizwrap">
+                                                <button class="oxquiz">O</button> <button class="oxquiz">X</button>
+                                            </div>
+                                        </span>
+    
+                                        <span class="questionwrap">
+                                            <span> 문제 3: 학교에서는 또래 압력에 대한 교육을 실시하며, 개인의 선택과 가치를 존중하도록 가르치는 것이 핵심이다.</span>
+                                            <div class="oxquizwrap">
+                                                <button class="oxquiz">O</button> <button class="oxquiz">X</button>
+                                            </div>
+                                        </span>
+    
+                                        <span class="questionwrap">
+                                            <span> 문제 4: 부모와 학교의 협력 없이 학생들은 또래 압력에 따른 부정적 영향을 극복하고, 긍정적인 사회화 과정을 거칠 수 있다.</span>
+                                            <div class="oxquizwrap">
+                                                <button class="oxquiz">O</button> <button class="oxquiz">X</button>
+                                            </div>
+                                        </span>
+    
+                                        <span class="questionwrap">
+                                            <span> 문제 5: 또래집단 관리를 통해 학생들은 자신만의 정체성을 확립하고, 사회 구성원으로서 건강한 가치관을 갖추게 되는 발판이 된다.</span>
+                                            <div class="oxquizwrap">
+                                                <button class="oxquiz">O</button> <button class="oxquiz">X</button>
+                                            </div>
+                                        </span>
+    
+                                        <span class="quizTitle">단답식</span>
+    
+                                        <span class="questionwrap">
+                                            <span>문제 1: 또래집단은 개인이 사회 기준에 맞춰 행동하게 되고, 기존의 가치관이나 행동 양식을 재조정하는 과정인 ______를 겪게 된다.</span>
+                                            <div class="oxquizwrap">
+                                                <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                            </div>
+                                        </span>
+    
+                                        <span class="questionwrap">
+                                            <span>문제 2: 또래집단은 고등학교 시절에 특히 중요한데, 이 때 ______이 형성되기 때문이다.</span>
+                                            <div class="oxquizwrap">
+                                                <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                            </div>
+                                        </span>
+    
+                                        <span class="questionwrap">
+                                            <span>문제 3: 한 연구에 따르면, 고등학생들은 ______ 내에서 다양한 역할과 위치를 차지하며, 그 과정에서 자아정체성을 발견한다.</span>
+                                            <div class="oxquizwrap">
+                                                <input type="text" style="padding: 3px 40px; border-radius: 8px; border: 1px solid #696f7c;" id="">
+                                            </div>
+                                        </span>
+    
+                                            <button id="showResult" class="nextArticle">채점 결과보기</button>
+                                </div>
+                        </div>
+                    </div>    
+
+                    <div id="finalResult">
+                        
+                                    <div class="flx" style="padding:20px 0px;">
+                                        <div class="flx110"></div>
+                                        <div class="flx-col" style="text-align: center;">
+                                            <span>•SR지수</span>
+                                            <span>638점</span>
+                                        </div>
+                                        <div class="flx110"></div>
+                    
+                                    </div>
+                                    <div class="flx">
+                                        <div class="flx110"></div>
+                                        <span style="padding:20px 0px; width:70%;">•영역별 점수</span>
+                                    </div>
+                                    <div class="graphSetting">
+                                        <div class="flx" style="gap:85px; justify-content: center; color:#3180f3; text-align: center;">
+                                            <div class="flx-col" style="justify-content: center;">
+                                                <div class="flx110"></div>
+                                                <div class="flx" style="justify-content: center;">
+                                                    <span style="background-color:#696f7c; width:20px; height:140px;"></span>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="flx-col">
+                                                <div class="flx" style="justify-content: center;">
+                                                <span style="background-color:#3180f3; width:20px; height:200px;"></span>
+                                                </div>
+                                            
+                                            </div>
+                        
+                                        </div>
+                                    </div>  
+                                        <div class="flx" style="width:250px; margin:auto; justify-content: space-evenly; padding: 8px 0 0 0;">
+                                            <div>1차 어휘</div>
+                                            <div>2차 어휘</div>
+                                        </div>
+
+                                    <div class="flx" >
+                                        <div class="flx110"></div>
+                                        <span style="padding:20px 0px; width:70%;">•사회 스키마</span>
+                                    </div>
+
+                                    <div class="graphSetting02">
+                                        <div class="flx" style="gap:50px; justify-content: center; color:#3180f3; text-align: center;">
+
+                                            <div class="flx" style="gap:3px;">
+                                            <div class="flx-col" style="justify-content: center;">
+                                                <div class="flx110"></div>
+                                                <div class="flx" style="justify-content: center;">
+                                                <span style="background-color:#696f7c; width:20px; height:140px;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="flx-col">
+                                                <div class="flx" style="justify-content: center;">
+                                                <span style="background-color:#3180f3; width:20px; height:200px;"></span>
+                                                </div>
+                                            </div>
+                                            </div>
+
+                                            <div class="flx" style="gap:3px;">
+                                            <div class="flx-col" style="justify-content: center;">
+                                                <div class="flx110"></div>
+                                                <div class="flx" style="justify-content: center;">
+                                                <span style="background-color:#696f7c; width:20px; height:140px;"></span>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="flx-col">
+                                                <div class="flx" style="justify-content: center;">
+                                                <span style="background-color:#3180f3; width:20px; height:200px;"></span>
+                                                </div>
+                                                
+                                            </div>
+                                            </div>
+
+                                            <div class="flx" style="gap:3px;">
+                                            <div class="flx-col" style="justify-content: center;">
+                                                <div class="flx110"></div>
+                                                <div class="flx" style="justify-content: center;">
+                                                <span style="background-color:#696f7c; width:20px; height:140px;"></span>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="flx-col">
+                                                <div class="flx" style="justify-content: center;">
+                                                <span style="background-color:#3180f3; width:20px; height:200px;"></span>
+                                                </div>
+                                                
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flx" style="justify-content: space-evenly; width:350px; margin:auto; padding: 8px 0 0 0;">
+                                        <div>스키마</div>
+                                        <div>리딩</div>
+                                        <div>로직</div>
+                                    </div>
+
+                                    <div class="flx">
+                                        <div class="flx110"></div>
+                                        <span style="padding:20px 0px; width:70%;">•과학 스키마</span>
+                                    </div>
+
+                                    <div class="graphSetting02">
+                                        <div class="flx" style="gap:50px; justify-content: center; color:#3180f3; text-align: center;">
+
+                                            <div class="flx" style="gap:3px;">
+                                            <div class="flx-col" style="justify-content: center;">
+                                                <div class="flx110"></div>
+                                                <div class="flx" style="justify-content: center;">
+                                                <span style="background-color:#696f7c; width:20px; height:140px;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="flx-col">
+                                                <div class="flx" style="justify-content: center;">
+                                                <span style="background-color:#3180f3; width:20px; height:200px;"></span>
+                                                </div>
+                                            </div>
+                                            </div>
+
+                                            <div class="flx" style="gap:3px;">
+                                            <div class="flx-col" style="justify-content: center;">
+                                                <div class="flx110"></div>
+                                                <div class="flx" style="justify-content: center;">
+                                                <span style="background-color:#696f7c; width:20px; height:140px;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="flx-col">
+                                                <div class="flx" style="justify-content: center;">
+                                                <span style="background-color:#3180f3; width:20px; height:200px;"></span>
+                                                </div>
+                                            </div>
+                                            </div>
+
+                                            <div class="flx" style="gap:3px;">
+                                            <div class="flx-col" style="justify-content: center;">
+                                                <div class="flx110"></div>
+                                                <div class="flx" style="justify-content: center;">
+                                                <span style="background-color:#696f7c; width:20px; height:140px;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="flx-col">
+                                                <div class="flx" style="justify-content: center;">
+                                                <span style="background-color:#3180f3; width:20px; height:200px;"></span>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flx" style="justify-content: space-evenly; width:350px; margin:auto; padding: 8px 0 0 0;">
+                                        <div>스키마</div>
+                                        <div>리딩</div>
+                                        <div>로직</div>
+                                    </div>
+
+
+                                    <div class="flx">
+                                        <div class="flx110"></div>
+                                        <span style="padding:20px 0px; width:70%;">•오답문항</span>
+                                    </div>
+                                    <div class="articleSetting">
+                                    <div class="flx">
+                                        <div class="flx110"></div>
+                                        <div class="flx-col" style="gap:20px;">
+                                            <span class="flx" style="gap:34px;">
+                                                <span>어휘</span>
+                                                <div class="flx" style="gap:130px;">
+                                                <span>2</span>
+                                                <span>5</span>
+                                                <span>8</span>
+                                                <span>10</span>
+                                                </div>
+                                            </span>
+
+                                            <span class="flx" style="gap:20px;">
+                                            <span>스키마</span>
+                                            <div class="flx" style="gap:130px;">
+                                                <span>2</span>
+                                                <span>5</span>
+                                                <span>8</span>
+                                                <span>10</span>
+                                                </div>
+                                            </span>    
+
+                                            <span class="flx" style="gap:34px;">
+                                            <span>리딩</span>
+                                            <div class="flx" style="gap:130px;">
+                                                <span>2</span>
+                                                <span>5</span>
+                                                <span>8</span>
+                                                <span>10</span>
+                                            </div>
+                                            </span>
+
+                                            <span class="flx" style="gap:34px;">
+                                            <span>로직</span>
+                                            <div class="flx" style="gap:130px;">
+                                                <span>2</span>
+                                                <span>5</span>
+                                                <span>8</span>
+                                                <span>10</span>
+                                            </div>
+                                            </span>
+                                        </div>
+                                        <div class="flx110"></div>
+                                    </div>
+                                    </div>
+                                    <div style= "display:flex; gap:5px; padding:10px;">
+                                        <div class="flx110"></div>
+                                        <button  id="toPopUpHome" style="all:unset; padding:10px 30px; background-color:#3180f3; color:white; border-radius: 4px; cursor:pointer;">홈으로</button>
+                                        <button style="all:unset; padding:10px 30px; background-color:#3180f3; color:white; border-radius: 4px; cursor:pointer;">오답클리닉</button>
+                                        <div class="flx110"></div>
+                                    </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>

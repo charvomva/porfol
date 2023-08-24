@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aili-My Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <svg id="sideOnOff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            <a href="#"><img src="./img/logo.png" width="190px" onclick="location.href='../todayLearn/index.html'"></a>
+            <ul class="flx">
+                <li onclick="location.href='../todayLearn/index.html'">오늘의 학습</li>
+                <li onclick="location.href='../index.html'">학습현황</li>
+                <li onclick="location.href='../feedback/index.html'">학습피드백</li>
+                <li onclick="location.href='../community/index.html'" style="display:none;">게시판</li>
+            </ul>
+            <div class="flx110"></div>
+            <div class="flx" style="margin-right:30px; gap:18px; align-items:center; cursor:pointer">
+                <span>사용자 가이드</span>
+                <span class="flx-col" style="justify-content: center; text-align: center;">
+                    <span>내 정보</span>
+                </span>
+                <span onclick="location.href='../login/index.html'" style="cursor:pointer">로그아웃</span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="mainArea">
+        <div class="flx">
+        <div class="flx110"></div>
+            <div class="flx-col">
+                <div style="margin:20px 20px 0; font-size: 20px;">회원정보</div>
+                <div class="container">
+                    <div class="flx-col" style="gap: 10px;">
+                        <div class="flx" style="align-items:center;">
+                            <div style="width:140px;">아이디</div>
+                            <div>test</div>
+                        </div>
+                        <div class="flx" style="align-items:center;">
+                            <div style="width:140px;">비밀번호</div>
+                            <input class="inputStyle" type="text">
+                            <div style="padding: 0 20px; font-size: 14px; color:#c1c6d4;">※ 비밀번호 변경을 원하실 경우 입력하세요.
+                            </div>
+                        </div>
+                        <div class="flx" style="align-items:center;">
+                            <div style="width:140px;">비밀번호 확인</div>
+                            <input class="inputStyle" type="text">
+                            <div style="padding: 0 20px; font-size: 14px; color:#c1c6d4;">※ 변경할 비밀번호를 다시 입력해주세요.
+                            </div>
+                        </div>
+                        <div class="flx" style="align-items:center;">
+                            <div style="width:140px;">이름</div>
+                            <div>홍길동</div>
+                        </div>
+                        <div class="flx" style="align-items:center;">
+                            <div style="width:140px;">학년</div>
+                            <input class="inputStyle" type="text">
+                        </div>
+                        <div class="flx" style="align-items:center;">
+                            <div style="width:140px;">학생 연락처(선택)</div>
+                            <div class="flx" style="gap:3px; align-items:center;">
+                            <input class="inputStyle" type="text" maxlength="3"> - 
+                            <input class="inputStyle" type="text" maxlength="4"> -
+                            <input class="inputStyle" type="text" maxlength="4">
+                            <div style="padding: 0 20px; font-size: 14px; color:#c1c6d4;">※ 입력 시 학생에게 학습 관련 문자 알림이 제공됩니다.</div>
+                            </div>
+                        </div>
+                        <div class="flx" style="align-items:center;">
+                            <div style="width:140px;">학부모 연락처</div>
+                            <div class="flx" style="gap:3px; align-items: center;">
+                            <input class="inputStyle" type="text" maxlength="3"> - 
+                            <input class="inputStyle" type="text" maxlength="4"> -
+                            <input class="inputStyle" type="text" maxlength="4">
+                            </div>
+                        </div>
+                        <div class="flx" style="align-items:center;">
+                            <div style="width:140px;">학부모 이메일</div>
+                            <input class="inputStyle" type="text" style="width:318px;">
+                            <button style="all:unset; padding:5px 10px; border:1px solid #3180f3; cursor:pointer; margin:0 10px; border-radius: 8px; color:#3180f3; font-size:14px;">이메일 인증</button>
+                        </div>
+                        <div class="flx" style="align-items:center;">
+                            <div style="width:140px;">지역(선택)</div>
+                            <input class="inputStyle" type="text" style="width:200px;">
+                            <div style="padding: 0 20px; font-size: 14px; color:#c1c6d4;"> Ex) 서울시 강남구, 경기도 수원</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flx" style="margin-top: 10px;">
+                    <button class="saveButton" style="margin:0 auto;">수정</button>
+                </div>
+            </div>    
+        <div class="flx110"></div>
+        </div>
+
+        <div class="flx">
+                <div class="flx110"></div>
+                    <div class="flx-col">
+                        <div style="margin:20px 20px 0; font-size: 20px;">커리큘럼</div>
+                        <div class="container">
+                                    <div class="flx-col" style="gap: 10px;">
+                                        <div class="flx" style="border-bottom: 1px solid #c1c6d4; padding:10px;">
+                                            <div style="width:120px; text-align: center;">레벨</div>
+                                            <div style="width:120px; text-align: center;">주차</div>
+                                            <div style="width:360px; text-align: center;">학습기간</div>
+                                            <div style="width:120px; text-align: center;">학습진행률</div>
+                                        </div>
+                                        <div class="flx" style="border-bottom: 1px solid #c1c6d4; padding:10px;">
+                                            <div style="width:120px; text-align: center;">3</div>
+                                            <div style="width:120px; text-align: center;">1</div>
+                                            <div style="width:360px; text-align: center;">20230619~20230625</div>
+                                            <div style="width:120px; text-align: center;">완료</div>
+                                        </div>
+                                        <div class="flx" style="border-bottom: 1px solid #c1c6d4; padding:10px;">
+                                            <div style="width:120px; text-align: center;">3</div>
+                                            <div style="width:120px; text-align: center;">2</div>
+                                            <div style="width:360px; text-align: center;">20230626~20230702</div>
+                                            <div style="width:120px; text-align: center;">완료</div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>    
+                <div class="flx110"></div>
+            </div>
+            </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body { width:100vw; height:100vh; margin:0; font-family:'Pretendard-Regular'; overflow-y: scroll; color:#3b3f4e;}
+body::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+ul , li {text-decoration: none; list-style: none; padding:0; margin:0; cursor:pointer}
+p {all:unset;}
+.flx110 {flex:1 1 auto;}
+.flx {display:flex;}
+.flx-col{display:flex; flex-direction: column;}
+.gap{ gap:5px;}
+
+.none {display:none;}
+.popup {display:none; position:fixed; top:0; left:0; z-index: 1000; background-color: rgba(0, 0, 0, 0.4); width:100%; height:100%;}
+.blue {color:#3180f3;}
+
+
+#test {display:none;}
+#testResult {display:none;}
+#learn {display:none; height:97%; padding:10px;}
+#conceptLecture {display:none; margin: auto;}
+#paragraphQuiz {display:none; flex-direction: column; padding-top: 30px;}
+#vocaQuiz{display:none; flex:1 1 auto;}
+#schemaQuiz {display:none; flex-direction: column; padding-top: 30px;}
+#incorrectLecture {display:none; width:100%;}
+#logicLectureVid {display:none;}
+#answerAnalysis{display:none;}
+#deepProblem {display:none; flex-direction: column; padding-top: 30px;}
+#question01 {margin-right:10px; border-radius: 10px;}
+#final{display: none;}
+#finalResult {display:none; height:100%; overflow-y: auto;}
+
+
+.progresscontainer {display:flex; justify-content: center; padding:20px 0 10px;}
+.progressWrap { display:inline-flex; gap:40px; padding:8px 40px; border:0.5px solid #cacaca; border-radius: 20px; }
+
+.linewrap{position:relative; display:flex; gap:20px; align-items: center; color:#cacaca; z-index:0;}
+.grayBar {position:absolute; top:38%; left:0;  background-color:#eeeeee; width:412px; height:6px; z-index:-1;}
+
+.articlecontainer{background-color: white; border-radius: 8px; margin:10px; border: 0.2px solid #cbcbcb; width:50%; display: flex; flex-direction: column; height:650px; overflow-y: auto;}
+.articleSetting {padding:15px 25px; line-height: 33px; flex:1 1 auto;}
+.articlehead { font-size: 18px; font-weight: 700;}
+
+.questionwrap {display:flex; flex-direction: column; gap:5px; padding:15px 20px; color:#3b3f4e;}
+
+.layerContainer {background-color: #e1e7f6; border-radius: 8px; height:92%; width:80%; border: 0.2px solid #cbcbcb; margin:auto; flex-direction: column; padding:15px 40px 35px 40px ;}
+.layerContainerSub {background-color: white; border-radius: 8px; height:200px; border: 0.2px solid #3180f3; flex:1 1 auto; overflow: auto;  -ms-overflow-style: none; scrollbar-width: none; }
+.scroll::-webkit-scrollbar {display: none;}
+
+.layerContainerSubMenu {display:flex; gap:10px; justify-content: center; padding:30px 0;}
+.buttonstyle {padding:8px 20px; background-color: #3180f3; border-radius: 5px 5px 0 0; color:white; width:173px; display:flex; justify-content: center; gap:4px;}
+.buttonstyle02 {width:173px; border: 0.5px solid #3180f3; color:#3180f3; text-align: center; border-radius: 8px; padding:8px 20px; gap:10px; cursor:pointer;}
+.nextArticle {all:unset; background-color: #3180f3; color:white; padding: 15px 30px; text-align: center; cursor:pointer;} 
+
+.quizTitle {font-size: 20px; padding: 0 20px;}
+.oxquiz {all:unset; color:#3180f3; border:1px solid #3180f3; text-align: center; padding:10px 40px; border-radius: 25px; cursor:pointer;}
+.oxquiz:hover {background-color:#3180f3; color:white; }
+.oxquizwrap {display:flex; justify-content: center; gap:10px; margin-top: 10px;}
+
+.menucontainer {display:flex; flex-direction: column; width:160px; padding:50px 20px; border-right: 0.5px solid #cacaca;}
+.menuStyle {display:flex; padding: 10px 0; cursor:pointer; font-size: 22px; align-items: center; width:160px;}
+.menuWrap {display:flex; align-items: center; gap:3px; padding-bottom: 5px; cursor:pointer;}
+.menuWrap:hover {color:#bbd9ff;}
+
+header {border-bottom: 0.5px solid #c1c6d4; background-color: white;}
+header nav {display:flex; padding:15px 5px; gap:10px; align-items: center;}
+header nav svg { margin:0 20px; cursor:pointer }
+header nav ul {gap:14px; margin:16px 34px;}
+header li {font-size:20px; cursor:pointer}
+li:hover { color:#3180f3; }
+
+
+#mainArea {background-color: #f7f7f9; display:flex; height:106%; flex-direction: column; padding:5px 0 20px 0;}
+.container {background-color: white; border-radius: 8px; margin:10px; border: 0.5px solid #cbcbcb; padding:30px 20px;}
+.titlestyle { font-size: 14px;}
+.inputStyle {border-radius:4px; border:1px solid rgb(209, 215, 237); padding: 10px 20px;}
+.inputStyle:focus {outline:none;}
+.saveButton { all:unset; padding:13px 0; background-color: #3180f3; color:white; border-radius: 8px; cursor:pointer; width: 150px; text-align: center; font-size: 16px;}
