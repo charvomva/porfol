@@ -14,11 +14,18 @@ new fullpage('#fullpage', {
     responsiveHeight:450, //세로 높이 가 특정 수치보다 작아지면 오토스크롤링 작동 X
 });
 
+const sideMenu = document.querySelector(".sideMenu")
+
+function showSide (){
+    side.style.display="block"
+}
+
+sideMenu.addEventListener("click",showSide)
+
 const sideOff = document.querySelector("#sideOff")
 const side = document.querySelector(".side")
 
 function sideOffplz(){
-    console.log("hi")
     side.style.display ="none"
 }
 
