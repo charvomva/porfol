@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schema Reading Landing</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.png">
+</head>
+<body>
+    <div class="head">
+    <header>
+        <nav >
+            <ul id="menu" class="menu">
+                <li id="mobileCloseBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                      </svg>
+                </li>
+                <li id="home"><a href="#mainTitle">Home</a></li>
+                <li id="levelTest"><a href="#goleveltest">레벨테스트</a></li>
+                <li id="customer" ><a href="#customerSerive">상담 및 문의</a></li>
+                <li id="myPage" onclick="window.open('https://schemareading.com/login/')" >로그인</li>
+                <li id="myPage" onclick="window.open('https://schemareading.com/signup/')" >회원가입</li>
+                <li> 
+                    <select style="border:0; font-family: 'GmarketSansMedium'; color:#1f1f1f;" onchange="window.open(value,'_blank');">
+                        <option>Family Site</option>
+                        <option value="https://senggak.com/#" >생각국어</option>
+                        <option value="https://www.momobooks.co.kr/#contents" >모모의 책장</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="mobileMenu">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </div>
+        </nav>
+
+    </header>
+    </div>
+                    <section id="mainTitle" class="flx-col">
+                        <img class="pc" src="./img/main.png">
+                        <img class="mob"src="./img/mob1.png">
+
+                        <img class="pc" src="./img/main2.png">
+                        <img class="mob" src="./img/mob2.png">
+                    </section>  
+
+                    <section id="titleSub" style="background: #1f1f1f url(../img/bg01.jpeg) repeat 0 0;">
+                        
+                            <img class="flx pc" style="margin:0 auto;" src="./img/main3.png">
+                            <img class="mob" style="width:100%" src="./img/mob3.png">
+                        
+                        <div class="flx" style="justify-content: center; margin:0 auto; width:80%; padding:4vw 0 0 0;">
+                            <iframe class="video" src="https://www.youtube.com/embed/VweYyu5tJrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    
+                        <img class="flx pc" style="margin: 0 auto; padding:50px 0; width:80%;" src="./img/main4.png">
+                        <img class="mob" style="width:100%" src="./img/mob4.png">
+                    </section>
+
+                    <section id="nonliterature" class="flx-col" style="background:#383838;">
+                        <img class="pc" src="./img/main5.png">
+                        <img class="mob" style="width:100%;" src="./img/mob5.png">
+
+                        <div class="flx-col" style="gap:15px; position:relative">
+                            <img class="pc" src="./img/main6.png">
+                            <img class="mob" style="width:100%;" src="./img/mob6.png">
+                            
+                            <img id="showAnswer" src="./img/answerbtn.png">
+
+                            <img id="theAnswer" class="positionStyle" style="display:none; width:100%;" src="./img/answer.png"> 
+                            
+                            <section id="goleveltest" class="flx-col" style="padding:70px 0 0 0;">
+                            <img class="pc" src="./img/main7.png">
+                            <img class="mob" style="width:100%;" src="./img/mob7.png">
+                            <img class="freeleveltest" src="./img/freeleveltest.png"> 
+                            </section>
+                        </div>    
+                        
+                    </section>  
+
+                    <section id="gradeless" class="flx-col" style="justify-content: center; gap:10px; background-color: #eaeaea;">
+                                <img class="pc" src="./img/main8.png">
+                                <img class="mob" style="width:100%;" src="./img/mob8.png">
+                    </section>
+
+                    <section id="betaBenefit" class="flx-col" style="justify-content:center; background-color:#383838;">
+                        
+                        <img class="pc" src="./img/main99.png">
+                        <img class="mob" style="width:100%;" src="./img/mob99.png">
+
+                        <div class="flx" style="justify-content: center;">
+                            <img class="applybtn" src="./img/apply.png" onclick="window.open(' http://pf.kakao.com/_XLsxoxj/chat')"> 
+                            <img class="leveltestbtn2" src="./img/leveltestbtn2.png" onclick="window.open('https://schemareading.com/')">
+                        </div>
+                    </section>
+
+                    <section id="customerSerive" class="flx-col" style="background-color:#474a5f;">
+                            <img class="pc "src="./img/main100.png" width="80%;" style="margin:0 auto;">
+                            <img class="mob "src="./img/mob100.png" width="80%;" style="margin:0 auto;">
+                            
+                            <div class="flx" style="justify-content: center; padding:30px 0; gap:50px;">
+            
+                                    <img src="./img/img12.png" onclick="window.open('https://pf.kakao.com/_XLsxoxj')" style="width:15vw; cursor:pointer;">
+                                    <img src="./img/img13.png" onclick="document.location.href='tel:1688-6083'" style="width:15vw; cursor:pointer;">
+                                </div>
+                    </section>
+
+                    <div class="floating" style="position: fixed; bottom:0; width:100%;">
+                        <div class="flx">
+                            <div class="flx floatingButton" onclick="document.location.href='tel:1688-6083'" style="align-items: center; ">
+                                <div class="flx110"></div>
+                                <div>☎︎1688-6083</div>
+                                <div class="flx110"></div>
+                            </div>
+                            <div class="flx floatingButton"  style="background:#eaeaea; align-items: center;">
+                                <div class="flx110"></div>
+                                <div class=""  onclick="window.open('https://pf.kakao.com/_XLsxoxj')">상담 문의</div>
+                                <img src="./img/kakao.png" style="height:40%">
+                                <div class="flx110"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="position: fixed; right:50px; bottom:135px; width:100%; display: flex; justify-content: end; " >
+                        <div style="cursor:pointer; color: white; background: #3180f3; padding:10px 15px; border-radius: 10px;" onclick="window.open('../index.html')">독해 프로그램 바로가기 ›</div>
+                    </div>
+
+                <footer>   
+                    <div class="footerContainer flx">
+                        
+                        <div>
+                            <img width="100px" src="./img/unnamed.png" onclick="window.open('https://goodnwise.com/')" style="cursor: pointer;">
+                        </div>
+                        <div>대표 최성호</div>
+                        
+                        <div class="mobileLayOut">
+                        <div>서울시 강남구 테헤란로82길 15, 586호</div>
+                        <div>사업자등록번호 445-81-02966</div>
+                        </div>
+                    </div>
+                </footer>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
