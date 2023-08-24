@@ -13,12 +13,19 @@ header {position:fixed; top:0;  left:0; width:100%; min-height:80px; height:4.2v
 header h1 { display:flex; margin-left:1.3vw; align-items:center;  width:172px; height:100%; }
 header h1 a { display:inline-block; width:172px; height:100%; background: url('../img/logo.png') no-repeat center center / 40px ; text-indent: -9999px;}
 
-.gnb_wrap {}
+.gnb_wrap { display:flex; justify-content:flex-end;}
 
 .gnb_list_w {position:fixed; display: inline-block; top:25px; right:0; }
 .gnb_list {display:table; height:100%;  padding-right: 1.1vw;}
 .gnb_list > li {display:table-cell; height:100%; padding:0 37px; position:relative;} /* table-cell은 항상 가운데 정렬됨 */
 .gnb_list > li a:hover {color:#1FD15F}
+
+.sideMenu {display:none; padding-right: 16px; cursor:pointer;}
+.side {background:#ffff; display:none; position: fixed; top:0; right:0; height:100vh; padding:25px 15px; z-index: 100; width:330px;}
+.side li:hover a {cursor: pointer; color:#1FD15F} 
+#sideOff {cursor: pointer;}
+
+
 .mitem {display:flex; align-items: center; font-size: 14px; font-weight:700; height:100%; color:#fff; transition: .3s}
 
 .subItem_w {display:none; position:absolute; top:100%; left:0; width:100%; background: #fff; border-top:1px solid #d8d8d8; box-shadow: 10px 10px 30px rgb(0 0 0 /20%
@@ -51,6 +58,63 @@ a.btn_total {display:flex; position:relative; align-items: center; height:100%; 
 /********** #fullpage **************/
 
 #fullpage {overflow-x: hidden;}
+
+#s0 {position:relative;}
+.image_w {}
+img { 
+    width:100%; 
+    height:100%; 
+    object-fit:cover; 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    background-size: 100% 100%;
+     background-color: black; /* in case the video doesn't fit the whole page*/
+      background-image: /* our video; */;
+      background-position: center center;
+      background-size: contain;
+       z-index:3;}
+
+.s0_w {position:relative;  z-index: 5; color: #fff; padding:50px 0 0 12vw; }
+.s0_main {font-size: 3.6vw; font-weight: 700; font-family:'Merriweather'; line-height:1.25; letter-spacing: -1.8px; 
+            transform:translateY(150px); opacity:0; transition-delay:0.8s ; transition-duration: 1s; animation:s1_main_load 1s;}
+.s0_w span {display:block; font-size: 4.8vw;}
+.s0_sub {font-size: 0.95vw; margin-top:20px; margin-right:20px; color:#fff; line-height:1.6; transform:translateY(150px); opacity:0; transition-delay:0.8s ; transition-duration: 1s; animation:s1_sub_load 1s; }
+
+#s0.active .s0_main {transform:translateY(0); opacity: 1;}
+#s0.active .s0_sub {transform:translateY(0); opacity: 1;}
+
+@keyframes s0_main_load {
+    0% {transform:translateY(150px); opacity:0;}
+    100% {transform:translateY(0); opacity:1;}
+}
+
+@keyframes s0_sub_load {
+    0% {transform:translateY(150px); opacity:0;}
+    100% {transform:translateY(0); opacity:1;}
+}
+
+@keyframes s0_btn_load {
+    0% {transform:translateY(150px); opacity:0;}
+    100% {transform:translateY(0); opacity:1;}
+}
+
+
+
+.s0_btn_w {margin-top:50px; opacity:0; transform:translateY(150px); transition-delay:1.3s ; transition-duration: 1s;animation: s1_btn_load 1.3s;}
+.s0_btn span {font-size:0.84vw; display:block; color:#fff; padding-right:70px;}
+a.s0_btn {display:inline-block; margin-right:10px; border:1px solid #fff; padding: 13px 23px; border-radius: 100px; }
+
+.s0_btn span {position:relative; font-size:0.84vw; display:block; color:#fff; padding-right:70px;}
+
+#s0.active .s0_btn_w {transform:translateY(0); opacity: 1;}
+
+.s0_btn span:before, .s0_btn span:after {position:absolute; content: ''; top:50%; right:0}
+.s0_btn span:before {width:25px; height:1px; background: #fff; }
+.s0_btn span:after { width:6px; height:6px; border: 1px solid #fff; border-bottom:0; border-left:0; transform:rotate(45deg) translateY(calc(-50% - 1px )); right:3px; }
+
+
 
 
 #s1 {position:relative;}
@@ -231,4 +295,14 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
     .nextA::before {}
 
 
+    @media(max-width:700px){
+        .gnb_list {display:none;}
+        .sideMenu {display:block;}
+    }
 
+
+@media(max-width:500px){
+    header h1 a {width:82px;}
+    .gnb_list {display:none;}
+    a.s3_btn {margin-bottom:20px;}
+}

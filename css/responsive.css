@@ -42,13 +42,21 @@
 
 }
 
+
+@media(max-width:700px){
+    .gnb_list {display:none;}
+    .sideMenu {display:block;}
+}
+
 @media (max-width:500px){
     header h1 a {width:82px;}
-    .gnb_list {display:none;}
 
     .s1_main,  .s1_w span  { font-size: 6.8vw;}
     .s1_sub {font-size: 3.8vw}
 
-
-        
-    }
+    #s2 .s2_img {background:url('../img/about.jpg') no-repeat 48% 50% / cover;}
+    #s2 .s2_title_w  {top:37%; left:30%;}   
+    .s2_title h1 { font-size: 4.5vw;}
+    .s2_title_sub {margin-top: 3px;}
+    .s2_item_cont {margin-top: 12px;}
+}
