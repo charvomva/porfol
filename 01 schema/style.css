@@ -150,3 +150,20 @@ label {font-size: 14px; color:#696f7c; line-height: 20px;}
 .allbaekPopup { display:none; position:fixed; top:0; left:0; background-color: rgba(0, 0, 0, 0.4); width:100%; height:100%; z-index:1100;}
 .alertPop{ background-color: #e1e7f6; height:130px; width:320px; padding:30px 0 20px 0px; display:flex; flex-direction: column; margin: 250px auto; text-align: center; border-radius: 8px;}
 .alertOk{ padding:5px 8px; border:0.5px solid #696f7c; border-radius:20px; width:50px; margin:0 auto; cursor:pointer;}
+
+.guideMenu {margin-right:30px; gap:18px; align-items:center; cursor:pointer}
+
+@media(max-width:500px){
+    header nav  {flex-direction: column; padding: 15px 5px 0;}
+    header nav svg {margin-left:86%;}
+
+    .guideMenu { position: fixed; bottom: 0; left:0; background: white; width:100%; justify-content: center; padding: 15px 0;}
+    #sideBar{display: none;}
+
+    #middleArea{width:100%; padding: 40px 25px;}
+    .weeklySection {flex-direction: column; gap:10px;}
+    .weeklyTitle {width: 100%;}
+    .weeklySectionSub {display: none;}
+    .buttonfeature {font-size: 12px;}
+
+}
