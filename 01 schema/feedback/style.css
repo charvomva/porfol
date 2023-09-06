@@ -130,6 +130,9 @@ li:hover { color:#3180f3; }
 
 #schemaQuiz {display:flex;}
 #incorrectLecture {display:none; width:100%;}
+.sajunSiljun {padding:25px 0px; border-radius: 8px; justify-content: center; align-items: center; gap:20px;}
+.studyTime {justify-content: space-evenly; gap:10px; padding:20px 0 0 0;}
+
 
 @media(max-width:500px){
     header nav  {flex-direction: column; padding: 15px 5px 0;}
@@ -150,5 +153,13 @@ li:hover { color:#3180f3; }
     
     .schemaInfo  {font-size:16px;}
     .schemaInfo span:nth-child(2) {font-size:14px;}
+
+    .directionCol {flex-direction: column;}
+    .container, .containerVer2 {width:85%}
+
+    .sajunSiljun {flex-direction: column;}
+    .studyTime {flex-direction: column;}
+
+    .reportbtn {padding: 5px;}
 
 }
