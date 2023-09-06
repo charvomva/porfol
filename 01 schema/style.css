@@ -152,18 +152,42 @@ label {font-size: 14px; color:#696f7c; line-height: 20px;}
 .alertOk{ padding:5px 8px; border:0.5px solid #696f7c; border-radius:20px; width:50px; margin:0 auto; cursor:pointer;}
 
 .guideMenu {margin-right:30px; gap:18px; align-items:center; cursor:pointer}
+.phoneVer {display:none;}
+.testLearnMenuContainer {display:flex; flex-direction: column; gap:30px}
 
 @media(max-width:500px){
     header nav  {flex-direction: column; padding: 15px 5px 0;}
     header nav svg {margin-left:86%;}
 
     .guideMenu { position: fixed; bottom: 0; left:0; background: white; width:100%; justify-content: center; padding: 15px 0;}
-    #sideBar{display: none;}
+    #sideBar{display: none; width:100%;}
 
     #middleArea{width:100%; padding: 40px 25px;}
     .weeklySection {flex-direction: column; gap:10px;}
     .weeklyTitle {width: 100%;}
     .weeklySectionSub {display: none;}
     .buttonfeature {font-size: 12px;}
+
+    .schemaInfo  {font-size:16px;}
+    .schemaInfo span:nth-child(2) {font-size:14px;}
+
+    .layerContainerSubMenu{display:none;}
+    .phoneVer {display:flex;}
+    .testLearnMenu {flex-direction: column; padding: 40px 0;}
+    .buttonstyle02, .buttonstyle {margin:0 auto;}
+    .testLearnMenuContainer{ padding: 0 0 20px 0;}
+    .directionCol {flex-direction: column;}
+    
+    .articlecontainer {width:100%; margin: 0 0 30px 0;}
+    
+    .menucontainer {display: none;}
+    .listIcon {display:block; position: fixed;}
+
+    #openlist{background: #0000006e;}
+
+    #learn{padding:0;}
+    .articlecontainer::-webkit-scrollbar {
+        display: none; /* 크롬, 사파리, 오페라, 엣지 */
+    }
 
 }
