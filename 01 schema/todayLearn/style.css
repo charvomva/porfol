@@ -167,5 +167,27 @@ label {font-size: 14px; color:#696f7c; line-height: 20px;}
     .layerContainerSubMenu {flex-direction: column; background: #f7f7f9;}
 
     .phoneContainer {padding: 10px 0 37px 0;}
+    
+    .schemaInfo  {font-size:16px;}
+    .schemaInfo span:nth-child(2) {font-size:14px;}
+
+
+    .phoneVer {display:flex;}
+    .testLearnMenu {flex-direction: column; padding: 40px 0;}
+
+    .testLearnMenuContainer{ padding: 0 0 20px 0;}
+    .directionCol {flex-direction: column;}
+    
+    .articlecontainer {width:100%; margin: 0 0 30px 0;}
+    
+    .menucontainer {display: none;}
+    .listIcon {display:block; position: fixed;}
+
+    #openlist{background: #0000006e;}
+
+    #learn{padding:0;}
+    .articlecontainer::-webkit-scrollbar {
+        display: none; /* 크롬, 사파리, 오페라, 엣지 */
+    }
 
 }
