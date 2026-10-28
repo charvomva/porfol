@@ -1,5 +1,6 @@
-new fullpage('#fullpage', {
-    
+// 페이지별로 옵션을 바꾸고 싶으면 main.js 앞에서 window.fullpageOverrides = {...} 로 지정 (index.html 참고)
+new fullpage('#fullpage', Object.assign({
+
     autoScrolling:true,
     scrollHorizontally: true,
     scrollBar:true,
@@ -12,7 +13,7 @@ new fullpage('#fullpage', {
     menu: '.gnb_list',
     normalScrollElements: '#2', // 오토스크롤링X 정상 스크롤 작동
     responsiveHeight:450, //세로 높이 가 특정 수치보다 작아지면 오토스크롤링 작동 X
-});
+}, window.fullpageOverrides || {}));
 
 const sideMenu = document.querySelector(".sideMenu")
 

@@ -143,6 +143,10 @@ img {
 #s1.active .s1_main {transform:translateY(0); opacity: 1;}
 #s1.active .s1_sub {transform:translateY(0); opacity: 1;}
 
+/* 소개 화면(예전 HOME)용 크기/색 */
+#s1 .s1_main {font-size: 3.8vw;}
+#s1 .s1_sub {font-size: 1.5vw; margin-top:15px; color:#1FD15F;}
+
 @keyframes s1_main_load {
     0% {transform:translateY(150px); opacity:0;}
     100% {transform:translateY(0); opacity:1;}
@@ -305,4 +309,6 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
     header h1 a {width:82px;}
     .gnb_list {display:none;}
     a.s3_btn {margin-bottom:20px;}
+    #s1 .s1_main, #s1 .s1_w span {font-size: 6.8vw;}
+    #s1 .s1_sub {font-size: 3.8vw;}
 }
