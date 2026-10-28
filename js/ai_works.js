@@ -28,6 +28,20 @@
 */
 window.AI_WORKS = [
   {
+    category: '후드티',
+    title: '유레틴',
+    thumb: 'img/ai/uretin/thumb.webp',
+    thumbPos: '50% 0%',                    // 모자가 잘리지 않게 위쪽 기준
+    models: [
+      'img/ai/uretin/model-1.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/uretin/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13771553303',   // 실제 상세페이지 주소 (새 창으로 열림)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
     category: '청바지',
     title: '토미핑 Black',
     thumb: 'img/ai/tommyping/thumb.webp',
