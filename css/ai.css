@@ -161,6 +161,8 @@ body.fp-viewing-portfolio .sideMenu svg {fill:var(--wine);}
 .ai_btn:hover {background:rgba(74,14,14,.07);}
 .ai_btn.solid {color:#fff; background:var(--wine);}
 .ai_btn.solid:hover {background:#2f0808;}
+a.ai_btn {display:block; box-sizing:border-box; text-align:center; text-decoration:none;}
+.ai_info_note {margin:10px 0 0; font-size:12px; opacity:.6;}
 .ai_info_desc {margin:26px 0 0; line-height:1.75; opacity:.85; white-space:pre-line;}
 .ai_acc {margin-top:26px; border-top:1px solid var(--line);}
 .ai_acc + .ai_acc {margin-top:0;}

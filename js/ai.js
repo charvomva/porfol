@@ -225,12 +225,21 @@
             });
             btns.appendChild(b);
         }
-        // 모델 이미지와 상세페이지가 둘 다 있을 때만 이동 버튼을 보여줌 (하나뿐이면 이동할 곳이 없음)
+        // 모델 이미지와 상세페이지 이미지가 둘 다 있을 때만 이동 버튼을 보여줌 (하나뿐이면 이동할 곳이 없음)
         if (modelsTop && detailTop) {
             jump('Model Images', modelsTop, false);
-            jump('Detail Page', detailTop, true);
-            elInfo.appendChild(btns);
+            jump('Detail Page', detailTop, !w.detailUrl);
         }
+        // 실제 상세페이지(스마트스토어 등)가 따로 있으면 새 창으로 여는 링크 버튼
+        if (w.detailUrl) {
+            var link = el('a', 'ai_btn solid', w.detailLabel || 'View Detail Page ↗');
+            link.href = w.detailUrl;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            btns.appendChild(link);
+        }
+        if (btns.children.length) elInfo.appendChild(btns);
+        if (w.detailUrl) elInfo.appendChild(el('p', 'ai_info_note', w.detailNote || '실제 상세페이지가 새 창에서 열려요.'));
 
         if (w.desc) elInfo.appendChild(el('p', 'ai_info_desc', w.desc));
         if (w.tools) elInfo.appendChild(accordion('Tools', w.tools));

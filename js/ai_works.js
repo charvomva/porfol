@@ -16,6 +16,9 @@
   hoverPos : (선택) 마우스를 올렸을 때 이미지의 위치. 쓰는 방법은 thumbPos 와 같아요.
   models   : 모델 이미지 목록. 상세 화면 왼쪽에 위에서 아래로 쭉 이어져요 (없으면 [])
   detail   : 상세페이지 이미지 목록. 세로로 긴 이미지 한 장도, 여러 장으로 잘라서 순서대로 넣어도 됩니다 (없으면 [])
+  detailUrl: (선택) 실제 상세페이지가 올라가 있는 주소 (스마트스토어 등). 적으면 상세 화면에 "View Detail Page ↗" 버튼이 생기고 새 창으로 열려요.
+             주소 뒤의 ?nl-ts-pid=... 같은 추적용 파라미터는 빼고 상품 주소만 적는 걸 권해요.
+  detailLabel / detailNote : (선택) 위 버튼의 글자, 버튼 아래 작은 안내 문구를 바꾸고 싶을 때
   desc     : (선택) 작업 설명 한두 줄
   tools    : (선택) 사용한 툴 (예: 'Midjourney, Photoshop, Figma')
   role     : (선택) 내가 한 일 (예: '기획, 프롬프트, 보정, 상세페이지 디자인')
@@ -36,6 +39,7 @@ window.AI_WORKS = [
       'img/ai/tommyping/model-3.webp'    // 뒷모습
     ],
     detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13649092237',   // 실제 상세페이지 주소 (새 창으로 열림)
     desc: '',
     tools: '',
     role: ''
