@@ -49,15 +49,21 @@ $('.totalMitem').click(function(){
 
 });
 
-// 섹션이동 버튼
-document.querySelector('.prevA').addEventListener('click',function(e){
-    e.preventDefault();
-    fullpage_api.moveSectionUp();
-});
+// 섹션이동 버튼 (prev/next 화살표가 페이지에 있을 때만 동작)
+var prevBtn = document.querySelector('.prevA');
+if (prevBtn) {
+    prevBtn.addEventListener('click',function(e){
+        e.preventDefault();
+        fullpage_api.moveSectionUp();
+    });
+}
 
-document.querySelector('.nextA').addEventListener('click',function(e){
-    e.preventDefault();
-    fullpage_api.moveSectionDown();
-});
+var nextBtn = document.querySelector('.nextA');
+if (nextBtn) {
+    nextBtn.addEventListener('click',function(e){
+        e.preventDefault();
+        fullpage_api.moveSectionDown();
+    });
+}
 
 
