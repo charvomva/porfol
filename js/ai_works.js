@@ -198,7 +198,7 @@ window.AI_WORKS = [
     product: '옥스포드 셔츠',
     title: '옥스포드 셔츠 Khaki',
     thumb: 'img/ai/oxford/khaki-thumb.webp',
-    thumbPos: '50% 0%',
+    thumbPos: '50% 50%',
     models: [
       'img/ai/oxford/khaki-1.webp',
       'img/ai/oxford/khaki-2.webp',
@@ -219,7 +219,7 @@ window.AI_WORKS = [
     product: '옥스포드 셔츠',
     title: '옥스포드 셔츠 Navy',
     thumb: 'img/ai/oxford/navy-thumb.webp',
-    thumbPos: '50% 0%',
+    thumbPos: '50% 50%',
     models: [
       'img/ai/oxford/navy-1.webp',
       'img/ai/oxford/navy-2.webp',
@@ -237,7 +237,7 @@ window.AI_WORKS = [
     product: '옥스포드 셔츠',
     title: '옥스포드 셔츠 Sky',
     thumb: 'img/ai/oxford/sky-thumb.webp',
-    thumbPos: '50% 0%',
+    thumbPos: '50% 50%',
     models: [
       'img/ai/oxford/sky-1.webp',
       'img/ai/oxford/sky-2.webp',
@@ -255,7 +255,7 @@ window.AI_WORKS = [
     product: '반팔 데님 셔츠',
     title: '반팔 데님 셔츠',
     thumb: 'img/ai/denimshirt/thumb.webp',
-    thumbPos: '50% 20%',
+    thumbPos: '50% 50%',
     models: [
       'img/ai/denimshirt/1.webp',   // Light Blue
       'img/ai/denimshirt/2.webp',   // Light Blue
