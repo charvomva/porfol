@@ -154,7 +154,7 @@ window.AI_WORKS = [
       'img/ai/colorblock/beige-3.webp'
     ],
     detail: [],   // 나중에 상세페이지 이미지를 img/ai/colorblock/ 에 올리면 여기에 경로를 추가
-    // detailUrl: '',   // 스마트스토어 주소가 정해지면 여기에 적으면 "View Detail Page" 버튼이 생겨요
+    detailUrl: 'detail-colorblock.html',   // 상세페이지 이미지: img/ai/colorblock/detail-colorblock1, 2, 3 ... (번호 순서대로 표시)
     desc: '',
     tools: '',
     role: ''
@@ -171,7 +171,7 @@ window.AI_WORKS = [
       'img/ai/colorblock/black-3.webp'
     ],
     detail: [],   // 나중에 상세페이지 이미지를 img/ai/colorblock/ 에 올리면 여기에 경로를 추가
-    // detailUrl: '',   // 스마트스토어 주소가 정해지면 여기에 적으면 "View Detail Page" 버튼이 생겨요
+    detailUrl: 'detail-colorblock.html',   // 상세페이지 이미지: img/ai/colorblock/detail-colorblock1, 2, 3 ... (번호 순서대로 표시)
     desc: '',
     tools: '',
     role: ''
@@ -188,7 +188,7 @@ window.AI_WORKS = [
       'img/ai/colorblock/gray-3.webp'
     ],
     detail: [],   // 나중에 상세페이지 이미지를 img/ai/colorblock/ 에 올리면 여기에 경로를 추가
-    // detailUrl: '',   // 스마트스토어 주소가 정해지면 여기에 적으면 "View Detail Page" 버튼이 생겨요
+    detailUrl: 'detail-colorblock.html',   // 상세페이지 이미지: img/ai/colorblock/detail-colorblock1, 2, 3 ... (번호 순서대로 표시)
     desc: '',
     tools: '',
     role: ''
