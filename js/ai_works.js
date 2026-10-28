@@ -391,66 +391,18 @@ window.AI_WORKS = [
   {
     category: '아우터',
     product: '웰론 패딩 점퍼',
-    title: '웰론 패딩 점퍼 Light Khaki',
-    thumb: 'img/ai/padding/lightkhaki-thumb.webp',
+    title: '웰론 패딩 점퍼',
+    thumb: 'img/ai/padding/thumb.webp',
     thumbPos: '50% 20%',
     models: [
-      'img/ai/padding/lightkhaki-1.webp',
-      'img/ai/padding/lightkhaki-2.webp'
+      'img/ai/padding/1.webp',   // Black
+      'img/ai/padding/2.webp',   // Black
+      'img/ai/padding/3.webp',   // Gray
+      'img/ai/padding/4.webp',   // Khaki
+      'img/ai/padding/5.webp'    // Khaki
     ],
     detail: [],   // 나중에 상세페이지 이미지를 img/ai/padding/ 에 올리면 여기에 경로를 추가
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13812310314',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
-    desc: '',
-    tools: '',
-    role: ''
-  },
-  {
-    category: '아우터',
-    product: '웰론 패딩 점퍼',
-    title: '웰론 패딩 점퍼 Black',
-    thumb: 'img/ai/padding/black-thumb.webp',
-    thumbPos: '50% 20%',
-    models: [
-      'img/ai/padding/black-1.webp',
-      'img/ai/padding/black-2.webp'
-    ],
-    detail: [],   // 나중에 상세페이지 이미지를 img/ai/padding/ 에 올리면 여기에 경로를 추가
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13812310314',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
-    desc: '',
-    tools: '',
-    role: ''
-  },
-  {
-    category: '아우터',
-    product: '웰론 패딩 점퍼',
-    title: '웰론 패딩 점퍼 Dark Khaki',
-    thumb: 'img/ai/padding/darkkhaki-thumb.webp',
-    thumbPos: '50% 20%',
-    models: [
-      'img/ai/padding/darkkhaki-1.webp',
-      'img/ai/padding/darkkhaki-2.webp'
-    ],
-    detail: [],   // 나중에 상세페이지 이미지를 img/ai/padding/ 에 올리면 여기에 경로를 추가
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13812310314',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
-    desc: '',
-    tools: '',
-    role: ''
-  },
-  {
-    category: '아우터',
-    product: '포콜트',
-    title: '포콜트',
-    thumb: 'img/ai/pocolt/thumb.webp',
-    thumbPos: '50% 20%',
-    models: [
-      'img/ai/pocolt/1.webp',   // Black
-      'img/ai/pocolt/2.webp',   // Black
-      'img/ai/pocolt/3.webp',   // Gray
-      'img/ai/pocolt/4.webp',   // Khaki
-      'img/ai/pocolt/5.webp'    // Khaki
-    ],
-    detail: [],   // 나중에 상세페이지 이미지를 img/ai/pocolt/ 에 올리면 여기에 경로를 추가
-    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13812310314',   // 실제 상세페이지 주소 (새 창으로 열림)
     desc: '',
     tools: '',
     role: ''
