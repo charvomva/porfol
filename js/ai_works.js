@@ -496,7 +496,10 @@ window.AI_WORKS = [
       'img/ai/lightpadding/2.webp',   // Gray
       'img/ai/lightpadding/3.webp'    // Sky Blue
     ],
-    detail: [],   // 나중에 상세페이지 이미지를 img/ai/lightpadding/ 에 올리면 여기에 경로를 추가
+    detail: [
+      'img/ai/lightpadding/detail-1.jpg',   // 소개/후기  (원본으로 같은 이름 덮어쓰면 교체됨)
+      'img/ai/lightpadding/detail-2.jpg'    // DETAIL / SIZE
+    ],
     // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
     desc: '',
     tools: '',
