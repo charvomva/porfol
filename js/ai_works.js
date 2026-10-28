@@ -89,6 +89,60 @@ window.AI_WORKS = [
     role: ''
   },
   {
+    category: '후드티',
+    product: '레터링 오버핏 후드티',
+    title: '레터링 오버핏 후드티 Black',
+    thumb: 'img/ai/lettering/black-thumb.webp',
+    thumbPos: '50% 0%',
+    models: [
+      'img/ai/lettering/black-1.webp',
+      'img/ai/lettering/black-2.webp',
+      'img/ai/lettering/black-3.webp',
+      'img/ai/lettering/black-4.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/lettering/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/12650929670',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '후드티',
+    product: '레터링 오버핏 후드티',
+    title: '레터링 오버핏 후드티 Green',
+    thumb: 'img/ai/lettering/green-thumb.webp',
+    thumbPos: '50% 0%',
+    models: [
+      'img/ai/lettering/green-1.webp',
+      'img/ai/lettering/green-2.webp',
+      'img/ai/lettering/green-3.webp',
+      'img/ai/lettering/green-4.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/lettering/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/12650929670',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '후드티',
+    product: '레터링 오버핏 후드티',
+    title: '레터링 오버핏 후드티 Navy',
+    thumb: 'img/ai/lettering/navy-thumb.webp',
+    thumbPos: '50% 0%',
+    models: [
+      'img/ai/lettering/navy-1.webp',
+      'img/ai/lettering/navy-2.webp',
+      'img/ai/lettering/navy-3.webp',
+      'img/ai/lettering/navy-4.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/lettering/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/12650929670',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
     category: '셔츠',
     product: '옥스포드 셔츠',
     title: '옥스포드 셔츠 Khaki',
