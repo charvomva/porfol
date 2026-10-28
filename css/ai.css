@@ -186,8 +186,16 @@ a.ai_btn {display:block; box-sizing:border-box; text-align:center; text-decorati
 
 /* 모바일/태블릿 세로: 정보 패널이 먼저, 이미지가 아래로 */
 @media (max-width:900px) {
-    .ai_view {grid-template-columns:minmax(0, 1fr); padding:0 0 60px;}
-    .ai_info {position:static; order:-1; padding:24px 16px 28px;}
+    /* 상품 이름 + 버튼은 위에 고정(sticky), 설명은 같이 스크롤 */
+    .ai_view {display:flex; flex-direction:column; align-items:stretch; padding:0 0 60px;}
+    .ai_info {display:contents;}
+    .ai_info_head {order:-2; position:sticky; top:0; z-index:6; padding:12px 16px 12px; background:var(--cream); border-bottom:1px solid var(--line);}
+    .ai_info_title {font-size:20px; display:inline;}
+    .ai_info_cat {display:inline; margin:0 0 0 8px; font-size:12px;}
+    .ai_info_btns {margin-top:10px; flex-direction:row; gap:8px;}
+    .ai_info_btns .ai_btn {flex:1 1 0; width:auto; padding:10px 6px; font-size:13px; white-space:nowrap;}
+    .ai_info_note, .ai_info_desc, .ai_acc {order:-1; margin-left:16px; margin-right:16px;}
+    .ai_info_note {margin-top:12px;}
     .ai_gallery {gap:6px;}
     .ai_gallery_label {padding-left:16px;}
 }

@@ -283,8 +283,10 @@
 
         /* 오른쪽: 따라오는 정보 패널 */
         elInfo.innerHTML = '';
-        elInfo.appendChild(el('h3', 'ai_info_title', w.title));
-        if (cat(w)) elInfo.appendChild(el('p', 'ai_info_cat', cat(w)));
+        var head = el('div', 'ai_info_head');   // 모바일에서는 이 묶음(이름 + 버튼)이 화면 위에 고정됨
+        elInfo.appendChild(head);
+        head.appendChild(el('h3', 'ai_info_title', w.title));
+        if (cat(w)) head.appendChild(el('p', 'ai_info_cat', cat(w)));
 
         var btns = el('div', 'ai_info_btns');
         function jump(label, target, solid) {
@@ -308,7 +310,7 @@
             link.rel = 'noopener noreferrer';
             btns.appendChild(link);
         }
-        if (btns.children.length) elInfo.appendChild(btns);
+        if (btns.children.length) head.appendChild(btns);
         if (w.detailUrl) elInfo.appendChild(el('p', 'ai_info_note', w.detailNote || '실제 상세페이지가 새 창에서 열려요.'));
 
         if (w.desc) elInfo.appendChild(el('p', 'ai_info_desc', w.desc));
