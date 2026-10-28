@@ -143,6 +143,57 @@ window.AI_WORKS = [
     role: ''
   },
   {
+    category: '후드티',
+    product: '컬러배색 후드티',
+    title: '컬러배색 후드티 Beige',
+    thumb: 'img/ai/colorblock/beige-thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/colorblock/beige-1.webp',
+      'img/ai/colorblock/beige-2.webp',
+      'img/ai/colorblock/beige-3.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/colorblock/ 에 올리면 여기에 경로를 추가
+    // detailUrl: '',   // 스마트스토어 주소가 정해지면 여기에 적으면 "View Detail Page" 버튼이 생겨요
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '후드티',
+    product: '컬러배색 후드티',
+    title: '컬러배색 후드티 Black',
+    thumb: 'img/ai/colorblock/black-thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/colorblock/black-1.webp',
+      'img/ai/colorblock/black-2.webp',
+      'img/ai/colorblock/black-3.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/colorblock/ 에 올리면 여기에 경로를 추가
+    // detailUrl: '',   // 스마트스토어 주소가 정해지면 여기에 적으면 "View Detail Page" 버튼이 생겨요
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '후드티',
+    product: '컬러배색 후드티',
+    title: '컬러배색 후드티 Gray',
+    thumb: 'img/ai/colorblock/gray-thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/colorblock/gray-1.webp',
+      'img/ai/colorblock/gray-2.webp',
+      'img/ai/colorblock/gray-3.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/colorblock/ 에 올리면 여기에 경로를 추가
+    // detailUrl: '',   // 스마트스토어 주소가 정해지면 여기에 적으면 "View Detail Page" 버튼이 생겨요
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
     category: '셔츠',
     product: '옥스포드 셔츠',
     title: '옥스포드 셔츠 Khaki',
