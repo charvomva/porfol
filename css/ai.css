@@ -23,14 +23,18 @@ body.fp-viewing-portfolio header h1 a {filter:brightness(0);}
 body.fp-viewing-portfolio .sideMenu svg {fill:var(--wine);}
 
 .ai_w {
-    box-sizing:border-box; height:100%;
-    display:grid; grid-template-columns:220px minmax(0, 1fr); column-gap:40px;
-    padding:max(96px, calc(4.2vw + 20px)) 3vw 22px;
+    box-sizing:border-box; height:auto; min-height:100vh;
+    display:grid; align-items:start; grid-template-columns:220px minmax(0, 1fr); column-gap:40px;
+    padding:max(96px, calc(4.2vw + 20px)) 3vw 60px;
     text-align:left;
 }
 
 /* ---------- 왼쪽: 제목 + 카테고리 필터 ---------- */
 .ai_side {min-height:0; overflow:hidden;}
+/* PC: 페이지 번호 없이 아래로 스크롤하면 타일이 이어서 생김. 왼쪽 제목/카테고리는 그 자리에 고정 */
+#fullpage.fullpage-wrapper {overflow:visible !important;}   /* fullPage 래퍼의 overflow:hidden 이 sticky(고정)를 막으므로 해제 */
+.ai_side {position:sticky; top:calc(max(80px, 4.2vw) + 16px); max-height:calc(100vh - max(80px, 4.2vw) - 32px); overflow-y:auto; scrollbar-width:none;}
+.ai_side::-webkit-scrollbar {display:none;}
 .ai_title {
     margin:0; font-family:var(--serif); font-style:italic; font-weight:400; font-synthesis:none;
     font-size:clamp(26px, 2.2vw, 42px); line-height:1.15; letter-spacing:-.01em;
@@ -47,11 +51,11 @@ body.fp-viewing-portfolio .sideMenu svg {fill:var(--wine);}
 .ai_filters button.active {opacity:1; text-decoration:underline; text-underline-offset:4px; font-weight:500;}
 
 /* ---------- 오른쪽: 개수/페이지 + 타일 그리드 ---------- */
-.ai_main {min-width:0; min-height:0; display:flex; flex-direction:column;}
+.ai_main {min-width:0; display:block;}
 .ai_topbar {flex:none; height:36px; display:flex; justify-content:space-between; align-items:center; font-size:13px;}
 .ai_count {opacity:.8;}
 
-.ai_pager {display:flex; align-items:center; gap:2px;}
+.ai_pager {display:none;}   /* 페이지 번호는 쓰지 않음 (스크롤하면 이어서 생김) */
 .ai_pager button {
     font:inherit; font-size:13px; min-width:30px; height:30px; padding:0 6px; cursor:pointer;
     color:var(--wine); background:none; border:0; opacity:.6; transition:opacity .2s;
@@ -62,10 +66,9 @@ body.fp-viewing-portfolio .sideMenu svg {fill:var(--wine);}
 
 .ai_grid {
     --cols:4; --rows:2;
-    flex:1; min-height:0;
     display:grid;
     grid-template-columns:repeat(var(--cols), minmax(0, 1fr));
-    grid-template-rows:repeat(var(--rows), minmax(0, 1fr));
+    grid-auto-rows:auto;
     gap:22px 18px;
 }
 
@@ -73,7 +76,8 @@ body.fp-viewing-portfolio .sideMenu svg {fill:var(--wine);}
     display:flex; flex-direction:column; min-height:0; padding:0; text-align:left;
     background:none; border:0; cursor:pointer; color:var(--wine); font:inherit;
 }
-.ai_tile {position:relative; flex:1; min-height:0; overflow:hidden; background:var(--tile);}
+.ai_tile {position:relative; aspect-ratio:3 / 4; overflow:hidden; background:var(--tile);}
+.ai_tile img {width:100%; height:100%;}
 .ai_tile img {object-fit:cover; object-position:50% 25%; transition:opacity .5s, transform .8s;}
 .ai_tile img.hov {opacity:0;}
 .ai_card:hover .ai_tile img.hov, .ai_card:focus-visible .ai_tile img.hov {opacity:1;}
@@ -84,57 +88,42 @@ body.fp-viewing-portfolio .sideMenu svg {fill:var(--wine);}
 .ai_cap span {display:block; margin-top:2px; font-size:12px; letter-spacing:.04em; opacity:.7;}
 .ai_empty {grid-column:1 / -1; align-self:center; text-align:center; font-size:14px; opacity:.7;}
 
-/* 섹션 진입 효과 */
-.ai_side, .ai_main {opacity:0; transform:translateY(40px); transition:opacity .8s, transform .8s;}
-#sAi.active .ai_side {opacity:1; transform:none; transition-delay:.3s;}
-#sAi.active .ai_main {opacity:1; transform:none; transition-delay:.5s;}
+/* 타일이 생길 때 아래에서 살짝 올라오며 나타남 */
+.ai_card.ai_in {animation:aiIn .7s cubic-bezier(.2,.7,.2,1) both;}
+@keyframes aiIn {from {opacity:0; transform:translateY(26px);} to {opacity:1; transform:none;}}
 
 /* 태블릿: 사이드가 위로 올라가고 필터는 가로 한 줄 */
 @media (max-width:1279px) {.ai_grid {--cols:3;}}
 @media (max-width:1023px) {
-    .ai_w {grid-template-columns:minmax(0, 1fr); grid-template-rows:auto minmax(0, 1fr); row-gap:14px; padding:96px 4vw 20px;}
-    .ai_side {overflow:visible;}
-    .ai_title {font-size:clamp(24px, 3.4vw, 32px);}
-    .ai_sub {margin-top:6px;}
+    .ai_w {grid-template-columns:minmax(0, 1fr); row-gap:0; padding:96px 4vw 40px;}
+    .ai_side {display:contents;}   /* 제목은 같이 스크롤되고, 카테고리 줄만 헤더 아래에 고정(sticky) */
+    .ai_title {font-size:clamp(24px, 3.4vw, 32px); padding-bottom:6px;}
+    .ai_sub {margin-top:0; padding-bottom:12px;}
     .ai_browse {display:none;}
-    .ai_filters {margin-top:12px; display:flex; gap:20px; overflow-x:auto; border-bottom:1px solid var(--line); scrollbar-width:none;}
+    .ai_filters {
+        position:sticky; top:80px; z-index:5; margin:0 -4vw; padding:0 4vw; display:flex; gap:20px; overflow-x:auto;
+        background:var(--cream); border-bottom:1px solid var(--line); scrollbar-width:none;
+    }
     .ai_filters::-webkit-scrollbar {display:none;}
     .ai_filters li {flex:none;}
-    .ai_filters button {width:auto; padding:8px 0; white-space:nowrap;}
-    .ai_grid {--cols:3; --rows:3;}
+    .ai_filters button {width:auto; padding:12px 0; white-space:nowrap;}
+    .ai_topbar {height:auto; padding:14px 0 12px;}
+    .ai_grid {--cols:3;}
     /* 태블릿/모바일에서는 오른쪽 점 내비게이션이 타일을 가려서 이 섹션에서만 숨김 */
     body.fp-viewing-portfolio #fp-nav {display:none;}
 }
-/* 가로로 넓은 태블릿은 2줄 */
-@media (max-width:1023px) and (orientation:landscape) {.ai_grid {--rows:2;}}
 
-/* 모바일: 페이지 번호 없이 아래로 스크롤하면 타일이 이어서 생김 (js/ai.js 의 renderMobile)
-   - 화면 한 장에 고정되지 않고 일반 스크롤 / 카테고리 줄은 헤더 바로 아래에 고정(sticky) */
+/* 모바일 */
 @media (max-width:700px) {
-    .ai_w {display:grid; grid-template-columns:minmax(0, 1fr); grid-template-rows:none; grid-auto-rows:auto; height:auto; min-height:100vh; padding:100px 5vw 40px; row-gap:0; align-content:start;}
-    /* fullPage 래퍼의 overflow:hidden 이 sticky(카테고리 줄 고정)를 막으므로 모바일에서만 해제 */
-    #fullpage.fullpage-wrapper {overflow:visible !important;}
-    .ai_side {display:contents;}
-    .ai_side, .ai_main {opacity:1; transform:none; transition:none;}
+    .ai_w {padding:100px 5vw 40px;}
     .ai_title {font-size:24px; padding-bottom:14px;}
     .ai_sub {display:none;}
-    .ai_filters {
-        position:sticky; top:80px; z-index:5; margin:0 -5vw; padding:0 5vw; gap:18px;
-        background:var(--cream); border-bottom:1px solid var(--line);
-    }
-    .ai_filters button {font-size:14px; padding:12px 0;}
-    .ai_main {display:block;}
-    .ai_topbar {height:auto; padding:14px 0 12px;}
-    .ai_pager {display:none;}
-    .ai_grid {--cols:2; flex:none; grid-template-rows:none; grid-auto-rows:auto; gap:22px 12px;}
-    .ai_tile {flex:none; aspect-ratio:3 / 4;}
-    .ai_tile img {width:100%; height:100%;}
-    .ai_card.ai_in {animation:aiIn .7s cubic-bezier(.2,.7,.2,1) both;}
-    @keyframes aiIn {from {opacity:0; transform:translateY(26px);} to {opacity:1; transform:none;}}
+    .ai_filters {margin:0 -5vw; padding:0 5vw; gap:18px;}
+    .ai_filters button {font-size:14px;}
+    .ai_grid {--cols:2; gap:22px 12px;}
     /* 제목이 길어도(색상 이름까지) 두 줄로 보이게. 모든 타일이 같은 높이를 쓰도록 두 줄 공간을 항상 확보 */
     .ai_cap strong {font-size:14px; line-height:1.3; white-space:normal; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; min-height:2.6em;}
 }
-
 
 @media (prefers-reduced-motion:reduce) {.ai_card.ai_in {animation:none !important;}}
 

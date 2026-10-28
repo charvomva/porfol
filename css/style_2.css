@@ -9,7 +9,7 @@ img {max-width:100%;}
 
 /* header */
 header {position:fixed; top:0;  left:0; width:100%; min-height:80px; height:4.2vw; border-bottom:1px solid #fff; z-index:50;  }
-.header_in { max-width: 1920px; margin:auto; height:100%;}
+.header_in { margin:auto; height:100%;}   /* 넓은 모니터에서도 로고가 화면 왼쪽 끝 기준 여백을 갖도록 max-width 제한 없음 (메뉴는 오른쪽 끝 기준) */
 /* 로고: 왼쪽 여백을 오른쪽 메뉴의 여백과 같게 맞춤
    - 로고 이미지(40px로 표시) 안쪽 투명 여백이 약 7px 이라 그만큼 빼서, 눈에 보이는 로고 왼쪽 끝이 메뉴 오른쪽 끝 여백과 같아지도록 함
    - PC/태블릿: 메뉴 글자 오른쪽 여백 = 1.1vw + 37px / 모바일: 햄버거 아이콘 오른쪽 여백 ≈ 20px */
