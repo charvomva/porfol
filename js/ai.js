@@ -310,6 +310,18 @@
             link.rel = 'noopener noreferrer';
             btns.appendChild(link);
         }
+        // 장바구니 담기: 눌러 둔 작품만 나중에 오른쪽 아래 장바구니 아이콘에서 모아서 볼 수 있음
+        var cartBtn = el('button', 'ai_btn ai_cart_btn');
+        cartBtn.type = 'button';
+        function paintCartBtn() {
+            var on = inCart(w);
+            cartBtn.textContent = on ? '담김 ✓' : '장바구니 담기';
+            cartBtn.classList.toggle('on', on);
+            cartBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+        }
+        cartBtn.addEventListener('click', function () { toggleCart(w); paintCartBtn(); });
+        paintCartBtn();
+        btns.appendChild(cartBtn);
         if (btns.children.length) head.appendChild(btns);
         if (w.detailUrl) elInfo.appendChild(el('p', 'ai_info_note', w.detailNote || '실제 상세페이지가 새 창에서 열려요.'));
 
@@ -337,6 +349,7 @@
         modal.setAttribute('aria-hidden', 'true');
         lockPage(false);
         current = -1;
+        if (savedList) { list = savedList; savedList = null; }
         if (lastFocus && lastFocus.focus) lastFocus.focus();
     }
 
@@ -350,6 +363,7 @@
     btnNext.addEventListener('click', function () { step(1); });
 
     document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && cartOpen()) { showCart(false); return; }
         if (!modal.classList.contains('open')) return;
         if (e.key === 'Escape') closeModal();
         else if (e.key === 'ArrowLeft') step(-1);
@@ -360,6 +374,126 @@
     ['wheel', 'touchstart', 'touchmove', 'touchend'].forEach(function (type) {
         modal.addEventListener(type, function (e) { e.stopPropagation(); }, { passive: true });
     });
+
+
+    /* ---------- 장바구니 (담은 작품은 이 브라우저에 저장돼서 다시 와도 남아 있음) ---------- */
+    var CART_KEY = 'aiCart';
+    var cartKeys = [];
+    try { cartKeys = JSON.parse(localStorage.getItem(CART_KEY) || '[]') || []; } catch (e) { cartKeys = []; }
+    function saveCart() { try { localStorage.setItem(CART_KEY, JSON.stringify(cartKeys)); } catch (e) {} }
+    function inCart(w) { return cartKeys.indexOf(w.title) !== -1; }
+    function cartWorks() {
+        return cartKeys.map(function (k) {
+            for (var i = 0; i < works.length; i++) if (works[i].title === k) return works[i];
+            return null;
+        }).filter(Boolean);
+    }
+
+    var fab = el('button', 'ai_fab');
+    fab.type = 'button';
+    fab.setAttribute('aria-label', '장바구니 열기');
+    fab.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+        '<path d="M3 4h2.2l2.1 10.2a1 1 0 0 0 1 .8h8.6a1 1 0 0 0 1-.8L19.6 8H6.1"/><circle cx="9.5" cy="19" r="1.3"/><circle cx="16.5" cy="19" r="1.3"/></svg>';
+    var badge = el('span', 'ai_fab_badge');
+    fab.appendChild(badge);
+    document.body.appendChild(fab);
+
+    var panel = el('aside', 'ai_cart');
+    panel.setAttribute('aria-hidden', 'true');
+    panel.setAttribute('aria-label', '장바구니');
+    var panelHead = el('div', 'ai_cart_head');
+    var panelTitle = el('strong', '', '장바구니');
+    var panelClose = el('button', 'ai_cart_x', '✕');
+    panelClose.type = 'button';
+    panelClose.setAttribute('aria-label', '장바구니 닫기');
+    panelHead.appendChild(panelTitle);
+    panelHead.appendChild(panelClose);
+    var panelList = el('div', 'ai_cart_list');
+    var panelFoot = el('div', 'ai_cart_foot');
+    var clearBtn = el('button', 'ai_cart_clear', '전체 비우기');
+    clearBtn.type = 'button';
+    panelFoot.appendChild(clearBtn);
+    panel.appendChild(panelHead);
+    panel.appendChild(panelList);
+    panel.appendChild(panelFoot);
+    document.body.appendChild(panel);
+
+    var savedList = null;   // 장바구니에서 작품을 열면, 이전/다음 버튼이 장바구니 안에서 움직이도록 잠깐 list 를 바꿔 둠
+    function cartOpen() { return panel.classList.contains('open'); }
+
+    function paintCart() {
+        var items = cartWorks();
+        badge.textContent = items.length;
+        badge.style.display = items.length ? 'flex' : 'none';
+        fab.classList.toggle('has', items.length > 0);
+        panelTitle.textContent = '장바구니 (' + items.length + ')';
+        panelList.innerHTML = '';
+        panelFoot.style.display = items.length ? '' : 'none';
+        if (!items.length) {
+            panelList.appendChild(el('p', 'ai_cart_empty', '아직 담은 작품이 없어요.\n작품 상세 화면에서 “장바구니 담기”를 눌러 보세요.'));
+            return;
+        }
+        items.forEach(function (w, i) {
+            var row = el('div', 'ai_cart_item');
+            var th = el('button', 'ai_cart_th');
+            th.type = 'button';
+            th.setAttribute('aria-label', w.title + ' 보기');
+            th.appendChild(makeImg(w.thumb, w.title, true));
+            th.addEventListener('click', function () { openFromCart(i); });
+            var info = el('div', 'ai_cart_info');
+            var t = el('button', 'ai_cart_name', w.title);
+            t.type = 'button';
+            t.addEventListener('click', function () { openFromCart(i); });
+            info.appendChild(t);
+            if (cat(w)) info.appendChild(el('span', 'ai_cart_cat', cat(w)));
+            var acts = el('div', 'ai_cart_acts');
+            if (w.detailUrl) {
+                var a = el('a', '', '상세페이지 ↗');
+                a.href = w.detailUrl; a.target = '_blank'; a.rel = 'noopener noreferrer';
+                acts.appendChild(a);
+            }
+            var rm = el('button', '', '삭제');
+            rm.type = 'button';
+            rm.addEventListener('click', function () { toggleCart(w); });
+            acts.appendChild(rm);
+            info.appendChild(acts);
+            row.appendChild(th);
+            row.appendChild(info);
+            panelList.appendChild(row);
+        });
+    }
+
+    function toggleCart(w) {
+        var k = cartKeys.indexOf(w.title);
+        if (k === -1) {
+            cartKeys.push(w.title);
+            fab.classList.remove('pop'); void fab.offsetWidth; fab.classList.add('pop');   // 담길 때 살짝 통통 튀는 효과
+        } else cartKeys.splice(k, 1);
+        saveCart();
+        paintCart();
+    }
+
+    function showCart(open) {
+        panel.classList.toggle('open', open);
+        panel.setAttribute('aria-hidden', open ? 'false' : 'true');
+        if (open) paintCart();
+        lockPage(open);
+        if (open) panelClose.focus(); else fab.focus();
+    }
+
+    function openFromCart(i) {
+        var items = cartWorks();
+        if (!items[i]) return;
+        showCart(false);
+        savedList = list;
+        list = items;
+        openModal(i);
+    }
+
+    fab.addEventListener('click', function () { showCart(!cartOpen()); });
+    panelClose.addEventListener('click', function () { showCart(false); });
+    clearBtn.addEventListener('click', function () { cartKeys = []; saveCart(); paintCart(); });
+    paintCart();
 
     buildFilters();
     render();
