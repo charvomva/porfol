@@ -32,15 +32,16 @@
 .side li:hover a {cursor: pointer; color:#1FD15F} 
 #sideOff {cursor: pointer;}
 
+        /* 로고 왼쪽 여백 = 오른쪽 메뉴(CONTACT / 햄버거 버튼) 오른쪽 여백 */
+        .header_in {max-width:none;}
+        header h1 {margin-left:calc(1.1vw + 46px); width:40px;}
+        header h1 a {width:40px; background-position:left center;}
+
         @media(max-width:700px){
     .gnb_list {display:none;}
     .sideMenu {display:block;}
+    header h1 {margin-left:29px;}
         }
-
-        @media (max-width:500px){
-    header h1 a {width:82px;}
-
-            }
     </style>
 <body>
     <header>
@@ -49,9 +50,8 @@
                     <div class="gnb_wrap">
                         <div class="gnb_list_w">
                             <ul class="gnb_list">
-                                <li data-menuanchor="1st"><a class="mitem" href="index.html">HOME</a></li>
                                 <!-- ABOUT 비활성화 <li data-menuanchor="2nd"><a class="mitem" href="index.html">ABOUT</a></li> -->
-                                <li data-menuanchor="3rd"><a class="mitem" href="index.html#portfolio">PORTPOLIO</a></li>
+                                <li data-menuanchor="3rd"><a class="mitem" href="index.html#portfolio">PORTFOLIO</a></li>
                                 <li data-menuanchor="4th"><a class="mitem" href="#">CONTACT</a></li>
                             </ul>
                         </div>
@@ -68,7 +68,6 @@
                               </svg>
                         </div>
                         <ul style="display: flex; flex-direction: column; gap:20px;">
-                            <li><a href="index.html">HOME</a></li>
                             <!-- ABOUT 비활성화 <li><a href="#s2">ABOUT</a></li> -->
                             <li><a href="index.html#portfolio">PORTFOLIO</a></li>
                             <li><a href="contact.html">CONTACT</a></li>
