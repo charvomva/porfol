@@ -435,5 +435,24 @@ window.AI_WORKS = [
     desc: '',
     tools: '',
     role: ''
+  },
+  {
+    category: '아우터',
+    product: '포콜트',
+    title: '포콜트',
+    thumb: 'img/ai/pocolt/thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/pocolt/1.webp',   // Black
+      'img/ai/pocolt/2.webp',   // Black
+      'img/ai/pocolt/3.webp',   // Gray
+      'img/ai/pocolt/4.webp',   // Khaki
+      'img/ai/pocolt/5.webp'    // Khaki
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/pocolt/ 에 올리면 여기에 경로를 추가
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '',
+    tools: '',
+    role: ''
   }
 ];
