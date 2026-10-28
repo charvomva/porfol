@@ -454,5 +454,22 @@ window.AI_WORKS = [
     desc: '',
     tools: '',
     role: ''
+  },
+  {
+    category: '아우터',
+    product: '경량 패딩',
+    title: '경량 패딩',
+    thumb: 'img/ai/lightpadding/thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/lightpadding/1.webp',   // Black
+      'img/ai/lightpadding/2.webp',   // Gray
+      'img/ai/lightpadding/3.webp'    // Sky Blue
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/lightpadding/ 에 올리면 여기에 경로를 추가
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '',
+    tools: '',
+    role: ''
   }
 ];
