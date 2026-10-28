@@ -413,7 +413,7 @@ window.AI_WORKS = [
     product: '데님 쇼츠',
     title: '데님 쇼츠',
     thumb: 'img/ai/denimshorts/thumb.webp',
-    thumbPos: '50% 30%',
+    thumbPos: '50% 50%',
     models: [
       'img/ai/denimshorts/1.webp',   // Light Blue
       'img/ai/denimshorts/2.webp',   // Blue
@@ -433,7 +433,7 @@ window.AI_WORKS = [
     product: '논페이드 와이드 데님',
     title: '논페이드 와이드 데님 Deep Blue',
     thumb: 'img/ai/glimy/deepblue-thumb.webp',
-    thumbPos: '50% 30%',
+    thumbPos: '50% 50%',
     models: [
       'img/ai/glimy/1.webp',
       'img/ai/glimy/2.webp',
@@ -452,7 +452,7 @@ window.AI_WORKS = [
     product: '논페이드 와이드 데님',
     title: '논페이드 와이드 데님 Black',
     thumb: 'img/ai/glimy/black-thumb.webp',
-    thumbPos: '50% 30%',
+    thumbPos: '50% 50%',
     models: [
       'img/ai/glimy/3.webp',
       'img/ai/glimy/5.webp',
