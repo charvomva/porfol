@@ -22,7 +22,10 @@
     var btnNext = modal.querySelector('.ai_next');
     var btnClose = modal.querySelector('.ai_close');
 
-    var state = { filter: 'all', page: 0 };   // filter: 'all' 또는 카테고리 이름
+    var state = { filter: 'all', page: 0, shown: 0 };   // filter: 'all' 또는 카테고리 이름 / shown: 모바일에서 지금까지 보여준 타일 수
+    var mq = window.matchMedia('(max-width: 700px)');   // 모바일: 페이지 번호 대신 아래로 스크롤하면 타일이 이어서 생김
+    function isMobile() { return mq.matches; }
+    var FIRST_CHUNK = 6, NEXT_CHUNK = 4;
     var list = [];          // 현재 필터에 해당하는 작업물
     var current = -1;       // 상세 화면에 열려 있는 작업물 (list 기준 인덱스)
     var lastFocus = null;
@@ -90,6 +93,7 @@
                     o.classList.toggle('active', o === b);
                 });
                 render();
+                if (isMobile()) scrollToGridTop();
             });
             li.appendChild(b);
             filtersEl.appendChild(li);
@@ -97,48 +101,94 @@
     }
 
     /* ---------- 타일 그리드 ---------- */
+    function buildCard(w, idx) {
+        var card = el('button', 'ai_card');
+        card.type = 'button';
+        card.setAttribute('aria-label', w.title + ' 자세히 보기');
+
+        var tile = el('div', 'ai_tile');
+        var thumbImg = makeImg(w.thumb, w.title, true);
+        if (w.thumbPos) thumbImg.style.objectPosition = w.thumbPos;   // 썸네일이 잘릴 때 보여줄 위치 조절
+        tile.appendChild(thumbImg);
+        // 마우스를 올리면 바뀌는 두 번째 이미지는 터치 화면(모바일)에서는 쓸모가 없어 불러오지 않음
+        var hoverSrc = w.hover || (has(w.models) ? w.models[0] : '');
+        if (hoverSrc && hoverSrc !== w.thumb && !isMobile()) {
+            var h = makeImg(hoverSrc, '', true);
+            h.className = 'hov';
+            if (w.hoverPos) h.style.objectPosition = w.hoverPos;
+            tile.appendChild(h);
+        }
+        card.appendChild(tile);
+
+        var cap = el('div', 'ai_cap');
+        cap.appendChild(el('strong', '', w.title));
+        if (cat(w)) cap.appendChild(el('span', '', cat(w)));
+        card.appendChild(cap);
+
+        card.addEventListener('click', function () { openModal(idx); });
+        return card;
+    }
+
     function render() {
         list = getList();
+        countEl.textContent = list.length + (list.length === 1 ? ' work' : ' works');
+        grid.innerHTML = '';
+        if (list.length === 0) grid.appendChild(el('p', 'ai_empty', '등록된 작업물이 없어요.'));
+
+        if (isMobile()) { renderMobile(); return; }
+
         var size = perPage();
         var pages = Math.max(1, Math.ceil(list.length / size));
         if (state.page > pages - 1) state.page = pages - 1;
         if (state.page < 0) state.page = 0;
 
-        countEl.textContent = list.length + (list.length === 1 ? ' work' : ' works');
-
-        grid.innerHTML = '';
-        if (list.length === 0) {
-            grid.appendChild(el('p', 'ai_empty', '등록된 작업물이 없어요.'));
-        }
         list.slice(state.page * size, state.page * size + size).forEach(function (w, i) {
-            var idx = state.page * size + i;
-            var card = el('button', 'ai_card');
-            card.type = 'button';
-            card.setAttribute('aria-label', w.title + ' 자세히 보기');
-
-            var tile = el('div', 'ai_tile');
-            var thumbImg = makeImg(w.thumb, w.title, true);
-            if (w.thumbPos) thumbImg.style.objectPosition = w.thumbPos;   // 썸네일이 잘릴 때 보여줄 위치 조절
-            tile.appendChild(thumbImg);
-            var hoverSrc = w.hover || (has(w.models) ? w.models[0] : '');
-            if (hoverSrc && hoverSrc !== w.thumb) {
-                var h = makeImg(hoverSrc, '', true);
-                h.className = 'hov';
-                if (w.hoverPos) h.style.objectPosition = w.hoverPos;
-                tile.appendChild(h);
-            }
-            card.appendChild(tile);
-
-            var cap = el('div', 'ai_cap');
-            cap.appendChild(el('strong', '', w.title));
-            if (cat(w)) cap.appendChild(el('span', '', cat(w)));
-            card.appendChild(cap);
-
-            card.addEventListener('click', function () { openModal(idx); });
-            grid.appendChild(card);
+            grid.appendChild(buildCard(w, state.page * size + i));
         });
-
         renderPager(pages);
+    }
+
+    /* ---------- 모바일: 스크롤하면 타일이 부드럽게 이어서 생성 ---------- */
+    function appendChunk(n) {
+        var start = state.shown, end = Math.min(list.length, start + n);
+        for (var i = start; i < end; i++) {
+            var card = buildCard(list[i], i);
+            card.classList.add('ai_in');
+            card.style.animationDelay = ((i - start) % 6) * 70 + 'ms';   // 한 줄씩 차례로 나타나는 느낌
+            grid.appendChild(card);
+        }
+        state.shown = end;
+    }
+
+    // 화면 아래쪽에 닿기 직전(여유 90px)이면 다음 타일들을 더 붙임. 너무 일찍 붙이면 화면 밖에서 애니메이션이 끝나 버려 부드럽게 생기는 게 안 보임
+    function fillIfNeeded() {
+        if (!isMobile()) return;
+        var guard = 0;
+        while (state.shown < list.length && guard++ < 10) {
+            var last = grid.lastElementChild;
+            var bottom = last ? last.getBoundingClientRect().bottom : 0;
+            if (bottom > window.innerHeight + 90) break;
+            appendChunk(NEXT_CHUNK);
+        }
+    }
+
+    var scrollTick = false;
+    window.addEventListener('scroll', function () {
+        if (scrollTick) return;
+        scrollTick = true;
+        requestAnimationFrame(function () { scrollTick = false; fillIfNeeded(); });
+    }, { passive: true });
+
+    function renderMobile() {
+        state.shown = 0;
+        appendChunk(FIRST_CHUNK);
+        fillIfNeeded();
+    }
+
+    // 카테고리를 바꾸면, 고정된 카테고리 줄 바로 아래에서 목록이 시작되도록 스크롤 위치를 맞춤
+    function scrollToGridTop() {
+        var anchor = countEl.getBoundingClientRect().top + window.pageYOffset - (80 + filtersEl.offsetHeight);
+        if (window.pageYOffset > anchor) window.scrollTo(0, Math.max(0, anchor));
     }
 
     function renderPager(pages) {
@@ -160,6 +210,10 @@
         btn('›', state.page + 1, { disabled: state.page === pages - 1, aria: '다음 페이지' });
     }
 
+    // 모바일 <-> 태블릿/PC 로 바뀌면(화면 회전 등) 보기 방식이 달라지므로 다시 그림
+    var onMq = function () { state.page = 0; render(); };
+    if (mq.addEventListener) mq.addEventListener('change', onMq); else if (mq.addListener) mq.addListener(onMq);
+
     // 창 크기가 바뀌면 한 페이지에 보이는 개수가 달라지므로, 보고 있던 첫 작업물이 있는 페이지로 맞춰서 다시 그림
     var resizeTimer = null;
     var lastSize = perPage();
@@ -167,6 +221,7 @@
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function () {
             var size = perPage();
+            if (isMobile()) { fillIfNeeded(); lastSize = size; return; }
             if (size !== lastSize) {
                 state.page = Math.floor((state.page * lastSize) / size);
                 lastSize = size;
@@ -177,6 +232,8 @@
 
     /* ---------- 상세 화면 ---------- */
     function lockPage(lock) {
+        // 모바일은 일반 스크롤이라, 상세 화면이 열려 있는 동안 뒤쪽 페이지가 같이 스크롤되지 않게 잠금
+        document.documentElement.classList.toggle('ai_lock', !!lock);
         // 열려 있는 동안 fullpage 의 휠/터치/키보드 스크롤을 꺼서 상세 화면 안에서만 스크롤되게 함
         var api = window.fullpage_api;
         if (!api) return;

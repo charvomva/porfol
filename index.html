@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>✓작업꾸러미✓</title>
+    <!-- 오트밀색 배경을 화면 전체에: 폰 상단(시간/배터리 줄)·하단 브라우저 바 색은 theme-color 와 html 배경색을 따라감 -->
+    <meta name="theme-color" content="#f5f3ee">
+    <meta name="color-scheme" content="light">
+    <style>html, body {background:#f5f3ee;}</style>
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/vendors/easings.min.js"></script>
     <link rel="stylesheet" href="css/style_2.css">
@@ -27,7 +31,8 @@
             anchors: ['portfolio'],
             navigationTooltips: ['AI 모델 이미지'],
             sectionsColor: ['#f5f3ee'],
-            navigation: false   // 섹션이 하나뿐이라 오른쪽 점 내비게이션 숨김
+            navigation: false,   // 섹션이 하나뿐이라 오른쪽 점 내비게이션 숨김
+            responsiveWidth: 700   // 모바일(700px 이하)은 한 화면 고정 대신 일반 스크롤 (타일이 아래로 이어서 생김)
         };
     </script>
     <script defer src="js/main.js"></script>
@@ -83,7 +88,7 @@
         -->
 
         <!-- AI 모델 이미지 & 상세페이지 (작업물 목록은 js/ai_works.js 에서 관리) -->
-        <div class="section" id="sAi">
+        <div class="section fp-auto-height-responsive" id="sAi">
             <div class="ai_w">
                 <aside class="ai_side">
                     <h2 class="ai_title">AI Model Images &amp; Detail Pages</h2>
