@@ -640,6 +640,17 @@ window.AI_WORKS = [
     role: ''
   },
   {
+    category: '아우터',
+    product: '바람막이',
+    title: '바람막이',
+    thumb: 'img/ai/windbreaker/thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/windbreaker/1.webp', 'img/ai/windbreaker/2.webp', 'img/ai/windbreaker/3.webp', 'img/ai/windbreaker/4.webp', 'img/ai/windbreaker/5.webp', 'img/ai/windbreaker/6.webp', 'img/ai/windbreaker/7.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13685356995',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '니트',
     product: '헨리넥 니트',
     title: '헨리넥 니트 Black',
