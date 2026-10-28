@@ -86,14 +86,54 @@ window.AI_WORKS = [
   },
   {
     category: '셔츠',
-    title: '옥스포드 셔츠 Gray',
-    thumb: 'img/ai/oxford/gray-thumb.webp',
+    title: '옥스포드 셔츠 Khaki',
+    thumb: 'img/ai/oxford/khaki-thumb.webp',
     thumbPos: '50% 0%',
     models: [
-      'img/ai/oxford/gray-1.webp'
+      'img/ai/oxford/khaki-1.webp',
+      'img/ai/oxford/khaki-2.webp',
+      'img/ai/oxford/khaki-3.webp',
+      'img/ai/oxford/khaki-4.webp',
+      'img/ai/oxford/khaki-5.webp',
+      'img/ai/oxford/khaki-6.webp',
+      'img/ai/oxford/khaki-7.webp'
     ],
-    detail: [],
-    // detailUrl: '',   // 스마트스토어 주소가 정해지면 여기에 적으면 "View Detail Page" 버튼이 생겨요
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/oxford/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/10839046838',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 3종 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '셔츠',
+    title: '옥스포드 셔츠 Navy',
+    thumb: 'img/ai/oxford/navy-thumb.webp',
+    thumbPos: '50% 0%',
+    models: [
+      'img/ai/oxford/navy-1.webp',
+      'img/ai/oxford/navy-2.webp',
+      'img/ai/oxford/navy-3.webp',
+      'img/ai/oxford/navy-4.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/oxford/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/10839046838',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 3종 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '셔츠',
+    title: '옥스포드 셔츠 Sky',
+    thumb: 'img/ai/oxford/sky-thumb.webp',
+    thumbPos: '50% 0%',
+    models: [
+      'img/ai/oxford/sky-1.webp',
+      'img/ai/oxford/sky-2.webp',
+      'img/ai/oxford/sky-3.webp',
+      'img/ai/oxford/sky-4.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/oxford/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/10839046838',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 3종 공통)
     desc: '',
     tools: '',
     role: ''
