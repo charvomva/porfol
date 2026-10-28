@@ -21,10 +21,13 @@
     <script>
         // 이 페이지 전용 fullpage 설정 (js/main.js의 기본값을 덮어씀)
         // 섹션을 추가하면 아래 세 배열에도 항목을 같은 순서로 추가해 주세요.
+        // (스키마리딩 / 디자인 작업물(윤동주 문학제) 섹션은 비활성화 중: 다시 쓰려면 아래 배열에 'schema', 'design' 항목을 추가하고 HTML 주석을 풀어 주세요.
+        //  anchors: ['portfolio', 'schema', 'design'] / navigationTooltips: [..., '스키마리딩', '디자인 작업물'] / sectionsColor: [..., '#000000', '#000000'] / navigation: true)
         window.fullpageOverrides = {
-            anchors: ['portfolio', 'schema', 'design'],
-            navigationTooltips: ['AI 모델 이미지', '스키마리딩', '디자인 작업물'],
-            sectionsColor: ['#f5f3ee', '#000000', '#000000']
+            anchors: ['portfolio'],
+            navigationTooltips: ['AI 모델 이미지'],
+            sectionsColor: ['#f5f3ee'],
+            navigation: false   // 섹션이 하나뿐이라 오른쪽 점 내비게이션 숨김
         };
     </script>
     <script defer src="js/main.js"></script>
@@ -98,6 +101,7 @@
             </div>
         </div>
 
+        <!-- 스키마리딩 섹션 비활성화 (다시 쓰려면 이 주석을 풀고, 위 fullpageOverrides 에 'schema' 항목을 추가하세요)
         <div class="section" id="s0">
             <div class="image_w">
                 <img src="img/schema.png" alt="">
@@ -114,7 +118,9 @@
                 </div>
             </div>
         </div>
+        -->
 
+        <!-- 디자인 작업물(윤동주 문학제, hgu.html 연결) 섹션 비활성화 (다시 쓰려면 이 주석을 풀고, 위 fullpageOverrides 에 'design' 항목을 추가하세요)
         <div class="section" id="s5">
                 <div class="s5_title">
                     <p>디자인 작업물</p>
@@ -124,9 +130,10 @@
                     <a href="hgu.html" target="_blank" class="s5_btn"><span>더 보기</span></a>
                 </div>
 
-            <!-- 영상은 PC에서만 불러와 재생(아래 스크립트). 휴대폰/태블릿은 poster 이미지만 표시 -->
+            ※ 영상은 PC에서만 불러와 재생(아래 스크립트). 휴대폰/태블릿은 poster 이미지만 표시
             <video muted loop playsinline preload="none" poster="img/vid03_poster.jpg" data-src="vid/vid03.mp4"></video>
         </div>
+        -->
     </div>
 
     <!-- AI 작업물 상세 팝업 (fullpage 의 transform 영향을 받지 않도록 #fullpage 바깥에 둠) -->
