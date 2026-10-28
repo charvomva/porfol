@@ -409,6 +409,26 @@ window.AI_WORKS = [
     role: ''
   },
   {
+    category: '청바지',
+    product: '데님 쇼츠',
+    title: '데님 쇼츠',
+    thumb: 'img/ai/denimshorts/thumb.webp',
+    thumbPos: '50% 30%',
+    models: [
+      'img/ai/denimshorts/1.webp',   // Light Blue
+      'img/ai/denimshorts/2.webp',   // Blue
+      'img/ai/denimshorts/3.webp',   // Blue (back)
+      'img/ai/denimshorts/4.webp',   // Black (back)
+      'img/ai/denimshorts/5.webp',   // Black
+      'img/ai/denimshorts/6.webp'    // Black
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/denimshorts/ 에 올리면 여기에 경로를 추가
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
     category: '아우터',
     product: '웰론 패딩 점퍼',
     title: '웰론 패딩 점퍼',
