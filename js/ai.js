@@ -30,8 +30,17 @@
     function has(arr) { return arr && arr.length > 0; }
     function cat(w) { return w.category || w.tag || ''; }
 
+    // 같은 상품(product)의 색상 작업물은 올린 순서 그대로 연달아 보이도록 묶음 (상품은 처음 등장한 순서)
     function getList() {
-        return works.filter(function (w) { return state.filter === 'all' || cat(w) === state.filter; });
+        var picked = works.filter(function (w) { return state.filter === 'all' || cat(w) === state.filter; });
+        var order = [];
+        picked.forEach(function (w) {
+            var k = w.product || w.title;
+            if (order.indexOf(k) === -1) order.push(k);
+        });
+        return picked.map(function (w, i) { return { w: w, g: order.indexOf(w.product || w.title), i: i }; })
+            .sort(function (a, b) { return a.g - b.g || a.i - b.i; })
+            .map(function (x) { return x.w; });
     }
 
     // 화면 크기에 따라 CSS(--cols, --rows)가 정한 열x줄 수만큼이 한 페이지

@@ -9,7 +9,8 @@
   [항목 설명]
   category : 카테고리 이름 (예: '후드티', '청바지'). 왼쪽 필터 목록이 이 값으로 자동으로 만들어져요.
              같은 이름을 쓴 작업물끼리 묶이고, 목록 순서는 처음 등장한 순서예요.
-  title    : 작업물 이름
+  product  : 상품 이름 (같은 상품의 색상끼리 이 값으로 묶여서 연달아 보여요. 색상만 다른 작업물은 같은 값을 쓰세요)
+  title    : 작업물 이름 (보통 '상품 이름 + 색상')
   thumb    : 목록에 보이는 썸네일 이미지 (권장 3:4 세로 비율, 가로 600px 이상, WebP/JPG)
   hover    : (선택) 마우스를 올렸을 때 바뀌는 이미지. 안 적으면 models 의 첫 번째 이미지가 나와요.
   thumbPos : (선택) 썸네일이 칸에 맞춰 잘릴 때 보여줄 위치. 예: '50% 20%' (가로 50%, 세로 위에서 20%) 얼굴이 잘리면 값을 줄이고, 아래가 잘리면 늘려요.
@@ -29,6 +30,7 @@
 window.AI_WORKS = [
   {
     category: '후드티',
+    product: '무지 오버핏 후드티',
     title: '무지 오버핏 후드티 Oatmeal',
     thumb: 'img/ai/uretin/oatmeal-thumb.webp',
     thumbPos: '50% 0%',
@@ -48,6 +50,7 @@ window.AI_WORKS = [
   },
   {
     category: '후드티',
+    product: '무지 오버핏 후드티',
     title: '무지 오버핏 후드티 Black',
     thumb: 'img/ai/uretin/black-thumb.webp',
     thumbPos: '50% 0%',
@@ -67,6 +70,7 @@ window.AI_WORKS = [
   },
   {
     category: '후드티',
+    product: '무지 오버핏 후드티',
     title: '무지 오버핏 후드티 Purple',
     thumb: 'img/ai/uretin/purple-thumb.webp',
     thumbPos: '50% 20%',
@@ -86,6 +90,7 @@ window.AI_WORKS = [
   },
   {
     category: '셔츠',
+    product: '옥스포드 셔츠',
     title: '옥스포드 셔츠 Khaki',
     thumb: 'img/ai/oxford/khaki-thumb.webp',
     thumbPos: '50% 0%',
@@ -106,6 +111,7 @@ window.AI_WORKS = [
   },
   {
     category: '셔츠',
+    product: '옥스포드 셔츠',
     title: '옥스포드 셔츠 Navy',
     thumb: 'img/ai/oxford/navy-thumb.webp',
     thumbPos: '50% 0%',
@@ -123,6 +129,7 @@ window.AI_WORKS = [
   },
   {
     category: '셔츠',
+    product: '옥스포드 셔츠',
     title: '옥스포드 셔츠 Sky',
     thumb: 'img/ai/oxford/sky-thumb.webp',
     thumbPos: '50% 0%',
@@ -140,6 +147,7 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
+    product: '세미와이드 데님 팬츠',
     title: '세미와이드 데님 팬츠 Black',
     thumb: 'img/ai/tommyping/thumb.webp',
     thumbPos: '50% 85%',                   // 썸네일이 잘릴 때 보여줄 위치 (위 0% ~ 아래 100%)
@@ -157,6 +165,7 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
+    product: '세미와이드 데님 팬츠',
     title: '세미와이드 데님 팬츠 Gray',
     thumb: 'img/ai/tommyping/gray-thumb.webp',
     thumbPos: '50% 85%',
@@ -173,6 +182,7 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
+    product: '세미와이드 데님 팬츠',
     title: '세미와이드 데님 팬츠 Light Blue',
     thumb: 'img/ai/tommyping/lightblue-thumb.webp',
     thumbPos: '50% 85%',
@@ -189,6 +199,7 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
+    product: '세미와이드 데님 팬츠',
     title: '세미와이드 데님 팬츠 Blue',
     thumb: 'img/ai/tommyping/blue-thumb.webp',
     thumbPos: '50% 85%',
@@ -206,6 +217,7 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
+    product: '스트레이트핏 데님 팬츠',
     title: '스트레이트핏 데님 팬츠 Light Blue',
     thumb: 'img/ai/straight/lightblue-thumb.webp',
     thumbPos: '50% 85%',
@@ -222,6 +234,7 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
+    product: '스트레이트핏 데님 팬츠',
     title: '스트레이트핏 데님 팬츠 Ice Blue',
     thumb: 'img/ai/straight/iceblue-thumb.webp',
     thumbPos: '50% 85%',
@@ -238,6 +251,7 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
+    product: '스트레이트핏 데님 팬츠',
     title: '스트레이트핏 데님 팬츠 Dark Blue',
     thumb: 'img/ai/straight/darkblue-thumb.webp',
     thumbPos: '50% 85%',
@@ -254,6 +268,7 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
+    product: '스트레이트핏 데님 팬츠',
     title: '스트레이트핏 데님 팬츠 Black',
     thumb: 'img/ai/straight/black-thumb.webp',
     thumbPos: '50% 85%',
