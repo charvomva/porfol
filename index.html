@@ -103,11 +103,24 @@
                     <a href="hgu.html" target="_blank" class="s5_btn"><span>더 보기</span></a>
                 </div>
 
-            <video class="" autoplay muted loop >
-                <source  src="vid/vid03.mp4" >
-              </video>
+            <!-- 영상은 PC에서만 불러와 재생(아래 스크립트). 휴대폰/태블릿은 poster 이미지만 표시 -->
+            <video muted loop playsinline preload="none" poster="img/vid03_poster.jpg" data-src="vid/vid03.mp4"></video>
         </div>
     </div>
+
+    <script>
+        // 배경 영상: 마우스 PC에서만 불러와서 재생, 터치 기기(휴대폰/태블릿)나 좁은 화면에서는 재생/다운로드하지 않음
+        (function () {
+            var v = document.querySelector('#s5 video');
+            if (!v) return;
+            var noVideo = window.matchMedia('(max-width: 700px), (hover: none) and (pointer: coarse)').matches;
+            if (noVideo) return;
+            v.src = v.getAttribute('data-src');
+            v.autoplay = true;
+            var p = v.play();
+            if (p && p.catch) p.catch(function () {});
+        })();
+    </script>
 
 </body>
 </html>
