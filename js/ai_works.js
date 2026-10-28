@@ -209,7 +209,7 @@ window.AI_WORKS = [
       'img/ai/oxford/khaki-7.webp'
     ],
     detail: [],   // 나중에 상세페이지 이미지를 img/ai/oxford/ 에 올리면 여기에 경로를 추가
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/10839046838',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 3종 공통)
+    detailUrl: 'https://www.musinsa.com/products/5445894',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
     desc: '',
     tools: '',
     role: ''
@@ -227,7 +227,7 @@ window.AI_WORKS = [
       'img/ai/oxford/navy-4.webp'
     ],
     detail: [],   // 나중에 상세페이지 이미지를 img/ai/oxford/ 에 올리면 여기에 경로를 추가
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/10839046838',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 3종 공통)
+    detailUrl: 'https://www.musinsa.com/products/5445894',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
     desc: '',
     tools: '',
     role: ''
@@ -245,7 +245,7 @@ window.AI_WORKS = [
       'img/ai/oxford/sky-4.webp'
     ],
     detail: [],   // 나중에 상세페이지 이미지를 img/ai/oxford/ 에 올리면 여기에 경로를 추가
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/10839046838',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 3종 공통)
+    detailUrl: 'https://www.musinsa.com/products/5445894',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
     desc: '',
     tools: '',
     role: ''
