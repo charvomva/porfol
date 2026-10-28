@@ -251,6 +251,26 @@ window.AI_WORKS = [
     role: ''
   },
   {
+    category: '셔츠',
+    product: '반팔 데님 셔츠',
+    title: '반팔 데님 셔츠',
+    thumb: 'img/ai/denimshirt/thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/denimshirt/1.webp',   // Light Blue
+      'img/ai/denimshirt/2.webp',   // Light Blue
+      'img/ai/denimshirt/3.webp',   // Blue
+      'img/ai/denimshirt/4.webp',   // Black
+      'img/ai/denimshirt/5.webp',   // White
+      'img/ai/denimshirt/6.webp'    // 컬러 전체 플랫레이
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/denimshirt/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13467369698',   // 실제 상세페이지 주소 (새 창으로 열림)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
     category: '청바지',
     product: '세미와이드 데님 팬츠',
     title: '세미와이드 데님 팬츠 Black',
