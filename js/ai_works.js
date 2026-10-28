@@ -483,6 +483,27 @@ window.AI_WORKS = [
     role: ''
   },
   {
+    category: '아우터',
+    product: '패딩 조끼',
+    title: '패딩 조끼',
+    thumb: 'img/ai/vest/thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/vest/1.webp',   // Light Gray
+      'img/ai/vest/2.webp',   // Light Gray
+      'img/ai/vest/3.webp',   // Light Gray
+      'img/ai/vest/4.webp',   // Charcoal
+      'img/ai/vest/5.webp',   // Charcoal
+      'img/ai/vest/6.webp',   // White
+      'img/ai/vest/7.webp'    // White
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/vest/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13771307007',   // 실제 상세페이지 주소 (새 창으로 열림)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
     category: '니트',
     product: '헨리넥 니트',
     title: '헨리넥 니트 Black',
