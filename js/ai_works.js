@@ -429,6 +429,44 @@ window.AI_WORKS = [
     role: ''
   },
   {
+    category: '청바지',
+    product: '논페이드 와이드 데님',
+    title: '논페이드 와이드 데님 Deep Blue',
+    thumb: 'img/ai/glimy/deepblue-thumb.webp',
+    thumbPos: '50% 30%',
+    models: [
+      'img/ai/glimy/1.webp',
+      'img/ai/glimy/2.webp',
+      'img/ai/glimy/4.webp',
+      'img/ai/glimy/7.webp',
+      'img/ai/glimy/6.webp'
+    ],
+    detail: [],
+    detailUrl: 'detail-glimy.html',   // 상세페이지 이미지는 img/ai/glimy/detail-glimy1, detail-glimy2 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '청바지',
+    product: '논페이드 와이드 데님',
+    title: '논페이드 와이드 데님 Black',
+    thumb: 'img/ai/glimy/black-thumb.webp',
+    thumbPos: '50% 30%',
+    models: [
+      'img/ai/glimy/3.webp',
+      'img/ai/glimy/5.webp',
+      'img/ai/glimy/8.webp',
+      'img/ai/glimy/9.webp',
+      'img/ai/glimy/6.webp'
+    ],
+    detail: [],
+    detailUrl: 'detail-glimy.html',   // 상세페이지 이미지는 img/ai/glimy/detail-glimy1, detail-glimy2 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
     category: '아우터',
     product: '웰론 패딩 점퍼',
     title: '웰론 패딩 점퍼',

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>논페이드 와이드 데님 · Detail</title>
+<style>
+    :root {--wine:#4a0e0e; --cream:#f5f3ee;}
+    * {box-sizing:border-box;}
+    html, body {margin:0; background:var(--cream); color:var(--wine);}
+    body {font-family:'Inter','Noto Sans KR',Arial,sans-serif;}
+    .bar {position:sticky; top:0; z-index:5; display:flex; justify-content:space-between; align-items:center; padding:14px 20px; background:var(--cream); border-bottom:1px solid rgba(74,14,14,.25); font-size:13px;}
+    .bar strong {font-family:'EB Garamond','Noto Serif KR',Georgia,serif; font-style:italic; font-weight:400; font-size:17px;}
+    .bar a {color:var(--wine); text-decoration:none; border:1px solid rgba(74,14,14,.45); padding:6px 12px; border-radius:999px; font-size:12px;}
+    .bar a:hover {background:var(--wine); color:var(--cream);}
+    .wrap {max-width:860px; margin:0 auto; background:#fff;}
+    .wrap img {display:block; width:100%; height:auto;}
+</style>
+</head>
+<body>
+<div class="bar"><strong>논페이드 와이드 데님</strong><a href="javascript:window.close()">Close</a></div>
+<div class="wrap" id="wrap"></div>
+<script>
+/* 상세페이지 이미지: img/ai/glimy/detail-glimy1, detail-glimy2
+   같은 이름으로 파일을 덮어쓰면 됩니다. 확장자는 jpg / png / webp 어느 것이든 자동으로 찾아요. */
+(function () {
+    var base = 'img/ai/glimy/';
+    var names = ['detail-glimy1', 'detail-glimy2'];
+    var exts = ['jpg', 'png', 'webp', 'jpeg'];
+    var wrap = document.getElementById('wrap');
+    names.forEach(function (n) {
+        var img = new Image(), i = 0;
+        img.alt = n;
+        img.onerror = function () { i += 1; if (i < exts.length) img.src = base + n + '.' + exts[i]; else img.remove(); };
+        img.src = base + n + '.' + exts[0];
+        wrap.appendChild(img);
+    });
+})();
+</script>
+</body>
+</html>
