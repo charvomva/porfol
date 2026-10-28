@@ -85,6 +85,20 @@ window.AI_WORKS = [
     role: ''
   },
   {
+    category: '셔츠',
+    title: '옥스포드 셔츠 Gray',
+    thumb: 'img/ai/oxford/gray-thumb.webp',
+    thumbPos: '50% 0%',
+    models: [
+      'img/ai/oxford/gray-1.webp'
+    ],
+    detail: [],
+    // detailUrl: '',   // 스마트스토어 주소가 정해지면 여기에 적으면 "View Detail Page" 버튼이 생겨요
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
     category: '청바지',
     title: '토미핑 Black',
     thumb: 'img/ai/tommyping/thumb.webp',
