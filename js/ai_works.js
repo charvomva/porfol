@@ -248,6 +248,28 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '후드티',
+    product: '무지 베이직핏 후드티',
+    title: '무지 베이직핏 후드티 Navy',
+    thumb: 'img/ai/basic/navy-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/basic/navy-1.webp', 'img/ai/basic/navy-2.webp', 'img/ai/basic/navy-3.webp' ],
+    detail: [],
+    detailUrl: 'https://www.musinsa.com/products/7414862',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '후드티',
+    product: '무지 베이직핏 후드티',
+    title: '무지 베이직핏 후드티 Oatmeal',
+    thumb: 'img/ai/basic/oatmeal-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/basic/oatmeal-1.webp', 'img/ai/basic/oatmeal-2.webp', 'img/ai/basic/oatmeal-3.webp' ],
+    detail: [],
+    detailUrl: 'https://www.musinsa.com/products/7414862',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '셔츠',
     product: '옥스포드 셔츠',
     title: '옥스포드 셔츠 Khaki',
