@@ -21,21 +21,21 @@
 <div class="bar"><strong>컬러배색 후드티</strong><a href="javascript:window.close()">Close</a></div>
 <div class="wrap" id="wrap"></div>
 <script>
-/* 상세페이지 이미지: img/ai/colorblock/detail-colorblock1, detail-colorblock2, detail-colorblock3 ...
-   번호 순서대로 위에서 아래로 보여줘요. 확장자는 jpg / png / webp / jpeg 어느 것이든 자동으로 찾고,
-   번호가 비면(예: 4번이 없으면) 거기서 멈춰요. 최대 30장까지. */
+/* 상세페이지 이미지: img/ai/colorblock/detail-RVL01, detail-RVL02 ... (번호 순서대로 위에서 아래로)
+   확장자는 jpg / png / webp / jpeg 어느 것이든 자동으로 찾고, 번호가 비면 거기서 멈춰요. 최대 30장. */
 (function () {
     var base = 'img/ai/colorblock/';
-    var prefix = 'detail-colorblock';
+    var prefix = 'detail-RVL';
     var exts = ['jpg', 'png', 'webp', 'jpeg'];
     var wrap = document.getElementById('wrap');
     function load(n) {
         if (n > 30) return;
+        var num = (n < 10 ? '0' : '') + n;
         var img = new Image(), i = 0;
-        img.alt = prefix + n;
+        img.alt = prefix + num;
         img.onload = function () { wrap.appendChild(img); load(n + 1); };
-        img.onerror = function () { i += 1; if (i < exts.length) img.src = base + prefix + n + '.' + exts[i]; };
-        img.src = base + prefix + n + '.' + exts[0];
+        img.onerror = function () { i += 1; if (i < exts.length) img.src = base + prefix + num + '.' + exts[i]; };
+        img.src = base + prefix + num + '.' + exts[0];
     }
     load(1);
 })();
