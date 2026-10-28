@@ -29,7 +29,7 @@
 window.AI_WORKS = [
   {
     category: '후드티',
-    title: '유레틴 Oatmeal',
+    title: '무지 오버핏 후드티 Oatmeal',
     thumb: 'img/ai/uretin/oatmeal-thumb.webp',
     thumbPos: '50% 0%',
     models: [
@@ -48,7 +48,7 @@ window.AI_WORKS = [
   },
   {
     category: '후드티',
-    title: '유레틴 Black',
+    title: '무지 오버핏 후드티 Black',
     thumb: 'img/ai/uretin/black-thumb.webp',
     thumbPos: '50% 0%',
     models: [
@@ -67,7 +67,7 @@ window.AI_WORKS = [
   },
   {
     category: '후드티',
-    title: '유레틴 Purple',
+    title: '무지 오버핏 후드티 Purple',
     thumb: 'img/ai/uretin/purple-thumb.webp',
     thumbPos: '50% 20%',
     models: [
@@ -140,7 +140,7 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
-    title: '토미핑 Black',
+    title: '세미와이드 데님 팬츠 Black',
     thumb: 'img/ai/tommyping/thumb.webp',
     thumbPos: '50% 85%',                   // 썸네일이 잘릴 때 보여줄 위치 (위 0% ~ 아래 100%)
     hoverPos: '50% 20%',                   // 마우스를 올렸을 때 이미지(전신 컷)의 위치. 얼굴이 보이게 위쪽 기준
@@ -151,6 +151,55 @@ window.AI_WORKS = [
     ],
     detail: [],
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13649092237',   // 실제 상세페이지 주소 (새 창으로 열림)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '청바지',
+    title: '세미와이드 데님 팬츠 Gray',
+    thumb: 'img/ai/tommyping/gray-thumb.webp',
+    thumbPos: '50% 85%',
+    models: [
+      'img/ai/tommyping/gray-1.webp',
+      'img/ai/tommyping/gray-2.webp',
+      'img/ai/tommyping/gray-3.webp'
+    ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13649092237',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '청바지',
+    title: '세미와이드 데님 팬츠 Light Blue',
+    thumb: 'img/ai/tommyping/lightblue-thumb.webp',
+    thumbPos: '50% 85%',
+    models: [
+      'img/ai/tommyping/lightblue-1.webp',
+      'img/ai/tommyping/lightblue-2.webp',
+      'img/ai/tommyping/lightblue-3.webp'
+    ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13649092237',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '청바지',
+    title: '세미와이드 데님 팬츠 Blue',
+    thumb: 'img/ai/tommyping/blue-thumb.webp',
+    thumbPos: '50% 85%',
+    models: [
+      'img/ai/tommyping/blue-1.webp',
+      'img/ai/tommyping/blue-2.webp',
+      'img/ai/tommyping/blue-3.webp',
+      'img/ai/tommyping/blue-4.webp'
+    ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13649092237',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
     desc: '',
     tools: '',
     role: ''
