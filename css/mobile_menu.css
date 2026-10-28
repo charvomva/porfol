@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* 모바일(700px 이하) 메뉴: 햄버거 버튼을 누르면 화면 전체를 덮는 크림색 메뉴가 부드럽게 나타남 (가운데 정렬, 현재 페이지는 밑줄) */
+@media (max-width:700px) {
+    header .side {
+        display:flex !important; flex-direction:column; align-items:stretch;
+        position:fixed; inset:0; width:100%; height:100%; box-sizing:border-box; padding:0; z-index:300;
+        background:#f5f3ee; color:#4a0e0e; font-family:'Inter','Noto Sans KR',Arial,sans-serif;
+        opacity:0; visibility:hidden; transition:opacity .4s ease, visibility 0s linear .4s;
+    }
+    header .side.open {opacity:1; visibility:visible; transition:opacity .4s ease;}
+    header .side > div:first-child {flex:none; height:80px; align-items:center; padding-right:30px; box-sizing:border-box;}
+    header .side #sideOff {width:26px; height:26px; color:#4a0e0e; cursor:pointer;}
+    header .side ul {align-items:center; margin:64px 0 0; padding:0; list-style:none; gap:34px !important; transform:translateY(14px); transition:transform .5s cubic-bezier(.2,.7,.2,1);}
+    header .side.open ul {transform:none;}
+    header .side li {text-align:center;}
+    header .side li a {color:#4a0e0e; font-size:20px; letter-spacing:.01em; text-decoration:none; padding:4px 2px;}
+    header .side li a.current {text-decoration:underline; text-underline-offset:6px; text-decoration-thickness:1px;}
+    header .side li:hover a {color:#4a0e0e;}
+    /* 메뉴가 열려 있는 동안 뒤 화면은 스크롤되지 않음 */
+    html.menu_open, html.menu_open body {overflow:hidden;}
+    html.menu_open .ai_fab, html.menu_open #fp-nav {display:none;}
+}
