@@ -441,5 +441,118 @@ window.AI_WORKS = [
     desc: '',
     tools: '',
     role: ''
+  },
+  {
+    category: '니트',
+    product: '헨리넥 니트',
+    title: '헨리넥 니트 Black',
+    thumb: 'img/ai/henley/black-thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/henley/black-1.webp',
+      'img/ai/henley/black-2.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/henley/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13824829588',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '니트',
+    product: '헨리넥 니트',
+    title: '헨리넥 니트 Brown',
+    thumb: 'img/ai/henley/brown-thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/henley/brown-1.webp',
+      'img/ai/henley/brown-2.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/henley/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13824829588',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '니트',
+    product: '헨리넥 니트',
+    title: '헨리넥 니트 Gray',
+    thumb: 'img/ai/henley/gray-thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/henley/gray-1.webp',
+      'img/ai/henley/gray-2.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/henley/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13824829588',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '니트',
+    product: '헨리넥 니트',
+    title: '헨리넥 니트 Green',
+    thumb: 'img/ai/henley/green-thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/henley/green-1.webp',
+      'img/ai/henley/green-2.webp',
+      'img/ai/henley/green-3.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/henley/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13824829588',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '니트',
+    product: '헨리넥 니트',
+    title: '헨리넥 니트 Khaki',
+    thumb: 'img/ai/henley/khaki-thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/henley/khaki-1.webp',
+      'img/ai/henley/khaki-2.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/henley/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13824829588',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '니트',
+    product: '헨리넥 니트',
+    title: '헨리넥 니트 Navy',
+    thumb: 'img/ai/henley/navy-thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/henley/navy-1.webp',
+      'img/ai/henley/navy-2.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/henley/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13824829588',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '니트',
+    product: '헨리넥 니트',
+    title: '헨리넥 니트 Oatmeal',
+    thumb: 'img/ai/henley/oatmeal-thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/henley/oatmeal-1.webp',
+      'img/ai/henley/oatmeal-2.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/henley/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13824829588',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
   }
 ];
