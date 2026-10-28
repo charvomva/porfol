@@ -101,7 +101,7 @@ window.AI_WORKS = [
       'img/ai/lettering/black-4.webp'
     ],
     detail: [],   // 나중에 상세페이지 이미지를 img/ai/lettering/ 에 올리면 여기에 경로를 추가
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/12650929670',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    detailUrl: 'https://www.musinsa.com/products/7202138',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 3종 공통)
     desc: '',
     tools: '',
     role: ''
@@ -119,7 +119,7 @@ window.AI_WORKS = [
       'img/ai/lettering/green-4.webp'
     ],
     detail: [],   // 나중에 상세페이지 이미지를 img/ai/lettering/ 에 올리면 여기에 경로를 추가
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/12650929670',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    detailUrl: 'https://www.musinsa.com/products/7202138',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 3종 공통)
     desc: '',
     tools: '',
     role: ''
@@ -137,7 +137,7 @@ window.AI_WORKS = [
       'img/ai/lettering/navy-4.webp'
     ],
     detail: [],   // 나중에 상세페이지 이미지를 img/ai/lettering/ 에 올리면 여기에 경로를 추가
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/12650929670',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    detailUrl: 'https://www.musinsa.com/products/7202138',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 3종 공통)
     desc: '',
     tools: '',
     role: ''
