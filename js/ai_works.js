@@ -471,5 +471,23 @@ window.AI_WORKS = [
     desc: '',
     tools: '',
     role: ''
+  },
+  {
+    category: '아우터',
+    product: '경량 패딩2',
+    title: '경량 패딩2',
+    thumb: 'img/ai/lightpadding2/thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/lightpadding2/1.webp',   // Charcoal Olive
+      'img/ai/lightpadding2/2.webp',   // Khaki Brown
+      'img/ai/lightpadding2/3.webp',   // Navy
+      'img/ai/lightpadding2/4.webp'    // White
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/lightpadding2/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13778355161',   // 실제 상세페이지 주소 (새 창으로 열림)
+    desc: '',
+    tools: '',
+    role: ''
   }
 ];
