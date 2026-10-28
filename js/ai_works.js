@@ -817,5 +817,60 @@ window.AI_WORKS = [
     desc: '',
     tools: '',
     role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '테이퍼드 팬츠',
+    title: '테이퍼드 팬츠 Charcoal',
+    thumb: 'img/ai/cotton/charcoal-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cotton/charcoal-1.webp', 'img/ai/cotton/charcoal-2.webp', 'img/ai/cotton/charcoal-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13676441708',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '테이퍼드 팬츠',
+    title: '테이퍼드 팬츠 Beige',
+    thumb: 'img/ai/cotton/beige-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cotton/beige-1.webp', 'img/ai/cotton/beige-2.webp', 'img/ai/cotton/beige-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13676441708',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '테이퍼드 팬츠',
+    title: '테이퍼드 팬츠 Ivory',
+    thumb: 'img/ai/cotton/ivory-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cotton/ivory-1.webp', 'img/ai/cotton/ivory-2.webp', 'img/ai/cotton/ivory-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13676441708',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '테이퍼드 팬츠',
+    title: '테이퍼드 팬츠 Black',
+    thumb: 'img/ai/cotton/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cotton/black-1.webp', 'img/ai/cotton/black-2.webp', 'img/ai/cotton/black-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13676441708',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '테이퍼드 팬츠',
+    title: '테이퍼드 팬츠 Olive',
+    thumb: 'img/ai/cotton/olive-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cotton/olive-1.webp', 'img/ai/cotton/olive-2.webp', 'img/ai/cotton/olive-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13676441708',
+    desc: '', tools: '', role: ''
   }
 ];
