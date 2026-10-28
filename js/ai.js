@@ -108,11 +108,14 @@
             card.setAttribute('aria-label', w.title + ' 자세히 보기');
 
             var tile = el('div', 'ai_tile');
-            tile.appendChild(makeImg(w.thumb, w.title, true));
+            var thumbImg = makeImg(w.thumb, w.title, true);
+            if (w.thumbPos) thumbImg.style.objectPosition = w.thumbPos;   // 썸네일이 잘릴 때 보여줄 위치 조절
+            tile.appendChild(thumbImg);
             var hoverSrc = w.hover || (has(w.models) ? w.models[0] : '');
             if (hoverSrc && hoverSrc !== w.thumb) {
                 var h = makeImg(hoverSrc, '', true);
                 h.className = 'hov';
+                if (w.hoverPos) h.style.objectPosition = w.hoverPos;
                 tile.appendChild(h);
             }
             card.appendChild(tile);
@@ -222,15 +225,12 @@
             });
             btns.appendChild(b);
         }
+        // 모델 이미지와 상세페이지가 둘 다 있을 때만 이동 버튼을 보여줌 (하나뿐이면 이동할 곳이 없음)
         if (modelsTop && detailTop) {
             jump('Model Images', modelsTop, false);
             jump('Detail Page', detailTop, true);
-        } else if (modelsTop) {
-            jump('Model Images', modelsTop, true);
-        } else if (detailTop) {
-            jump('Detail Page', detailTop, true);
+            elInfo.appendChild(btns);
         }
-        elInfo.appendChild(btns);
 
         if (w.desc) elInfo.appendChild(el('p', 'ai_info_desc', w.desc));
         if (w.tools) elInfo.appendChild(accordion('Tools', w.tools));
