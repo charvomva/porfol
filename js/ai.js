@@ -1,38 +1,37 @@
 /*
   AI 모델 이미지 & 상세페이지 섹션 동작
   - 작업물 목록은 js/ai_works.js 에서 관리합니다.
-  - 썸네일 그리드(탭 필터 + 페이지 넘김) / 클릭하면 상세 팝업(모델 이미지 + 상세페이지)
+  - 왼쪽 필터(카테고리: 후드티, 청바지 ...)는 작업물의 category 값으로 자동 생성됩니다.
+  - 타일을 누르면 상세 화면(왼쪽 이미지 스택 + 오른쪽 정보 패널)이 열립니다.
 */
 (function () {
     var works = window.AI_WORKS || [];
 
     var grid = document.getElementById('aiGrid');
     var pager = document.getElementById('aiPager');
+    var filtersEl = document.getElementById('aiFilters');
+    var countEl = document.getElementById('aiCount');
     var modal = document.getElementById('aiModal');
-    if (!grid || !pager || !modal) return;
+    if (!grid || !pager || !filtersEl || !modal) return;
 
-    var tabs = document.querySelectorAll('.ai_tab');
-    var elTitle = modal.querySelector('.ai_modal_title');
+    var elGallery = modal.querySelector('.ai_gallery');
+    var elInfo = modal.querySelector('.ai_info');
     var elCount = modal.querySelector('.ai_modal_count');
     var elBody = modal.querySelector('.ai_modal_body');
-    var elInner = modal.querySelector('.ai_modal_inner');
     var btnPrev = modal.querySelector('.ai_prev');
     var btnNext = modal.querySelector('.ai_next');
     var btnClose = modal.querySelector('.ai_close');
 
-    var state = { filter: 'all', page: 0 };
-    var list = [];          // 현재 탭에 해당하는 작업물
-    var current = -1;       // 팝업에 열려 있는 작업물 (list 기준 인덱스)
+    var state = { filter: 'all', page: 0 };   // filter: 'all' 또는 카테고리 이름
+    var list = [];          // 현재 필터에 해당하는 작업물
+    var current = -1;       // 상세 화면에 열려 있는 작업물 (list 기준 인덱스)
     var lastFocus = null;
 
     function has(arr) { return arr && arr.length > 0; }
+    function cat(w) { return w.category || w.tag || ''; }
 
     function getList() {
-        return works.filter(function (w) {
-            if (state.filter === 'models') return has(w.models);
-            if (state.filter === 'detail') return has(w.detail);
-            return true;
-        });
+        return works.filter(function (w) { return state.filter === 'all' || cat(w) === state.filter; });
     }
 
     // 화면 크기에 따라 CSS(--cols, --rows)가 정한 열x줄 수만큼이 한 페이지
@@ -60,13 +59,43 @@
         return img;
     }
 
-    /* ---------- 썸네일 그리드 ---------- */
+    /* ---------- 왼쪽 카테고리 필터 ---------- */
+    function buildFilters() {
+        var names = [];
+        works.forEach(function (w) {
+            var c = cat(w);
+            if (c && names.indexOf(c) === -1) names.push(c);
+        });
+        var items = [{ key: 'all', label: 'All Works' }].concat(names.map(function (n) { return { key: n, label: n }; }));
+
+        filtersEl.innerHTML = '';
+        items.forEach(function (it) {
+            var li = document.createElement('li');
+            var b = el('button', it.key === state.filter ? 'active' : '', it.label);
+            b.type = 'button';
+            b.setAttribute('data-filter', it.key);
+            b.addEventListener('click', function () {
+                state.filter = it.key;
+                state.page = 0;
+                Array.prototype.forEach.call(filtersEl.querySelectorAll('button'), function (o) {
+                    o.classList.toggle('active', o === b);
+                });
+                render();
+            });
+            li.appendChild(b);
+            filtersEl.appendChild(li);
+        });
+    }
+
+    /* ---------- 타일 그리드 ---------- */
     function render() {
         list = getList();
         var size = perPage();
         var pages = Math.max(1, Math.ceil(list.length / size));
         if (state.page > pages - 1) state.page = pages - 1;
         if (state.page < 0) state.page = 0;
+
+        countEl.textContent = list.length + (list.length === 1 ? ' work' : ' works');
 
         grid.innerHTML = '';
         if (list.length === 0) {
@@ -77,11 +106,22 @@
             var card = el('button', 'ai_card');
             card.type = 'button';
             card.setAttribute('aria-label', w.title + ' 자세히 보기');
-            card.appendChild(makeImg(w.thumb, w.title, true));
-            var cap = el('div', 'ai_card_cap');
+
+            var tile = el('div', 'ai_tile');
+            tile.appendChild(makeImg(w.thumb, w.title, true));
+            var hoverSrc = w.hover || (has(w.models) ? w.models[0] : '');
+            if (hoverSrc && hoverSrc !== w.thumb) {
+                var h = makeImg(hoverSrc, '', true);
+                h.className = 'hov';
+                tile.appendChild(h);
+            }
+            card.appendChild(tile);
+
+            var cap = el('div', 'ai_cap');
             cap.appendChild(el('strong', '', w.title));
-            if (w.tag) cap.appendChild(el('span', '', w.tag));
+            if (cat(w)) cap.appendChild(el('span', '', cat(w)));
             card.appendChild(cap);
+
             card.addEventListener('click', function () { openModal(idx); });
             grid.appendChild(card);
         });
@@ -108,16 +148,6 @@
         btn('›', state.page + 1, { disabled: state.page === pages - 1, aria: '다음 페이지' });
     }
 
-    tabs.forEach(function (t) {
-        t.addEventListener('click', function () {
-            tabs.forEach(function (o) { o.classList.remove('active'); });
-            t.classList.add('active');
-            state.filter = t.getAttribute('data-filter');
-            state.page = 0;
-            render();
-        });
-    });
-
     // 창 크기가 바뀌면 한 페이지에 보이는 개수가 달라지므로, 보고 있던 첫 작업물이 있는 페이지로 맞춰서 다시 그림
     var resizeTimer = null;
     var lastSize = perPage();
@@ -133,9 +163,9 @@
         }, 150);
     });
 
-    /* ---------- 상세 팝업 ---------- */
+    /* ---------- 상세 화면 ---------- */
     function lockPage(lock) {
-        // 팝업이 열려 있는 동안 fullpage 의 휠/터치/키보드 스크롤을 꺼서 팝업 안에서만 스크롤되게 함
+        // 열려 있는 동안 fullpage 의 휠/터치/키보드 스크롤을 꺼서 상세 화면 안에서만 스크롤되게 함
         var api = window.fullpage_api;
         if (!api) return;
         try {
@@ -145,36 +175,68 @@
         } catch (e) {}
     }
 
+    function accordion(label, text) {
+        var d = el('details', 'ai_acc');
+        d.appendChild(el('summary', '', label));
+        d.appendChild(el('p', '', text));
+        return d;
+    }
+
     function fillModal(i) {
         var w = list[i];
         if (!w) return;
         current = i;
-
-        elTitle.textContent = w.title;
-        if (w.tag) elTitle.appendChild(el('small', '', w.tag));
         elCount.textContent = (i + 1) + ' / ' + list.length;
 
-        elInner.innerHTML = '';
-        if (w.desc) elInner.appendChild(el('p', 'ai_modal_desc', w.desc));
-
+        /* 왼쪽: 모델 이미지 → 상세페이지 순서로 쭉 이어붙임 */
+        elGallery.innerHTML = '';
+        var modelsTop = null, detailTop = null;
         if (has(w.models)) {
-            var s1 = el('div', 'ai_modal_sec');
-            s1.appendChild(el('h3', '', 'MODEL IMAGES'));
-            var g = el('div', 'ai_models_list');
-            w.models.forEach(function (src, n) { g.appendChild(makeImg(src, w.title + ' 모델 이미지 ' + (n + 1), true)); });
-            s1.appendChild(g);
-            elInner.appendChild(s1);
+            w.models.forEach(function (src, n) {
+                var img = makeImg(src, w.title + ' 모델 이미지 ' + (n + 1), true);
+                if (n === 0) modelsTop = img;
+                elGallery.appendChild(img);
+            });
         }
         if (has(w.detail)) {
-            var s2 = el('div', 'ai_modal_sec');
-            s2.appendChild(el('h3', '', 'DETAIL PAGE'));
-            var d = el('div', 'ai_detail_list');
-            w.detail.forEach(function (src, n) { d.appendChild(makeImg(src, w.title + ' 상세페이지 ' + (n + 1), true)); });
-            s2.appendChild(d);
-            elInner.appendChild(s2);
+            var wrap = el('div', 'ai_detail_wrap');
+            if (has(w.models)) elGallery.appendChild(el('div', 'ai_gallery_label', 'Detail Page'));
+            w.detail.forEach(function (src, n) {
+                wrap.appendChild(makeImg(src, w.title + ' 상세페이지 ' + (n + 1), true));
+            });
+            detailTop = wrap;
+            elGallery.appendChild(wrap);
         }
-        elBody.scrollTop = 0;
 
+        /* 오른쪽: 따라오는 정보 패널 */
+        elInfo.innerHTML = '';
+        elInfo.appendChild(el('h3', 'ai_info_title', w.title));
+        if (cat(w)) elInfo.appendChild(el('p', 'ai_info_cat', cat(w)));
+
+        var btns = el('div', 'ai_info_btns');
+        function jump(label, target, solid) {
+            var b = el('button', 'ai_btn' + (solid ? ' solid' : ''), label);
+            b.type = 'button';
+            b.addEventListener('click', function () {
+                if (target && target.scrollIntoView) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+            btns.appendChild(b);
+        }
+        if (modelsTop && detailTop) {
+            jump('Model Images', modelsTop, false);
+            jump('Detail Page', detailTop, true);
+        } else if (modelsTop) {
+            jump('Model Images', modelsTop, true);
+        } else if (detailTop) {
+            jump('Detail Page', detailTop, true);
+        }
+        elInfo.appendChild(btns);
+
+        if (w.desc) elInfo.appendChild(el('p', 'ai_info_desc', w.desc));
+        if (w.tools) elInfo.appendChild(accordion('Tools', w.tools));
+        if (w.role) elInfo.appendChild(accordion('Role', w.role));
+
+        elBody.scrollTop = 0;
         btnPrev.disabled = list.length < 2;
         btnNext.disabled = list.length < 2;
     }
@@ -213,10 +275,11 @@
         else if (e.key === 'ArrowRight') step(1);
     });
 
-    // 팝업 안의 휠/터치 이벤트가 fullpage 로 전달되어 섹션이 넘어가지 않도록 막음 (스크롤 자체는 막지 않음)
+    // 상세 화면 안의 휠/터치 이벤트가 fullpage 로 전달되어 섹션이 넘어가지 않도록 막음 (스크롤 자체는 막지 않음)
     ['wheel', 'touchstart', 'touchmove', 'touchend'].forEach(function (type) {
         modal.addEventListener(type, function (e) { e.stopPropagation(); }, { passive: true });
     });
 
+    buildFilters();
     render();
 })();

@@ -1,114 +1,187 @@
 @charset "UTF-8";
 
-/* ===== AI 모델 이미지 & 상세페이지 섹션 ===== */
+/* ===== AI 모델 이미지 & 상세페이지 섹션 (크림 + 와인 톤) ===== */
 
-#sAi {position:relative; color:#fff; background:#111;}
+:root {
+    --wine:#4a0e0e;
+    --cream:#f5f3ee;
+    --tile:#e8e6df;
+    --line:rgba(74,14,14,.45);
+    --serif:'EB Garamond', 'Noto Serif KR', Georgia, serif;
+    --sans:'Inter', 'Noto Sans KR', Arial, sans-serif;
+}
+
+#sAi {position:relative; background:var(--cream); color:var(--wine); font-family:var(--sans);}
+
+/* 이 섹션을 보는 동안에는 헤더(로고/메뉴)를 어두운 색으로 바꿈 */
+header {transition:border-color .3s;}
+.mitem, header h1 a, .sideMenu svg {transition:color .3s, filter .3s, fill .3s;}
+body.fp-viewing-portfolio header {border-bottom-color:var(--line);}
+body.fp-viewing-portfolio .mitem {color:var(--wine); font-weight:500;}
+body.fp-viewing-portfolio .gnb_list > li a:hover {color:var(--wine); text-decoration:underline;}
+body.fp-viewing-portfolio header h1 a {filter:brightness(0);}
+body.fp-viewing-portfolio .sideMenu svg {fill:var(--wine);}
 
 .ai_w {
-    box-sizing:border-box;
-    height:100%;
-    display:flex; flex-direction:column;
-    padding: max(100px, calc(4.2vw + 28px)) 8vw 28px;
+    box-sizing:border-box; height:100%;
+    display:grid; grid-template-columns:220px minmax(0, 1fr); column-gap:40px;
+    padding:max(96px, calc(4.2vw + 20px)) 3vw 22px;
     text-align:left;
 }
 
-/* 제목 + 탭 */
-.ai_head {flex:none; display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:14px 24px; margin-bottom:20px;}
-.ai_title {font-size:clamp(18px, 1.7vw, 32px); font-weight:700; line-height:1.3; margin:0;}
-.ai_title em {font-style:normal; color:#1FD15F; padding:0 .15em;}
-.ai_tabs {display:flex; gap:8px; flex-wrap:wrap;}
-.ai_tab {
-    font:inherit; font-size:13px; color:#cfcfcf; background:transparent; cursor:pointer;
-    border:1px solid rgba(255,255,255,.3); border-radius:100px; padding:8px 18px; transition:.25s;
+/* ---------- 왼쪽: 제목 + 카테고리 필터 ---------- */
+.ai_side {min-height:0; overflow:hidden;}
+.ai_title {
+    margin:0; font-family:var(--serif); font-style:italic; font-weight:400; font-synthesis:none;
+    font-size:clamp(26px, 2.2vw, 42px); line-height:1.15; letter-spacing:-.01em;
 }
-.ai_tab:hover {color:#fff; border-color:#fff;}
-.ai_tab.active {color:#111; background:#1FD15F; border-color:#1FD15F; font-weight:700;}
+.ai_sub {margin:12px 0 0; font-size:13px; line-height:1.6; opacity:.75;}
+.ai_browse {margin-top:44px; padding-bottom:10px; font-size:12px; letter-spacing:.08em; text-transform:uppercase; opacity:.7; border-bottom:1px solid var(--line);}
+.ai_filters {margin:14px 0 0; padding:0; list-style:none;}
+.ai_filters li {margin:0;}
+.ai_filters button {
+    display:block; width:100%; padding:7px 0; font:inherit; font-size:15px; text-align:left;
+    color:var(--wine); background:none; border:0; cursor:pointer; opacity:.85; transition:opacity .2s;
+}
+.ai_filters button:hover {opacity:1; text-decoration:underline; text-underline-offset:4px;}
+.ai_filters button.active {opacity:1; text-decoration:underline; text-underline-offset:4px; font-weight:500;}
 
-/* 썸네일 그리드: PC 4열 x 2줄 / 태블릿 3열 / 모바일 2열 (한 화면에 딱 맞게 페이지로 넘김) */
+/* ---------- 오른쪽: 개수/페이지 + 타일 그리드 ---------- */
+.ai_main {min-width:0; min-height:0; display:flex; flex-direction:column;}
+.ai_topbar {flex:none; height:36px; display:flex; justify-content:space-between; align-items:center; font-size:13px;}
+.ai_count {opacity:.8;}
+
+.ai_pager {display:flex; align-items:center; gap:2px;}
+.ai_pager button {
+    font:inherit; font-size:13px; min-width:30px; height:30px; padding:0 6px; cursor:pointer;
+    color:var(--wine); background:none; border:0; opacity:.6; transition:opacity .2s;
+}
+.ai_pager button:hover:not(:disabled) {opacity:1;}
+.ai_pager button.on {opacity:1; font-weight:500; text-decoration:underline; text-underline-offset:5px;}
+.ai_pager button:disabled {opacity:.2; cursor:default;}
+
 .ai_grid {
     --cols:4; --rows:2;
     flex:1; min-height:0;
     display:grid;
     grid-template-columns:repeat(var(--cols), minmax(0, 1fr));
     grid-template-rows:repeat(var(--rows), minmax(0, 1fr));
-    gap:16px;
-}
-@media (max-width:1023px) {.ai_grid {--cols:3;}}
-@media (max-width:700px)  {
-    .ai_grid {--cols:2; gap:10px;}
-    .ai_w {padding:112px 5vw 20px;}
-    /* 모바일에서는 오른쪽 점 내비게이션이 썸네일을 가려서 이 섹션에서만 숨김 */
-    body.fp-viewing-portfolio #fp-nav {display:none;}
+    gap:22px 18px;
 }
 
 .ai_card {
-    position:relative; display:block; min-height:0; padding:0; overflow:hidden;
-    border:0; border-radius:8px; background:#222; cursor:pointer; color:#fff; text-align:left;
+    display:flex; flex-direction:column; min-height:0; padding:0; text-align:left;
+    background:none; border:0; cursor:pointer; color:var(--wine); font:inherit;
 }
-.ai_card img {
-    object-fit:cover; object-position:50% 20%; transition:transform .6s;
-}
-.ai_card:hover img, .ai_card:focus-visible img {transform:scale(1.06);}
-.ai_card:focus-visible {outline:2px solid #1FD15F; outline-offset:2px;}
-.ai_card_cap {
-    position:absolute; left:0; right:0; bottom:0; z-index:5;
-    padding:34px 14px 12px; background:linear-gradient(to top, rgba(0,0,0,.78), rgba(0,0,0,0));
-}
-.ai_card_cap strong {display:block; font-size:14px; font-weight:500; line-height:1.35;}
-.ai_card_cap span {display:block; margin-top:3px; font-size:11px; letter-spacing:.06em; color:#1FD15F;}
-.ai_empty {grid-column:1 / -1; align-self:center; text-align:center; color:#999; font-size:14px;}
-
-/* 페이지 넘김 */
-.ai_pager {flex:none; height:44px; margin-top:14px; display:flex; justify-content:center; align-items:center; gap:6px;}
-.ai_pager button {
-    font:inherit; font-size:13px; min-width:34px; height:34px; padding:0 8px; cursor:pointer;
-    color:#cfcfcf; background:transparent; border:1px solid transparent; border-radius:100px; transition:.2s;
-}
-.ai_pager button:hover:not(:disabled) {color:#fff; border-color:rgba(255,255,255,.4);}
-.ai_pager button.on {color:#111; background:#1FD15F; font-weight:700;}
-.ai_pager button:disabled {opacity:.3; cursor:default;}
+.ai_tile {position:relative; flex:1; min-height:0; overflow:hidden; background:var(--tile);}
+.ai_tile img {object-fit:cover; object-position:50% 25%; transition:opacity .5s, transform .8s;}
+.ai_tile img.hov {opacity:0;}
+.ai_card:hover .ai_tile img.hov, .ai_card:focus-visible .ai_tile img.hov {opacity:1;}
+.ai_card:hover .ai_tile img, .ai_card:focus-visible .ai_tile img {transform:scale(1.03);}
+.ai_card:focus-visible {outline:1px solid var(--wine); outline-offset:3px;}
+.ai_cap {flex:none; padding-top:10px;}
+.ai_cap strong {display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-family:var(--serif); font-style:italic; font-weight:400; font-synthesis:none; font-size:17px; line-height:1.3;}
+.ai_cap span {display:block; margin-top:2px; font-size:12px; letter-spacing:.04em; opacity:.7;}
+.ai_empty {grid-column:1 / -1; align-self:center; text-align:center; font-size:14px; opacity:.7;}
 
 /* 섹션 진입 효과 */
-.ai_head, .ai_grid, .ai_pager {opacity:0; transform:translateY(40px); transition:opacity .8s, transform .8s;}
-#sAi.active .ai_head {opacity:1; transform:none; transition-delay:.3s;}
-#sAi.active .ai_grid {opacity:1; transform:none; transition-delay:.5s;}
-#sAi.active .ai_pager {opacity:1; transform:none; transition-delay:.7s;}
+.ai_side, .ai_main {opacity:0; transform:translateY(40px); transition:opacity .8s, transform .8s;}
+#sAi.active .ai_side {opacity:1; transform:none; transition-delay:.3s;}
+#sAi.active .ai_main {opacity:1; transform:none; transition-delay:.5s;}
+
+/* 태블릿: 사이드가 위로 올라가고 필터는 가로 한 줄 */
+@media (max-width:1279px) {.ai_grid {--cols:3;}}
+@media (max-width:1023px) {
+    .ai_w {grid-template-columns:minmax(0, 1fr); grid-template-rows:auto minmax(0, 1fr); row-gap:14px; padding:96px 4vw 20px;}
+    .ai_side {overflow:visible;}
+    .ai_title {font-size:clamp(24px, 3.4vw, 32px);}
+    .ai_sub {margin-top:6px;}
+    .ai_browse {display:none;}
+    .ai_filters {margin-top:12px; display:flex; gap:20px; overflow-x:auto; border-bottom:1px solid var(--line); scrollbar-width:none;}
+    .ai_filters::-webkit-scrollbar {display:none;}
+    .ai_filters li {flex:none;}
+    .ai_filters button {width:auto; padding:8px 0; white-space:nowrap;}
+    .ai_grid {--cols:3; --rows:3;}
+    /* 태블릿/모바일에서는 오른쪽 점 내비게이션이 타일을 가려서 이 섹션에서만 숨김 */
+    body.fp-viewing-portfolio #fp-nav {display:none;}
+}
+/* 가로로 넓은 태블릿은 2줄 */
+@media (max-width:1023px) and (orientation:landscape) {.ai_grid {--rows:2;}}
+
+/* 모바일 */
+@media (max-width:700px) {
+    .ai_w {padding:112px 5vw 18px; row-gap:10px;}
+    .ai_title {font-size:24px;}
+    .ai_sub {display:none;}
+    .ai_filters {margin-top:8px; gap:18px;}
+    .ai_filters button {font-size:14px;}
+    .ai_grid {--cols:2; --rows:2; gap:16px 12px;}
+    .ai_cap strong {font-size:15px;}
+}
 
 
-/* ===== 상세 보기 팝업 ===== */
+/* ===== 상세 화면 (좌: 이미지 스택 / 우: 따라오는 정보 패널) ===== */
 
-.ai_modal {position:fixed; inset:0; z-index:200; display:none; flex-direction:column; background:#111; color:#fff; font-size:14px;}
+.ai_modal {position:fixed; inset:0; z-index:200; display:none; flex-direction:column; background:var(--cream); color:var(--wine); font-family:var(--sans); font-size:14px;}
 .ai_modal.open {display:flex;}
 
 .ai_modal_bar {
-    flex:none; height:64px; box-sizing:border-box; padding:0 max(16px, 3vw);
+    flex:none; height:60px; box-sizing:border-box; padding:0 max(16px, 2.4vw);
     display:flex; align-items:center; justify-content:space-between; gap:16px;
-    border-bottom:1px solid rgba(255,255,255,.15); background:#111;
+    background:var(--cream); border-bottom:1px solid var(--line);
 }
-.ai_modal_title {min-width:0; font-size:15px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
-.ai_modal_title small {margin-left:10px; font-size:12px; font-weight:400; color:#1FD15F;}
-.ai_modal_ctrl {flex:none; display:flex; align-items:center; gap:6px;}
-.ai_modal_count {font-size:12px; color:#999; margin-right:8px;}
+.ai_close {font:inherit; font-size:14px; padding:6px 0; color:var(--wine); background:none; border:0; cursor:pointer;}
+.ai_close:hover {text-decoration:underline; text-underline-offset:4px;}
+.ai_modal_ctrl {display:flex; align-items:center; gap:4px;}
+.ai_modal_count {font-size:12px; opacity:.65; margin-right:10px;}
 .ai_modal_ctrl button {
-    font:inherit; font-size:18px; width:38px; height:38px; line-height:1; cursor:pointer;
-    color:#fff; background:transparent; border:1px solid rgba(255,255,255,.3); border-radius:100px; transition:.2s;
+    font:inherit; font-size:22px; width:38px; height:38px; line-height:1; cursor:pointer;
+    color:var(--wine); background:none; border:1px solid transparent; transition:.2s;
 }
-.ai_modal_ctrl button:hover {border-color:#1FD15F; color:#1FD15F;}
+.ai_modal_ctrl button:hover:not(:disabled) {border-color:var(--wine);}
+.ai_modal_ctrl button:disabled {opacity:.25; cursor:default;}
 
 .ai_modal_body {flex:1; min-height:0; overflow-y:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch;}
-.ai_modal_inner {max-width:1100px; margin:0 auto; padding:36px 16px 90px;}
-.ai_modal_desc {max-width:760px; margin:0 0 36px; color:#cfcfcf; line-height:1.7; font-size:14px;}
-.ai_modal_sec {margin-bottom:56px;}
-.ai_modal_sec h3 {margin:0 0 16px; font-size:12px; font-weight:700; letter-spacing:.14em; color:#1FD15F;}
+.ai_view {display:grid; grid-template-columns:minmax(0, 2fr) minmax(320px, 1fr); align-items:start; column-gap:3vw; padding:0 max(16px, 2.4vw) 80px 0;}
 
-/* 팝업 안의 이미지는 사이트 공통 img 규칙(절대 위치)을 풀어서 원본 비율로 표시 */
-.ai_modal img {position:static; display:block; width:100%; height:auto; z-index:auto; object-fit:contain; background:#1b1b1b;}
-.ai_models_list {display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:12px; align-items:start;}
-.ai_detail_list {max-width:860px; margin:0 auto; display:flex; flex-direction:column;}
+.ai_gallery {display:flex; flex-direction:column; gap:8px;}
+.ai_gallery img {position:static; display:block; width:100%; height:auto; z-index:auto; object-fit:contain; background:var(--tile);}
+.ai_gallery_label {margin:56px 0 4px; padding-left:16px; font-size:12px; letter-spacing:.12em; text-transform:uppercase; opacity:.7;}
+.ai_detail_wrap {display:flex; flex-direction:column; align-items:center; background:var(--cream);}
+.ai_detail_wrap img {max-width:860px;}
 
+.ai_info {position:sticky; top:0; padding-top:36px; min-width:0;}
+.ai_info_title {margin:0; font-family:var(--serif); font-style:italic; font-weight:400; font-synthesis:none; font-size:clamp(24px, 2vw, 34px); line-height:1.2;}
+.ai_info_cat {margin:8px 0 0; font-size:13px; opacity:.75;}
+.ai_info_btns {margin-top:26px; display:flex; flex-direction:column; gap:12px;}
+.ai_btn {
+    font:inherit; font-size:14px; width:100%; padding:15px 12px; cursor:pointer; transition:.2s;
+    color:var(--wine); background:transparent; border:1px solid var(--wine);
+}
+.ai_btn:hover {background:rgba(74,14,14,.07);}
+.ai_btn.solid {color:#fff; background:var(--wine);}
+.ai_btn.solid:hover {background:#2f0808;}
+.ai_info_desc {margin:26px 0 0; line-height:1.75; opacity:.85; white-space:pre-line;}
+.ai_acc {margin-top:26px; border-top:1px solid var(--line);}
+.ai_acc + .ai_acc {margin-top:0;}
+.ai_acc summary {
+    list-style:none; cursor:pointer; padding:16px 0; display:flex; justify-content:space-between; align-items:center; font-size:14px;
+}
+.ai_acc summary::-webkit-details-marker {display:none;}
+.ai_acc summary::after {content:'+'; font-size:18px; line-height:1;}
+.ai_acc[open] summary::after {content:'\2212';}
+.ai_acc p {margin:0 0 18px; line-height:1.7; opacity:.85; white-space:pre-line;}
+.ai_acc:last-of-type {border-bottom:1px solid var(--line);}
+.ai_acc:not(:first-of-type) {border-top:1px solid var(--line);}
+
+/* 모바일/태블릿 세로: 정보 패널이 먼저, 이미지가 아래로 */
+@media (max-width:900px) {
+    .ai_view {grid-template-columns:minmax(0, 1fr); padding:0 0 60px;}
+    .ai_info {position:static; order:-1; padding:24px 16px 28px;}
+    .ai_gallery {gap:6px;}
+    .ai_gallery_label {padding-left:16px;}
+}
 @media (max-width:700px) {
-    .ai_modal_bar {height:56px;}
+    .ai_modal_bar {height:54px;}
     .ai_modal_count {display:none;}
-    .ai_modal_inner {padding:24px 12px 70px;}
-    .ai_models_list {grid-template-columns:1fr 1fr; gap:8px;}
 }

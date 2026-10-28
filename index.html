@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/vendors/easings.min.js"></script>
     <link rel="stylesheet" href="css/style_2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500&family=Noto+Serif+KR:wght@400;500&display=swap">
     <link rel="stylesheet" href="css/ai.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
     <link rel="shortcut icon" href="./img/favi.png">
@@ -21,7 +24,7 @@
         window.fullpageOverrides = {
             anchors: ['home', 'portfolio', 'schema', 'design'],
             navigationTooltips: ['HOME', 'AI 모델 이미지', '스키마리딩', '디자인 작업물'],
-            sectionsColor: ['#fff', '#111111', '#000000', '#000000']
+            sectionsColor: ['#fff', '#f5f3ee', '#000000', '#000000']
         };
     </script>
     <script defer src="js/main.js"></script>
@@ -79,16 +82,19 @@
         <!-- AI 모델 이미지 & 상세페이지 (작업물 목록은 js/ai_works.js 에서 관리) -->
         <div class="section" id="sAi">
             <div class="ai_w">
-                <div class="ai_head">
-                    <h2 class="ai_title">AI 모델 이미지 <em>&amp;</em> 상세페이지</h2>
-                    <div class="ai_tabs">
-                        <button type="button" class="ai_tab active" data-filter="all">전체</button>
-                        <button type="button" class="ai_tab" data-filter="models">모델 이미지</button>
-                        <button type="button" class="ai_tab" data-filter="detail">상세페이지</button>
+                <aside class="ai_side">
+                    <h2 class="ai_title">AI Model Images &amp; Detail Pages</h2>
+                    <p class="ai_sub">AI 모델 이미지 &amp; 상세페이지 작업물</p>
+                    <div class="ai_browse">Browse by</div>
+                    <ul class="ai_filters" id="aiFilters"></ul>
+                </aside>
+                <div class="ai_main">
+                    <div class="ai_topbar">
+                        <span class="ai_count" id="aiCount"></span>
+                        <div class="ai_pager" id="aiPager"></div>
                     </div>
+                    <div class="ai_grid" id="aiGrid"></div>
                 </div>
-                <div class="ai_grid" id="aiGrid"></div>
-                <div class="ai_pager" id="aiPager"></div>
             </div>
         </div>
 
@@ -126,16 +132,18 @@
     <!-- AI 작업물 상세 팝업 (fullpage 의 transform 영향을 받지 않도록 #fullpage 바깥에 둠) -->
     <div class="ai_modal" id="aiModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="작업물 상세 보기">
         <div class="ai_modal_bar">
-            <div class="ai_modal_title"></div>
+            <button type="button" class="ai_close" aria-label="목록으로 돌아가기">&larr; Back to works</button>
             <div class="ai_modal_ctrl">
                 <span class="ai_modal_count"></span>
-                <button type="button" class="ai_prev" aria-label="이전 작업물">‹</button>
-                <button type="button" class="ai_next" aria-label="다음 작업물">›</button>
-                <button type="button" class="ai_close" aria-label="닫기">✕</button>
+                <button type="button" class="ai_prev" aria-label="이전 작업물">&lsaquo;</button>
+                <button type="button" class="ai_next" aria-label="다음 작업물">&rsaquo;</button>
             </div>
         </div>
         <div class="ai_modal_body">
-            <div class="ai_modal_inner"></div>
+            <div class="ai_view">
+                <div class="ai_gallery"></div>
+                <aside class="ai_info"></aside>
+            </div>
         </div>
     </div>
 
