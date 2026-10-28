@@ -554,5 +554,60 @@ window.AI_WORKS = [
     desc: '',
     tools: '',
     role: ''
+  },
+  {
+    category: '트레이닝',
+    product: '파라슈트 팬츠',
+    title: '파라슈트 팬츠 Light Gray',
+    thumb: 'img/ai/parachute/lightgray-thumb.webp',
+    thumbPos: '50% 30%',
+    models: [
+      'img/ai/parachute/lightgray-1.webp',
+      'img/ai/parachute/lightgray-2.webp',
+      'img/ai/parachute/lightgray-3.webp',
+      'img/ai/parachute/lightgray-4.webp',
+      'img/ai/parachute/lightgray-5.webp',
+      'img/ai/parachute/lightgray-6.webp',
+      'img/ai/parachute/lightgray-7.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/parachute/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13467286870',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '트레이닝',
+    product: '파라슈트 팬츠',
+    title: '파라슈트 팬츠 Brown',
+    thumb: 'img/ai/parachute/brown-thumb.webp',
+    thumbPos: '50% 30%',
+    models: [
+      'img/ai/parachute/brown-1.webp',
+      'img/ai/parachute/brown-2.webp',
+      'img/ai/parachute/brown-3.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/parachute/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13467286870',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '트레이닝',
+    product: '파라슈트 팬츠',
+    title: '파라슈트 팬츠 Charcoal',
+    thumb: 'img/ai/parachute/charcoal-thumb.webp',
+    thumbPos: '50% 30%',
+    models: [
+      'img/ai/parachute/charcoal-1.webp',
+      'img/ai/parachute/charcoal-2.webp',
+      'img/ai/parachute/charcoal-3.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/parachute/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13467286870',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 공통)
+    desc: '',
+    tools: '',
+    role: ''
   }
 ];
