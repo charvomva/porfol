@@ -29,15 +29,57 @@
 window.AI_WORKS = [
   {
     category: '후드티',
-    title: '유레틴',
-    thumb: 'img/ai/uretin/thumb.webp',
-    thumbPos: '50% 0%',                    // 모자가 잘리지 않게 위쪽 기준
+    title: '유레틴 Oatmeal',
+    thumb: 'img/ai/uretin/oatmeal-thumb.webp',
+    thumbPos: '50% 0%',
     models: [
-      'img/ai/uretin/model-1.webp',   // 앞모습
-      'img/ai/uretin/model-2.webp'    // 뒷모습
+      'img/ai/uretin/oatmeal-1.webp',
+      'img/ai/uretin/oatmeal-2.webp',
+      'img/ai/uretin/oatmeal-3.webp',
+      'img/ai/uretin/oatmeal-4.webp',
+      'img/ai/uretin/oatmeal-5.webp',
+      'img/ai/uretin/oatmeal-6.webp'
     ],
     detail: [],   // 나중에 상세페이지 이미지를 img/ai/uretin/ 에 올리면 여기에 경로를 추가
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13771553303',   // 실제 상세페이지 주소 (새 창으로 열림)
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13771553303',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 3종 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '후드티',
+    title: '유레틴 Black',
+    thumb: 'img/ai/uretin/black-thumb.webp',
+    thumbPos: '50% 0%',
+    models: [
+      'img/ai/uretin/black-1.webp',
+      'img/ai/uretin/black-2.webp',
+      'img/ai/uretin/black-3.webp',
+      'img/ai/uretin/black-4.webp',
+      'img/ai/uretin/black-5.webp',
+      'img/ai/uretin/black-6.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/uretin/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13771553303',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 3종 공통)
+    desc: '',
+    tools: '',
+    role: ''
+  },
+  {
+    category: '후드티',
+    title: '유레틴 Purple',
+    thumb: 'img/ai/uretin/purple-thumb.webp',
+    thumbPos: '50% 20%',
+    models: [
+      'img/ai/uretin/purple-1.webp',
+      'img/ai/uretin/purple-2.webp',
+      'img/ai/uretin/purple-3.webp',
+      'img/ai/uretin/purple-4.webp',
+      'img/ai/uretin/purple-5.webp',
+      'img/ai/uretin/purple-6.webp'
+    ],
+    detail: [],   // 나중에 상세페이지 이미지를 img/ai/uretin/ 에 올리면 여기에 경로를 추가
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13771553303',   // 실제 상세페이지 주소 (새 창으로 열림, 색상 3종 공통)
     desc: '',
     tools: '',
     role: ''
