@@ -301,7 +301,10 @@ a.s1_btn {display:inline-block; margin-right:10px; border:1px solid #fff; paddin
 
     @media(max-width:700px){
         .gnb_list {display:none;}
-        .sideMenu {display:block;}
+        .sideMenu {display:flex; align-items:center; height:100%;}
+        /* 메뉴(햄버거) 버튼이 로고 아래 줄로 떨어지지 않고, 헤더 선 위 오른쪽 끝에 세로 가운데로 오도록 */
+        .header_in {position:relative;}
+        .gnb_wrap {position:absolute; top:0; right:0; height:100%; align-items:center;}
     }
 
 
