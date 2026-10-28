@@ -33,7 +33,8 @@ window.AI_WORKS = [
     thumb: 'img/ai/uretin/thumb.webp',
     thumbPos: '50% 0%',                    // 모자가 잘리지 않게 위쪽 기준
     models: [
-      'img/ai/uretin/model-1.webp'
+      'img/ai/uretin/model-1.webp',   // 앞모습
+      'img/ai/uretin/model-2.webp'    // 뒷모습
     ],
     detail: [],   // 나중에 상세페이지 이미지를 img/ai/uretin/ 에 올리면 여기에 경로를 추가
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13771553303',   // 실제 상세페이지 주소 (새 창으로 열림)
