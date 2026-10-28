@@ -19,7 +19,11 @@ header {transition:border-color .3s;}
 body.fp-viewing-portfolio header {border-bottom-color:var(--line); background:var(--cream);}   /* 스크롤될 때 타일이 헤더 뒤로 비치지 않게 */
 body.fp-viewing-portfolio .mitem {color:var(--wine); font-weight:500;}
 body.fp-viewing-portfolio .gnb_list > li a:hover {color:var(--wine); text-decoration:underline;}
-body.fp-viewing-portfolio header h1 a {filter:brightness(0);}
+/* 로고를 글자색과 같은 버건디로: 로고 이미지를 마스크로 쓰고 배경색을 칠함 */
+body.fp-viewing-portfolio header h1 a {
+    background:var(--wine); filter:none;
+    -webkit-mask:url('../img/logo.png') no-repeat left center / 40px; mask:url('../img/logo.png') no-repeat left center / 40px;
+}
 body.fp-viewing-portfolio .sideMenu svg {fill:var(--wine);}
 
 .ai_w {
