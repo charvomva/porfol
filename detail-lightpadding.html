@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>경량 패딩 · Detail</title>
+<style>
+    :root {--wine:#4a0e0e; --cream:#f5f3ee;}
+    * {box-sizing:border-box;}
+    html, body {margin:0; background:var(--cream); color:var(--wine);}
+    body {font-family:'Inter','Noto Sans KR',Arial,sans-serif;}
+    .bar {position:sticky; top:0; z-index:5; display:flex; justify-content:space-between; align-items:center; padding:14px 20px; background:var(--cream); border-bottom:1px solid rgba(74,14,14,.25); font-size:13px;}
+    .bar strong {font-family:'EB Garamond','Noto Serif KR',Georgia,serif; font-style:italic; font-weight:400; font-size:17px;}
+    .bar a {color:var(--wine); text-decoration:none; border:1px solid rgba(74,14,14,.45); padding:6px 12px; border-radius:999px; font-size:12px;}
+    .bar a:hover {background:var(--wine); color:var(--cream);}
+    .wrap {max-width:860px; margin:0 auto; background:#fff;}
+    .wrap img {display:block; width:100%; height:auto;}
+</style>
+</head>
+<body>
+<div class="bar"><strong>경량 패딩</strong><a href="javascript:window.close()">Close</a></div>
+<div class="wrap" id="wrap"></div>
+<script>
+/* 상세페이지 이미지: img/ai/lightpadding/detail-1, detail-2, detail-3 ... (번호 순서대로 위에서 아래로)
+   원본 파일을 같은 이름으로 덮어쓰면 교체돼요. 확장자는 jpg / png / webp / jpeg 어느 것이든 자동으로 찾고,
+   번호가 비면 거기서 멈춰요. 최대 30장. */
+(function () {
+    var base = 'img/ai/lightpadding/';
+    var prefix = 'detail-';
+    var exts = ['jpg', 'png', 'webp', 'jpeg'];
+    var wrap = document.getElementById('wrap');
+    function load(n) {
+        if (n > 30) return;
+        var img = new Image(), i = 0;
+        img.alt = prefix + n;
+        img.onload = function () { wrap.appendChild(img); load(n + 1); };
+        img.onerror = function () { i += 1; if (i < exts.length) img.src = base + prefix + n + '.' + exts[i]; };
+        img.src = base + prefix + n + '.' + exts[0];
+    }
+    load(1);
+})();
+</script>
+</body>
+</html>
