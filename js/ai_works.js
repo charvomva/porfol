@@ -659,7 +659,7 @@ window.AI_WORKS = [
     product: '파라슈트 팬츠',
     title: '파라슈트 팬츠 Light Gray',
     thumb: 'img/ai/parachute/lightgray-thumb.webp',
-    thumbPos: '50% 30%',
+    thumbPos: '50% 50%',
     models: [
       'img/ai/parachute/lightgray-1.webp',
       'img/ai/parachute/lightgray-2.webp',
@@ -680,7 +680,7 @@ window.AI_WORKS = [
     product: '파라슈트 팬츠',
     title: '파라슈트 팬츠 Brown',
     thumb: 'img/ai/parachute/brown-thumb.webp',
-    thumbPos: '50% 30%',
+    thumbPos: '50% 50%',
     models: [
       'img/ai/parachute/brown-1.webp',
       'img/ai/parachute/brown-2.webp',
@@ -697,7 +697,7 @@ window.AI_WORKS = [
     product: '파라슈트 팬츠',
     title: '파라슈트 팬츠 Charcoal',
     thumb: 'img/ai/parachute/charcoal-thumb.webp',
-    thumbPos: '50% 30%',
+    thumbPos: '50% 50%',
     models: [
       'img/ai/parachute/charcoal-1.webp',
       'img/ai/parachute/charcoal-2.webp',
