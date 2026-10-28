@@ -22,9 +22,9 @@
         // 이 페이지 전용 fullpage 설정 (js/main.js의 기본값을 덮어씀)
         // 섹션을 추가하면 아래 세 배열에도 항목을 같은 순서로 추가해 주세요.
         window.fullpageOverrides = {
-            anchors: ['home', 'portfolio', 'schema', 'design'],
-            navigationTooltips: ['HOME', 'AI 모델 이미지', '스키마리딩', '디자인 작업물'],
-            sectionsColor: ['#fff', '#f5f3ee', '#000000', '#000000']
+            anchors: ['portfolio', 'schema', 'design'],
+            navigationTooltips: ['AI 모델 이미지', '스키마리딩', '디자인 작업물'],
+            sectionsColor: ['#f5f3ee', '#000000', '#000000']
         };
     </script>
     <script defer src="js/main.js"></script>
@@ -36,7 +36,7 @@
                     <div class="gnb_wrap">
                         <div class="gnb_list_w">
                             <ul class="gnb_list">
-                                <li data-menuanchor="home"><a class="mitem" href="#home">HOME</a></li>
+                                <!-- HOME 메뉴: 소개 화면이 없어지면서 첫 화면이 곧 포트폴리오라 중복되어 숨김 (로고를 누르면 맨 위로 이동) -->
                                 <!-- ABOUT 비활성화 <li data-menuanchor="2nd"><a class="mitem" href="#2nd">ABOUT</a></li> -->
                                 <li data-menuanchor="portfolio"><a class="mitem" href="#portfolio">PORTFOLIO</a></li>
                                 <li data-menuanchor="4th"><a class="mitem" href="contact.html">CONTACT</a></li>
@@ -55,7 +55,6 @@
                               </svg>
                         </div>
                         <ul style="display: flex; flex-direction: column; gap:20px;">
-                            <li><a href="#home">HOME</a></li>
                             <!-- ABOUT 비활성화 <li><a href="index.html#second">ABOUT</a></li> -->
                             <li><a href="#portfolio">PORTFOLIO</a></li>
                             <li><a href="contact.html">CONTACT</a></li>
@@ -66,7 +65,7 @@
 
     <div id="fullpage">
 
-        <!-- 소개 화면 (예전 HOME) -->
+        <!-- 소개 화면 비활성화 (다시 쓰려면 아래 주석을 풀고, 위 anchors/navigationTooltips/sectionsColor 맨 앞에 'home' 항목을 추가하세요)
         <div class="section" id="s1">
             <div class="image_w">
                 <img src="img/main_home.jpg" alt="">
@@ -78,6 +77,7 @@
                 </div>
             </div>
         </div>
+        -->
 
         <!-- AI 모델 이미지 & 상세페이지 (작업물 목록은 js/ai_works.js 에서 관리) -->
         <div class="section" id="sAi">
