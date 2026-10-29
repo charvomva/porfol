@@ -940,6 +940,61 @@ window.AI_WORKS = [
     role: ''
   },
   {
+    category: '트레이닝',
+    product: '카고 트레이닝 팬츠',
+    title: '카고 트레이닝 팬츠 Beige',
+    thumb: 'img/ai/cargo/beige-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cargo/beige-1.webp', 'img/ai/cargo/beige-2.webp', 'img/ai/cargo/beige-3.webp' ],
+    detail: [],
+    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '트레이닝',
+    product: '카고 트레이닝 팬츠',
+    title: '카고 트레이닝 팬츠 Light Gray',
+    thumb: 'img/ai/cargo/lightgray-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cargo/lightgray-1.webp', 'img/ai/cargo/lightgray-2.webp', 'img/ai/cargo/lightgray-3.webp' ],
+    detail: [],
+    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '트레이닝',
+    product: '카고 트레이닝 팬츠',
+    title: '카고 트레이닝 팬츠 Green',
+    thumb: 'img/ai/cargo/green-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cargo/green-1.webp', 'img/ai/cargo/green-2.webp', 'img/ai/cargo/green-3.webp' ],
+    detail: [],
+    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '트레이닝',
+    product: '카고 트레이닝 팬츠',
+    title: '카고 트레이닝 팬츠 Sky Blue',
+    thumb: 'img/ai/cargo/skyblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cargo/skyblue-1.webp', 'img/ai/cargo/skyblue-2.webp', 'img/ai/cargo/skyblue-3.webp' ],
+    detail: [],
+    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '트레이닝',
+    product: '카고 트레이닝 팬츠',
+    title: '카고 트레이닝 팬츠 Pink',
+    thumb: 'img/ai/cargo/pink-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cargo/pink-1.webp', 'img/ai/cargo/pink-2.webp', 'img/ai/cargo/pink-3.webp' ],
+    detail: [],
+    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '코튼 팬츠',
     product: '테이퍼드 팬츠',
     title: '테이퍼드 팬츠 Charcoal',
