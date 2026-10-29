@@ -565,6 +565,39 @@ window.AI_WORKS = [
     role: ''
   },
   {
+    category: '청바지',
+    product: '세미 스트레이트 데님 팬츠',
+    title: '세미 스트레이트 데님 팬츠 Black',
+    thumb: 'img/ai/semistraight/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/semistraight/black-1.webp', 'img/ai/semistraight/black-2.webp', 'img/ai/semistraight/black-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13667231218',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '세미 스트레이트 데님 팬츠',
+    title: '세미 스트레이트 데님 팬츠 Light Blue',
+    thumb: 'img/ai/semistraight/lightblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/semistraight/lightblue-1.webp', 'img/ai/semistraight/lightblue-2.webp', 'img/ai/semistraight/lightblue-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13667231218',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '세미 스트레이트 데님 팬츠',
+    title: '세미 스트레이트 데님 팬츠 Vintage Blue',
+    thumb: 'img/ai/semistraight/vintage-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/semistraight/vintage-1.webp', 'img/ai/semistraight/vintage-2.webp', 'img/ai/semistraight/vintage-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13667231218',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '아우터',
     product: '웰론 패딩 점퍼',
     title: '웰론 패딩 점퍼',
