@@ -631,6 +631,61 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '청바지',
+    product: '절개 와이드 데님 팬츠',
+    title: '절개 와이드 데님 팬츠 Light Blue',
+    thumb: 'img/ai/cafferom/lightblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cafferom/lightblue-1.webp', 'img/ai/cafferom/lightblue-2.webp', 'img/ai/cafferom/lightblue-3.webp' ],
+    detail: [],
+    detailUrl: 'detail-cafferom.html',   // 상세페이지 이미지: img/ai/cafferom/detail-cafferom1, detail-cafferom2 (새 창으로 열림, 색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '절개 와이드 데님 팬츠',
+    title: '절개 와이드 데님 팬츠 Blue',
+    thumb: 'img/ai/cafferom/blue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cafferom/blue-1.webp', 'img/ai/cafferom/blue-2.webp', 'img/ai/cafferom/blue-3.webp' ],
+    detail: [],
+    detailUrl: 'detail-cafferom.html',   // 상세페이지 이미지: img/ai/cafferom/detail-cafferom1, detail-cafferom2 (새 창으로 열림, 색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '절개 와이드 데님 팬츠',
+    title: '절개 와이드 데님 팬츠 Gray',
+    thumb: 'img/ai/cafferom/gray-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cafferom/gray-1.webp', 'img/ai/cafferom/gray-2.webp', 'img/ai/cafferom/gray-3.webp' ],
+    detail: [],
+    detailUrl: 'detail-cafferom.html',   // 상세페이지 이미지: img/ai/cafferom/detail-cafferom1, detail-cafferom2 (새 창으로 열림, 색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '절개 와이드 데님 팬츠',
+    title: '절개 와이드 데님 팬츠 Coco Blue',
+    thumb: 'img/ai/cafferom/cocoblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cafferom/cocoblue-1.webp', 'img/ai/cafferom/cocoblue-2.webp', 'img/ai/cafferom/cocoblue-3.webp' ],
+    detail: [],
+    detailUrl: 'detail-cafferom.html',   // 상세페이지 이미지: img/ai/cafferom/detail-cafferom1, detail-cafferom2 (새 창으로 열림, 색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '절개 와이드 데님 팬츠',
+    title: '절개 와이드 데님 팬츠 Black',
+    thumb: 'img/ai/cafferom/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cafferom/black-1.webp', 'img/ai/cafferom/black-2.webp', 'img/ai/cafferom/black-3.webp' ],
+    detail: [],
+    detailUrl: 'detail-cafferom.html',   // 상세페이지 이미지: img/ai/cafferom/detail-cafferom1, detail-cafferom2 (새 창으로 열림, 색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '아우터',
     product: '웰론 패딩 점퍼',
     title: '웰론 패딩 점퍼',
