@@ -1116,6 +1116,28 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '트레이닝',
+    product: '와이드 스냅 트레이닝 쇼츠',
+    title: '와이드 스냅 트레이닝 쇼츠 Gray',
+    thumb: 'img/ai/snapshorts/gray-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/snapshorts/gray-1.webp', 'img/ai/snapshorts/gray-2.webp', 'img/ai/snapshorts/gray-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13628459741',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '트레이닝',
+    product: '와이드 스냅 트레이닝 쇼츠',
+    title: '와이드 스냅 트레이닝 쇼츠 Black',
+    thumb: 'img/ai/snapshorts/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/snapshorts/black-1.webp', 'img/ai/snapshorts/black-2.webp', 'img/ai/snapshorts/black-3.webp', 'img/ai/snapshorts/black-4.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13628459741',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '코튼 팬츠',
     product: '테이퍼드 팬츠',
     title: '테이퍼드 팬츠 Charcoal',
