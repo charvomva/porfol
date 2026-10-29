@@ -599,8 +599,8 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
-    product: '와이드 데님 팬츠',
-    title: '와이드 데님 팬츠 Light Blue',
+    product: '밴딩 와이드 팬츠',
+    title: '밴딩 와이드 팬츠 Light Blue',
     thumb: 'img/ai/widedenim/lightblue-thumb.webp',
     thumbPos: '50% 50%',
     models: [ 'img/ai/widedenim/lightblue-1.webp', 'img/ai/widedenim/lightblue-2.webp', 'img/ai/widedenim/lightblue-3.webp' ],
@@ -610,8 +610,8 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
-    product: '와이드 데님 팬츠',
-    title: '와이드 데님 팬츠 Blue',
+    product: '밴딩 와이드 팬츠',
+    title: '밴딩 와이드 팬츠 Blue',
     thumb: 'img/ai/widedenim/blue-thumb.webp',
     thumbPos: '50% 50%',
     models: [ 'img/ai/widedenim/blue-1.webp', 'img/ai/widedenim/blue-2.webp', 'img/ai/widedenim/blue-3.webp' ],
@@ -621,8 +621,8 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
-    product: '와이드 데님 팬츠',
-    title: '와이드 데님 팬츠 Gray',
+    product: '밴딩 와이드 팬츠',
+    title: '밴딩 와이드 팬츠 Gray',
     thumb: 'img/ai/widedenim/gray-thumb.webp',
     thumbPos: '50% 50%',
     models: [ 'img/ai/widedenim/gray-1.webp', 'img/ai/widedenim/gray-2.webp', 'img/ai/widedenim/gray-3.webp' ],
