@@ -1226,6 +1226,39 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '코튼 팬츠',
+    product: '와이드 핀턱 쇼츠',
+    title: '와이드 핀턱 쇼츠 Dark Gray',
+    thumb: 'img/ai/pintuck/darkgray-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/pintuck/darkgray-1.webp', 'img/ai/pintuck/darkgray-2.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13627347518',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '와이드 핀턱 쇼츠',
+    title: '와이드 핀턱 쇼츠 Beige',
+    thumb: 'img/ai/pintuck/beige-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/pintuck/beige-1.webp', 'img/ai/pintuck/beige-2.webp', 'img/ai/pintuck/beige-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13627347518',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '와이드 핀턱 쇼츠',
+    title: '와이드 핀턱 쇼츠 Black',
+    thumb: 'img/ai/pintuck/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/pintuck/black-1.webp', 'img/ai/pintuck/black-2.webp', 'img/ai/pintuck/black-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13627347518',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '반팔티',
     product: '헨리넥 반팔티',
     title: '헨리넥 반팔티 Ivory',
