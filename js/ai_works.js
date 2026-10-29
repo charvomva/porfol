@@ -719,6 +719,39 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '청바지',
+    product: '카펜터 와이드 데님 쇼츠',
+    title: '카펜터 와이드 데님 쇼츠 Black',
+    thumb: 'img/ai/carpenter/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/carpenter/black-1.webp', 'img/ai/carpenter/black-2.webp', 'img/ai/carpenter/black-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13634143948',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '카펜터 와이드 데님 쇼츠',
+    title: '카펜터 와이드 데님 쇼츠 Blue',
+    thumb: 'img/ai/carpenter/blue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/carpenter/blue-1.webp', 'img/ai/carpenter/blue-2.webp', 'img/ai/carpenter/blue-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13634143948',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '카펜터 와이드 데님 쇼츠',
+    title: '카펜터 와이드 데님 쇼츠 Light Blue',
+    thumb: 'img/ai/carpenter/lightblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/carpenter/lightblue-1.webp', 'img/ai/carpenter/lightblue-2.webp', 'img/ai/carpenter/lightblue-3.webp', 'img/ai/carpenter/lightblue-4.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13634143948',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '아우터',
     product: '웰론 패딩 점퍼',
     title: '웰론 패딩 점퍼',
