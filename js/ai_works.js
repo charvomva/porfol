@@ -947,7 +947,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/cargo/beige-1.webp', 'img/ai/cargo/beige-2.webp', 'img/ai/cargo/beige-3.webp' ],
     detail: [],
-    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    detailUrl: 'detail-cargo.html',   // 상세페이지 이미지: img/ai/cargo/detail-cargo1~3 (새 창으로 열림, 색상 공통). 스토어 주소가 정해지면 이 값만 교체
     desc: '', tools: '', role: ''
   },
   {
@@ -958,7 +958,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/cargo/lightgray-1.webp', 'img/ai/cargo/lightgray-2.webp', 'img/ai/cargo/lightgray-3.webp' ],
     detail: [],
-    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    detailUrl: 'detail-cargo.html',   // 상세페이지 이미지: img/ai/cargo/detail-cargo1~3 (새 창으로 열림, 색상 공통). 스토어 주소가 정해지면 이 값만 교체
     desc: '', tools: '', role: ''
   },
   {
@@ -969,7 +969,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/cargo/green-1.webp', 'img/ai/cargo/green-2.webp', 'img/ai/cargo/green-3.webp' ],
     detail: [],
-    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    detailUrl: 'detail-cargo.html',   // 상세페이지 이미지: img/ai/cargo/detail-cargo1~3 (새 창으로 열림, 색상 공통). 스토어 주소가 정해지면 이 값만 교체
     desc: '', tools: '', role: ''
   },
   {
@@ -980,7 +980,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/cargo/skyblue-1.webp', 'img/ai/cargo/skyblue-2.webp', 'img/ai/cargo/skyblue-3.webp' ],
     detail: [],
-    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    detailUrl: 'detail-cargo.html',   // 상세페이지 이미지: img/ai/cargo/detail-cargo1~3 (새 창으로 열림, 색상 공통). 스토어 주소가 정해지면 이 값만 교체
     desc: '', tools: '', role: ''
   },
   {
@@ -991,7 +991,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/cargo/pink-1.webp', 'img/ai/cargo/pink-2.webp', 'img/ai/cargo/pink-3.webp' ],
     detail: [],
-    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    detailUrl: 'detail-cargo.html',   // 상세페이지 이미지: img/ai/cargo/detail-cargo1~3 (새 창으로 열림, 색상 공통). 스토어 주소가 정해지면 이 값만 교체
     desc: '', tools: '', role: ''
   },
   {
@@ -1002,7 +1002,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/cargo/cream-1.webp', 'img/ai/cargo/cream-2.webp', 'img/ai/cargo/cream-3.webp' ],
     detail: [],
-    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    detailUrl: 'detail-cargo.html',   // 상세페이지 이미지: img/ai/cargo/detail-cargo1~3 (새 창으로 열림, 색상 공통). 스토어 주소가 정해지면 이 값만 교체
     desc: '', tools: '', role: ''
   },
   {
@@ -1013,7 +1013,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/cargo/navy-1.webp', 'img/ai/cargo/navy-2.webp', 'img/ai/cargo/navy-3.webp' ],
     detail: [],
-    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    detailUrl: 'detail-cargo.html',   // 상세페이지 이미지: img/ai/cargo/detail-cargo1~3 (새 창으로 열림, 색상 공통). 스토어 주소가 정해지면 이 값만 교체
     desc: '', tools: '', role: ''
   },
   {
@@ -1024,7 +1024,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/cargo/whitemelange-1.webp', 'img/ai/cargo/whitemelange-2.webp', 'img/ai/cargo/whitemelange-3.webp' ],
     detail: [],
-    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    detailUrl: 'detail-cargo.html',   // 상세페이지 이미지: img/ai/cargo/detail-cargo1~3 (새 창으로 열림, 색상 공통). 스토어 주소가 정해지면 이 값만 교체
     desc: '', tools: '', role: ''
   },
   {
@@ -1035,7 +1035,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/cargo/charcoal-1.webp', 'img/ai/cargo/charcoal-2.webp', 'img/ai/cargo/charcoal-3.webp' ],
     detail: [],
-    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    detailUrl: 'detail-cargo.html',   // 상세페이지 이미지: img/ai/cargo/detail-cargo1~3 (새 창으로 열림, 색상 공통). 스토어 주소가 정해지면 이 값만 교체
     desc: '', tools: '', role: ''
   },
   {
@@ -1046,7 +1046,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/cargo/black-1.webp', 'img/ai/cargo/black-2.webp', 'img/ai/cargo/black-3.webp' ],
     detail: [],
-    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    detailUrl: 'detail-cargo.html',   // 상세페이지 이미지: img/ai/cargo/detail-cargo1~3 (새 창으로 열림, 색상 공통). 스토어 주소가 정해지면 이 값만 교체
     desc: '', tools: '', role: ''
   },
   {
