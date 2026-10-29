@@ -686,6 +686,39 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '청바지',
+    product: '와이드 데님 쇼츠',
+    title: '와이드 데님 쇼츠 Navy',
+    thumb: 'img/ai/widesshorts/navy-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/widesshorts/navy-1.webp', 'img/ai/widesshorts/navy-2.webp', 'img/ai/widesshorts/navy-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13635165805',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '와이드 데님 쇼츠',
+    title: '와이드 데님 쇼츠 Black',
+    thumb: 'img/ai/widesshorts/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/widesshorts/black-1.webp', 'img/ai/widesshorts/black-2.webp', 'img/ai/widesshorts/black-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13635165805',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '와이드 데님 쇼츠',
+    title: '와이드 데님 쇼츠 Blue',
+    thumb: 'img/ai/widesshorts/blue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/widesshorts/blue-1.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13635165805',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '아우터',
     product: '웰론 패딩 점퍼',
     title: '웰론 패딩 점퍼',
