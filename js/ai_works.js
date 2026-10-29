@@ -1006,6 +1006,17 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '트레이닝',
+    product: '카고 트레이닝 팬츠',
+    title: '카고 트레이닝 팬츠 Navy',
+    thumb: 'img/ai/cargo/navy-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/cargo/navy-1.webp', 'img/ai/cargo/navy-2.webp', 'img/ai/cargo/navy-3.webp' ],
+    detail: [],
+    // detailUrl: '',   // 주소 추후 추가 예정 (색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '코튼 팬츠',
     product: '테이퍼드 팬츠',
     title: '테이퍼드 팬츠 Charcoal',
