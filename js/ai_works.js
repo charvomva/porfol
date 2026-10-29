@@ -598,6 +598,39 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '청바지',
+    product: '와이드 데님 팬츠',
+    title: '와이드 데님 팬츠 Light Blue',
+    thumb: 'img/ai/widedenim/lightblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/widedenim/lightblue-1.webp', 'img/ai/widedenim/lightblue-2.webp', 'img/ai/widedenim/lightblue-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13658177436',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '와이드 데님 팬츠',
+    title: '와이드 데님 팬츠 Blue',
+    thumb: 'img/ai/widedenim/blue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/widedenim/blue-1.webp', 'img/ai/widedenim/blue-2.webp', 'img/ai/widedenim/blue-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13658177436',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '와이드 데님 팬츠',
+    title: '와이드 데님 팬츠 Gray',
+    thumb: 'img/ai/widedenim/gray-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/widedenim/gray-1.webp', 'img/ai/widedenim/gray-2.webp', 'img/ai/widedenim/gray-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13658177436',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '아우터',
     product: '웰론 패딩 점퍼',
     title: '웰론 패딩 점퍼',
