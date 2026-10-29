@@ -1136,5 +1136,60 @@ window.AI_WORKS = [
     detail: [],
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13641783019',
     desc: '', tools: '', role: ''
+  },
+  {
+    category: '반팔티',
+    product: '헨리넥 반팔티',
+    title: '헨리넥 반팔티 Ivory',
+    thumb: 'img/ai/henleytee/ivory-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/henleytee/ivory-1.webp', 'img/ai/henleytee/ivory-2.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13637024275',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '반팔티',
+    product: '헨리넥 반팔티',
+    title: '헨리넥 반팔티 White',
+    thumb: 'img/ai/henleytee/white-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/henleytee/white-1.webp', 'img/ai/henleytee/white-2.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13637024275',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '반팔티',
+    product: '헨리넥 반팔티',
+    title: '헨리넥 반팔티 Charcoal',
+    thumb: 'img/ai/henleytee/charcoal-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/henleytee/charcoal-1.webp', 'img/ai/henleytee/charcoal-2.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13637024275',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '반팔티',
+    product: '헨리넥 반팔티',
+    title: '헨리넥 반팔티 Gray',
+    thumb: 'img/ai/henleytee/gray-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/henleytee/gray-1.webp', 'img/ai/henleytee/gray-2.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13637024275',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '반팔티',
+    product: '헨리넥 반팔티',
+    title: '헨리넥 반팔티 Navy',
+    thumb: 'img/ai/henleytee/navy-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/henleytee/navy-1.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13637024275',
+    desc: '', tools: '', role: ''
   }
 ];
