@@ -425,7 +425,7 @@ window.AI_WORKS = [
     product: '세미와이드 데님 팬츠',
     title: '세미와이드 데님 팬츠 Blue',
     thumb: 'img/ai/tommyping/blue-thumb.webp',
-    thumbPos: '50% 85%',
+    thumbPos: '50% 50%',
     models: [
       'img/ai/tommyping/blue-1.webp',
       'img/ai/tommyping/blue-2.webp',
