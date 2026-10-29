@@ -443,7 +443,7 @@ window.AI_WORKS = [
     product: '스트레이트핏 데님 팬츠',
     title: '스트레이트핏 데님 팬츠 Light Blue',
     thumb: 'img/ai/straight/lightblue-thumb.webp',
-    thumbPos: '50% 85%',
+    thumbPos: '50% 50%',
     models: [
       'img/ai/straight/lightblue-1.webp',
       'img/ai/straight/lightblue-2.webp',
