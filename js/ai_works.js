@@ -993,5 +993,38 @@ window.AI_WORKS = [
     detail: [],
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13676441708',
     desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '세미 와이드 코튼 팬츠',
+    title: '세미 와이드 코튼 팬츠 Black',
+    thumb: 'img/ai/semiwide/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/semiwide/black-1.webp', 'img/ai/semiwide/black-2.webp', 'img/ai/semiwide/black-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13641783019',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '세미 와이드 코튼 팬츠',
+    title: '세미 와이드 코튼 팬츠 Ivory',
+    thumb: 'img/ai/semiwide/ivory-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/semiwide/ivory-1.webp', 'img/ai/semiwide/ivory-2.webp', 'img/ai/semiwide/ivory-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13641783019',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '세미 와이드 코튼 팬츠',
+    title: '세미 와이드 코튼 팬츠 Camel',
+    thumb: 'img/ai/semiwide/camel-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/semiwide/camel-1.webp', 'img/ai/semiwide/camel-2.webp', 'img/ai/semiwide/camel-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13641783019',
+    desc: '', tools: '', role: ''
   }
 ];
