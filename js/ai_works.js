@@ -1363,7 +1363,7 @@ window.AI_WORKS = [
     title: '9부 슬렉스 Black',
     thumb: 'img/ai/slacks/black-thumb.webp',
     thumbPos: '50% 50%',
-    models: [ 'img/ai/slacks/black-1.webp', 'img/ai/slacks/black-2.webp', 'img/ai/slacks/black-3.webp', 'img/ai/slacks/black-4.webp' ],
+    models: [ 'img/ai/slacks/black-1.webp', 'img/ai/slacks/black-2.webp', 'img/ai/slacks/black-3.webp' ],
     detail: [],
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13466665261',
     desc: '', tools: '', role: ''
