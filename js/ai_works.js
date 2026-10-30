@@ -762,6 +762,40 @@ window.AI_WORKS = [
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13634143948',
     desc: '', tools: '', role: ''
   },
+  // ── 부츠컷 데님 팬츠 (주소 대기중: 주소가 생기면 주석 해제) ──
+  // {
+  //   category: '청바지',
+  //   product: '부츠컷 데님 팬츠',
+  //   title: '부츠컷 데님 팬츠 Light Blue',
+  //   thumb: 'img/ai/bootcut/lightblue-thumb.webp',
+  //   thumbPos: '50% 50%',
+  //   models: [ 'img/ai/bootcut/lightblue-1.webp', 'img/ai/bootcut/lightblue-2.webp', 'img/ai/bootcut/lightblue-3.webp' ],
+  //   detail: [],
+  //   // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력 후 주석 해제
+  //   desc: '', tools: '', role: ''
+  // },
+  // {
+  //   category: '청바지',
+  //   product: '부츠컷 데님 팬츠',
+  //   title: '부츠컷 데님 팬츠 Gray',
+  //   thumb: 'img/ai/bootcut/gray-thumb.webp',
+  //   thumbPos: '50% 50%',
+  //   models: [ 'img/ai/bootcut/gray-1.webp', 'img/ai/bootcut/gray-2.webp', 'img/ai/bootcut/gray-3.webp' ],
+  //   detail: [],
+  //   // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력 후 주석 해제
+  //   desc: '', tools: '', role: ''
+  // },
+  // {
+  //   category: '청바지',
+  //   product: '부츠컷 데님 팬츠',
+  //   title: '부츠컷 데님 팬츠 Dark Blue',
+  //   thumb: 'img/ai/bootcut/darkblue-thumb.webp',
+  //   thumbPos: '50% 50%',
+  //   models: [ 'img/ai/bootcut/darkblue-1.webp', 'img/ai/bootcut/darkblue-2.webp', 'img/ai/bootcut/darkblue-3.webp' ],
+  //   detail: [],
+  //   // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력 후 주석 해제
+  //   desc: '', tools: '', role: ''
+  // },
   {
     category: '아우터',
     product: '웰론 패딩 점퍼',
