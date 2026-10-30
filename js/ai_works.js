@@ -369,6 +369,17 @@ window.AI_WORKS = [
     role: ''
   },
   {
+    category: '셔츠',
+    product: '오버핏 데님 셔츠',
+    title: '오버핏 데님 셔츠',
+    thumb: 'img/ai/odenim/thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/odenim/1.webp', 'img/ai/odenim/2.webp', 'img/ai/odenim/3.webp', 'img/ai/odenim/4.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466593548',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '청바지',
     product: '세미와이드 데님 팬츠',
     title: '세미와이드 데님 팬츠 Black',
