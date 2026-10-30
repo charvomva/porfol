@@ -1323,5 +1323,49 @@ window.AI_WORKS = [
     detail: [],
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13637024275',
     desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '9부 슬렉스',
+    title: '9부 슬렉스 Brown',
+    thumb: 'img/ai/slacks/brown-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/slacks/brown-1.webp', 'img/ai/slacks/brown-2.webp', 'img/ai/slacks/brown-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466665261',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '9부 슬렉스',
+    title: '9부 슬렉스 Beige',
+    thumb: 'img/ai/slacks/beige-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/slacks/beige-1.webp', 'img/ai/slacks/beige-2.webp', 'img/ai/slacks/beige-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466665261',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '9부 슬렉스',
+    title: '9부 슬렉스 Dark Gray',
+    thumb: 'img/ai/slacks/darkgray-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/slacks/darkgray-1.webp', 'img/ai/slacks/darkgray-2.webp', 'img/ai/slacks/darkgray-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466665261',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '9부 슬렉스',
+    title: '9부 슬렉스 Black',
+    thumb: 'img/ai/slacks/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/slacks/black-1.webp', 'img/ai/slacks/black-2.webp', 'img/ai/slacks/black-3.webp', 'img/ai/slacks/black-4.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466665261',
+    desc: '', tools: '', role: ''
   }
 ];
