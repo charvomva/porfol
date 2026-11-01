@@ -292,6 +292,17 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '후드티',
+    product: '반팔 후드티',
+    title: '반팔 후드티',
+    thumb: 'img/ai/phelly/thumb.webp',
+    thumbPos: '50% 20%',
+    models: [ 'img/ai/phelly/1.webp', 'img/ai/phelly/2.webp', 'img/ai/phelly/3.webp', 'img/ai/phelly/4.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13462955015',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '셔츠',
     product: '옥스포드 셔츠',
     title: '옥스포드 셔츠 Khaki',
