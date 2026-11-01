@@ -806,6 +806,50 @@ window.AI_WORKS = [
     detailUrl: 'detail-smilve.html',
     desc: '', tools: '', role: ''
   },
+  {
+    category: '청바지',
+    product: '와이드 턱 데님 팬츠',
+    title: '와이드 턱 데님 팬츠 Light Blue',
+    thumb: 'img/ai/tuckdenim/lightblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/tuckdenim/lightblue-1.webp', 'img/ai/tuckdenim/lightblue-2.webp', 'img/ai/tuckdenim/lightblue-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466891759',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '와이드 턱 데님 팬츠',
+    title: '와이드 턱 데님 팬츠 Blue',
+    thumb: 'img/ai/tuckdenim/blue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/tuckdenim/blue-1.webp', 'img/ai/tuckdenim/blue-2.webp', 'img/ai/tuckdenim/blue-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466891759',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '와이드 턱 데님 팬츠',
+    title: '와이드 턱 데님 팬츠 Grayish Blue',
+    thumb: 'img/ai/tuckdenim/grayishblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/tuckdenim/grayishblue-1.webp', 'img/ai/tuckdenim/grayishblue-2.webp', 'img/ai/tuckdenim/grayishblue-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466891759',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '와이드 턱 데님 팬츠',
+    title: '와이드 턱 데님 팬츠 Black',
+    thumb: 'img/ai/tuckdenim/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/tuckdenim/black-1.webp', 'img/ai/tuckdenim/black-2.webp', 'img/ai/tuckdenim/black-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466891759',
+    desc: '', tools: '', role: ''
+  },
   // ── 부츠컷 데님 팬츠 (주소 대기중: 주소가 생기면 주석 해제) ──
   // {
   //   category: '청바지',
