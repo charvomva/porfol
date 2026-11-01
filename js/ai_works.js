@@ -1434,5 +1434,49 @@ window.AI_WORKS = [
     detail: [],
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13466665261',
     desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '린넨 슬렉스',
+    title: '린넨 슬렉스 Gray',
+    thumb: 'img/ai/linenslacks/gray-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/linenslacks/gray-1.webp', 'img/ai/linenslacks/gray-2.webp', 'img/ai/linenslacks/gray-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466536401',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '린넨 슬렉스',
+    title: '린넨 슬렉스 Beige',
+    thumb: 'img/ai/linenslacks/beige-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/linenslacks/beige-1.webp', 'img/ai/linenslacks/beige-2.webp', 'img/ai/linenslacks/beige-3.webp', 'img/ai/linenslacks/beige-4.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466536401',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '린넨 슬렉스',
+    title: '린넨 슬렉스 Navy',
+    thumb: 'img/ai/linenslacks/navy-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/linenslacks/navy-1.webp', 'img/ai/linenslacks/navy-2.webp', 'img/ai/linenslacks/navy-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466536401',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '린넨 슬렉스',
+    title: '린넨 슬렉스 Charcoal',
+    thumb: 'img/ai/linenslacks/charcoal-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/linenslacks/charcoal-1.webp', 'img/ai/linenslacks/charcoal-2.webp', 'img/ai/linenslacks/charcoal-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466536401',
+    desc: '', tools: '', role: ''
   }
 ];
