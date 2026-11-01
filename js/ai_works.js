@@ -1392,6 +1392,17 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '반팔티',
+    product: '폴로티',
+    title: '폴로티',
+    thumb: 'img/ai/polo/thumb.webp',
+    thumbPos: '50% 20%',
+    models: [ 'img/ai/polo/1.webp', 'img/ai/polo/2.webp', 'img/ai/polo/3.webp', 'img/ai/polo/4.webp', 'img/ai/polo/5.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13463360526',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '슬렉스',
     product: '9부 슬렉스',
     title: '9부 슬렉스 Brown',
