@@ -1500,5 +1500,60 @@ window.AI_WORKS = [
     detail: [],
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13466536401',
     desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '밴딩 슬렉스',
+    title: '밴딩 슬렉스 Ivory',
+    thumb: 'img/ai/bandslacks/ivory-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bandslacks/ivory-1.webp', 'img/ai/bandslacks/ivory-2.webp', 'img/ai/bandslacks/ivory-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466766231',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '밴딩 슬렉스',
+    title: '밴딩 슬렉스 Brown',
+    thumb: 'img/ai/bandslacks/brown-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bandslacks/brown-1.webp', 'img/ai/bandslacks/brown-2.webp', 'img/ai/bandslacks/brown-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466766231',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '밴딩 슬렉스',
+    title: '밴딩 슬렉스 Khaki',
+    thumb: 'img/ai/bandslacks/khaki-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bandslacks/khaki-1.webp', 'img/ai/bandslacks/khaki-2.webp', 'img/ai/bandslacks/khaki-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466766231',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '밴딩 슬렉스',
+    title: '밴딩 슬렉스 Navy',
+    thumb: 'img/ai/bandslacks/navy-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bandslacks/navy-1.webp', 'img/ai/bandslacks/navy-2.webp', 'img/ai/bandslacks/navy-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466766231',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '밴딩 슬렉스',
+    title: '밴딩 슬렉스 Black',
+    thumb: 'img/ai/bandslacks/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bandslacks/black-1.webp', 'img/ai/bandslacks/black-2.webp', 'img/ai/bandslacks/black-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466766231',
+    desc: '', tools: '', role: ''
   }
 ];
