@@ -762,6 +762,39 @@ window.AI_WORKS = [
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13634143948',
     desc: '', tools: '', role: ''
   },
+  {
+    category: '청바지',
+    product: '와이드 데님 02',
+    title: '와이드 데님 02 Blue',
+    thumb: 'img/ai/smilve/blue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/smilve/blue-1.webp', 'img/ai/smilve/blue-2.webp', 'img/ai/smilve/blue-3.webp', 'img/ai/smilve/blue-4.webp', 'img/ai/smilve/blue-5.webp' ],
+    detail: [],
+    detailUrl: 'detail-smilve.html',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '와이드 데님 02',
+    title: '와이드 데님 02 Gray',
+    thumb: 'img/ai/smilve/gray-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/smilve/gray-1.webp', 'img/ai/smilve/gray-2.webp', 'img/ai/smilve/gray-3.webp' ],
+    detail: [],
+    detailUrl: 'detail-smilve.html',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '와이드 데님 02',
+    title: '와이드 데님 02 Black',
+    thumb: 'img/ai/smilve/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/smilve/black-1.webp', 'img/ai/smilve/black-2.webp', 'img/ai/smilve/black-3.webp', 'img/ai/smilve/black-4.webp' ],
+    detail: [],
+    detailUrl: 'detail-smilve.html',
+    desc: '', tools: '', role: ''
+  },
   // ── 부츠컷 데님 팬츠 (주소 대기중: 주소가 생기면 주석 해제) ──
   // {
   //   category: '청바지',
