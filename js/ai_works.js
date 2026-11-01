@@ -808,8 +808,8 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
-    product: '와이드 턱 데님 팬츠',
-    title: '와이드 턱 데님 팬츠 Light Blue',
+    product: '와이드 핀턱 데님 팬츠',
+    title: '와이드 핀턱 데님 팬츠 Light Blue',
     thumb: 'img/ai/tuckdenim/lightblue-thumb.webp',
     thumbPos: '50% 50%',
     models: [ 'img/ai/tuckdenim/lightblue-1.webp', 'img/ai/tuckdenim/lightblue-2.webp', 'img/ai/tuckdenim/lightblue-3.webp' ],
@@ -819,8 +819,8 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
-    product: '와이드 턱 데님 팬츠',
-    title: '와이드 턱 데님 팬츠 Blue',
+    product: '와이드 핀턱 데님 팬츠',
+    title: '와이드 핀턱 데님 팬츠 Blue',
     thumb: 'img/ai/tuckdenim/blue-thumb.webp',
     thumbPos: '50% 50%',
     models: [ 'img/ai/tuckdenim/blue-1.webp', 'img/ai/tuckdenim/blue-2.webp', 'img/ai/tuckdenim/blue-3.webp' ],
@@ -830,8 +830,8 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
-    product: '와이드 턱 데님 팬츠',
-    title: '와이드 턱 데님 팬츠 Grayish Blue',
+    product: '와이드 핀턱 데님 팬츠',
+    title: '와이드 핀턱 데님 팬츠 Grayish Blue',
     thumb: 'img/ai/tuckdenim/grayishblue-thumb.webp',
     thumbPos: '50% 50%',
     models: [ 'img/ai/tuckdenim/grayishblue-1.webp', 'img/ai/tuckdenim/grayishblue-2.webp', 'img/ai/tuckdenim/grayishblue-3.webp' ],
@@ -841,8 +841,8 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
-    product: '와이드 턱 데님 팬츠',
-    title: '와이드 턱 데님 팬츠 Black',
+    product: '와이드 핀턱 데님 팬츠',
+    title: '와이드 핀턱 데님 팬츠 Black',
     thumb: 'img/ai/tuckdenim/black-thumb.webp',
     thumbPos: '50% 50%',
     models: [ 'img/ai/tuckdenim/black-1.webp', 'img/ai/tuckdenim/black-2.webp', 'img/ai/tuckdenim/black-3.webp' ],
