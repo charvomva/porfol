@@ -971,6 +971,17 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '아우터',
+    product: '베이직 바람막이',
+    title: '베이직 바람막이',
+    thumb: 'img/ai/basicwind/thumb.webp',
+    thumbPos: '50% 30%',
+    models: [ 'img/ai/basicwind/1.webp', 'img/ai/basicwind/2.webp', 'img/ai/basicwind/3.webp', 'img/ai/basicwind/4.webp', 'img/ai/basicwind/5.webp', 'img/ai/basicwind/6.webp', 'img/ai/basicwind/7.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13466510085',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '니트',
     product: '헨리넥 니트',
     title: '헨리넥 니트 Black',
