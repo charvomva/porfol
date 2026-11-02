@@ -1447,6 +1447,61 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '코튼 팬츠',
+    product: '밴딩 코튼 팬츠',
+    title: '밴딩 코튼 팬츠 Ivory',
+    thumb: 'img/ai/bandcotton/ivory-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bandcotton/ivory-1.webp', 'img/ai/bandcotton/ivory-2.webp', 'img/ai/bandcotton/ivory-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13462944802',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '밴딩 코튼 팬츠',
+    title: '밴딩 코튼 팬츠 Light Beige',
+    thumb: 'img/ai/bandcotton/lightbeige-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bandcotton/lightbeige-1.webp', 'img/ai/bandcotton/lightbeige-2.webp', 'img/ai/bandcotton/lightbeige-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13462944802',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '밴딩 코튼 팬츠',
+    title: '밴딩 코튼 팬츠 Beige',
+    thumb: 'img/ai/bandcotton/beige-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bandcotton/beige-1.webp', 'img/ai/bandcotton/beige-2.webp', 'img/ai/bandcotton/beige-3.webp', 'img/ai/bandcotton/beige-4.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13462944802',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '밴딩 코튼 팬츠',
+    title: '밴딩 코튼 팬츠 Khaki',
+    thumb: 'img/ai/bandcotton/khaki-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bandcotton/khaki-1.webp', 'img/ai/bandcotton/khaki-2.webp', 'img/ai/bandcotton/khaki-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13462944802',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '밴딩 코튼 팬츠',
+    title: '밴딩 코튼 팬츠 Black',
+    thumb: 'img/ai/bandcotton/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bandcotton/black-1.webp', 'img/ai/bandcotton/black-2.webp', 'img/ai/bandcotton/black-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13462944802',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '반팔티',
     product: '헨리넥 반팔티',
     title: '헨리넥 반팔티 Ivory',
