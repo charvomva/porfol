@@ -850,6 +850,50 @@ window.AI_WORKS = [
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13466891759',
     desc: '', tools: '', role: ''
   },
+  {
+    category: '청바지',
+    product: '벌룬핏 데님 팬츠',
+    title: '벌룬핏 데님 팬츠 Blue',
+    thumb: 'img/ai/balloon/blue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/balloon/blue-1.webp', 'img/ai/balloon/blue-2.webp', 'img/ai/balloon/blue-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13463005753',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '벌룬핏 데님 팬츠',
+    title: '벌룬핏 데님 팬츠 Deep Blue',
+    thumb: 'img/ai/balloon/deepblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/balloon/deepblue-1.webp', 'img/ai/balloon/deepblue-2.webp', 'img/ai/balloon/deepblue-3.webp', 'img/ai/balloon/deepblue-4.webp', 'img/ai/balloon/deepblue-5.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13463005753',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '벌룬핏 데님 팬츠',
+    title: '벌룬핏 데님 팬츠 Black',
+    thumb: 'img/ai/balloon/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/balloon/black-1.webp', 'img/ai/balloon/black-2.webp', 'img/ai/balloon/black-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13463005753',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '벌룬핏 데님 팬츠',
+    title: '벌룬핏 데님 팬츠 Washed Black',
+    thumb: 'img/ai/balloon/washedblack-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/balloon/washedblack-1.webp', 'img/ai/balloon/washedblack-2.webp', 'img/ai/balloon/washedblack-3.webp', 'img/ai/balloon/washedblack-4.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13463005753',
+    desc: '', tools: '', role: ''
+  },
   // ── 부츠컷 데님 팬츠 (주소 대기중: 주소가 생기면 주석 해제) ──
   // {
   //   category: '청바지',
