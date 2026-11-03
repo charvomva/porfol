@@ -495,6 +495,17 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
+    product: '부츠컷 데님 팬츠',
+    title: '부츠컷 데님 팬츠 Black',
+    thumb: 'img/ai/bootcut/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bootcut/black-1.webp', 'img/ai/bootcut/black-2.webp', 'img/ai/bootcut/black-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
     product: '스트레이트핏 데님 팬츠',
     title: '스트레이트핏 데님 팬츠 Light Blue',
     thumb: 'img/ai/straight/lightblue-thumb.webp',
