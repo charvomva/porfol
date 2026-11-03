@@ -462,6 +462,39 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
+    product: '부츠컷 데님 팬츠',
+    title: '부츠컷 데님 팬츠 Light Blue',
+    thumb: 'img/ai/bootcut/lightblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bootcut/lightblue-1.webp', 'img/ai/bootcut/lightblue-2.webp', 'img/ai/bootcut/lightblue-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '부츠컷 데님 팬츠',
+    title: '부츠컷 데님 팬츠 Gray',
+    thumb: 'img/ai/bootcut/gray-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bootcut/gray-1.webp', 'img/ai/bootcut/gray-2.webp', 'img/ai/bootcut/gray-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '부츠컷 데님 팬츠',
+    title: '부츠컷 데님 팬츠 Dark Blue',
+    thumb: 'img/ai/bootcut/darkblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bootcut/darkblue-1.webp', 'img/ai/bootcut/darkblue-2.webp', 'img/ai/bootcut/darkblue-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
     product: '스트레이트핏 데님 팬츠',
     title: '스트레이트핏 데님 팬츠 Light Blue',
     thumb: 'img/ai/straight/lightblue-thumb.webp',
@@ -892,39 +925,6 @@ window.AI_WORKS = [
     models: [ 'img/ai/balloon/washedblack-1.webp', 'img/ai/balloon/washedblack-2.webp', 'img/ai/balloon/washedblack-3.webp', 'img/ai/balloon/washedblack-4.webp' ],
     detail: [],
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13463005753',
-    desc: '', tools: '', role: ''
-  },
-  {
-    category: '청바지',
-    product: '부츠컷 데님 팬츠',
-    title: '부츠컷 데님 팬츠 Light Blue',
-    thumb: 'img/ai/bootcut/lightblue-thumb.webp',
-    thumbPos: '50% 50%',
-    models: [ 'img/ai/bootcut/lightblue-1.webp', 'img/ai/bootcut/lightblue-2.webp', 'img/ai/bootcut/lightblue-3.webp' ],
-    detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
-    desc: '', tools: '', role: ''
-  },
-  {
-    category: '청바지',
-    product: '부츠컷 데님 팬츠',
-    title: '부츠컷 데님 팬츠 Gray',
-    thumb: 'img/ai/bootcut/gray-thumb.webp',
-    thumbPos: '50% 50%',
-    models: [ 'img/ai/bootcut/gray-1.webp', 'img/ai/bootcut/gray-2.webp', 'img/ai/bootcut/gray-3.webp' ],
-    detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
-    desc: '', tools: '', role: ''
-  },
-  {
-    category: '청바지',
-    product: '부츠컷 데님 팬츠',
-    title: '부츠컷 데님 팬츠 Dark Blue',
-    thumb: 'img/ai/bootcut/darkblue-thumb.webp',
-    thumbPos: '50% 50%',
-    models: [ 'img/ai/bootcut/darkblue-1.webp', 'img/ai/bootcut/darkblue-2.webp', 'img/ai/bootcut/darkblue-3.webp' ],
-    detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
     desc: '', tools: '', role: ''
   },
   {
