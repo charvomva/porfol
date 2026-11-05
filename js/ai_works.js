@@ -506,6 +506,39 @@ window.AI_WORKS = [
   },
   {
     category: '청바지',
+    product: '와이드 반 밴딩 데님',
+    title: '와이드 반 밴딩 데님 Washed Black',
+    thumb: 'img/ai/halfband/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/halfband/black-1.webp', 'img/ai/halfband/black-2.webp', 'img/ai/halfband/black-3.webp' ],
+    detail: [],
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '와이드 반 밴딩 데님',
+    title: '와이드 반 밴딩 데님 Blue',
+    thumb: 'img/ai/halfband/blue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/halfband/blue-1.webp', 'img/ai/halfband/blue-2.webp', 'img/ai/halfband/blue-3.webp' ],
+    detail: [],
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '와이드 반 밴딩 데님',
+    title: '와이드 반 밴딩 데님 Vintage Blue',
+    thumb: 'img/ai/halfband/vintage-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/halfband/vintage-1.webp', 'img/ai/halfband/vintage-2.webp', 'img/ai/halfband/vintage-3.webp' ],
+    detail: [],
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
     product: '스트레이트핏 데님 팬츠',
     title: '스트레이트핏 데님 팬츠 Light Blue',
     thumb: 'img/ai/straight/lightblue-thumb.webp',
@@ -936,39 +969,6 @@ window.AI_WORKS = [
     models: [ 'img/ai/balloon/washedblack-1.webp', 'img/ai/balloon/washedblack-2.webp', 'img/ai/balloon/washedblack-3.webp', 'img/ai/balloon/washedblack-4.webp' ],
     detail: [],
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13463005753',
-    desc: '', tools: '', role: ''
-  },
-  {
-    category: '청바지',
-    product: '와이드 반 밴딩 데님',
-    title: '와이드 반 밴딩 데님 Washed Black',
-    thumb: 'img/ai/halfband/black-thumb.webp',
-    thumbPos: '50% 50%',
-    models: [ 'img/ai/halfband/black-1.webp', 'img/ai/halfband/black-2.webp', 'img/ai/halfband/black-3.webp' ],
-    detail: [],
-    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
-    desc: '', tools: '', role: ''
-  },
-  {
-    category: '청바지',
-    product: '와이드 반 밴딩 데님',
-    title: '와이드 반 밴딩 데님 Blue',
-    thumb: 'img/ai/halfband/blue-thumb.webp',
-    thumbPos: '50% 50%',
-    models: [ 'img/ai/halfband/blue-1.webp', 'img/ai/halfband/blue-2.webp', 'img/ai/halfband/blue-3.webp' ],
-    detail: [],
-    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
-    desc: '', tools: '', role: ''
-  },
-  {
-    category: '청바지',
-    product: '와이드 반 밴딩 데님',
-    title: '와이드 반 밴딩 데님 Vintage Blue',
-    thumb: 'img/ai/halfband/vintage-thumb.webp',
-    thumbPos: '50% 50%',
-    models: [ 'img/ai/halfband/vintage-1.webp', 'img/ai/halfband/vintage-2.webp', 'img/ai/halfband/vintage-3.webp' ],
-    detail: [],
-    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
     desc: '', tools: '', role: ''
   },
   {
