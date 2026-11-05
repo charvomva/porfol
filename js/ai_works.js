@@ -939,6 +939,39 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '청바지',
+    product: '와이드 반 밴딩 데님',
+    title: '와이드 반 밴딩 데님 Washed Black',
+    thumb: 'img/ai/halfband/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/halfband/black-1.webp', 'img/ai/halfband/black-2.webp', 'img/ai/halfband/black-3.webp' ],
+    detail: [],
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '와이드 반 밴딩 데님',
+    title: '와이드 반 밴딩 데님 Blue',
+    thumb: 'img/ai/halfband/blue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/halfband/blue-1.webp', 'img/ai/halfband/blue-2.webp', 'img/ai/halfband/blue-3.webp' ],
+    detail: [],
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '와이드 반 밴딩 데님',
+    title: '와이드 반 밴딩 데님 Vintage Blue',
+    thumb: 'img/ai/halfband/vintage-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/halfband/vintage-1.webp', 'img/ai/halfband/vintage-2.webp', 'img/ai/halfband/vintage-3.webp' ],
+    detail: [],
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '아우터',
     product: '웰론 패딩 점퍼',
     title: '웰론 패딩 점퍼',
