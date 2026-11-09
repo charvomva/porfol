@@ -303,6 +303,17 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '후드티',
+    product: '오버핏 배색 후드티',
+    title: '오버핏 배색 후드티 Gray',
+    thumb: 'img/ai/overhood/thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/overhood/1.webp', 'img/ai/overhood/2.webp', 'img/ai/overhood/3.webp', 'img/ai/overhood/4.webp' ],
+    detail: [],
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '셔츠',
     product: '옥스포드 셔츠',
     title: '옥스포드 셔츠 Khaki',
