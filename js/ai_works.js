@@ -468,7 +468,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/bootcut/lightblue-1.webp', 'img/ai/bootcut/lightblue-2.webp', 'img/ai/bootcut/lightblue-3.webp' ],
     detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13862011430',
     desc: '', tools: '', role: ''
   },
   {
@@ -479,7 +479,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/bootcut/gray-1.webp', 'img/ai/bootcut/gray-2.webp', 'img/ai/bootcut/gray-3.webp' ],
     detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13862011430',
     desc: '', tools: '', role: ''
   },
   {
@@ -490,7 +490,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/bootcut/darkblue-1.webp', 'img/ai/bootcut/darkblue-2.webp', 'img/ai/bootcut/darkblue-3.webp' ],
     detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13862011430',
     desc: '', tools: '', role: ''
   },
   {
@@ -501,7 +501,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/bootcut/black-1.webp', 'img/ai/bootcut/black-2.webp', 'img/ai/bootcut/black-3.webp' ],
     detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13862011430',
     desc: '', tools: '', role: ''
   },
   {
