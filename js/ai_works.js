@@ -314,6 +314,28 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '후드티',
+    product: '오버핏 배색 후드티',
+    title: '오버핏 배색 후드티 Black',
+    thumb: 'img/ai/overhood/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/overhood/black-1.webp', 'img/ai/overhood/black-2.webp', 'img/ai/overhood/black-3.webp', 'img/ai/overhood/black-4.webp' ],
+    detail: [],
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '후드티',
+    product: '오버핏 배색 후드티',
+    title: '오버핏 배색 후드티 Navy',
+    thumb: 'img/ai/overhood/navy-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/overhood/navy-1.webp', 'img/ai/overhood/navy-2.webp', 'img/ai/overhood/navy-3.webp', 'img/ai/overhood/navy-4.webp' ],
+    detail: [],
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '셔츠',
     product: '옥스포드 셔츠',
     title: '옥스포드 셔츠 Khaki',
