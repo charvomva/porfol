@@ -512,7 +512,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/halfband/black-1.webp', 'img/ai/halfband/black-2.webp', 'img/ai/halfband/black-3.webp' ],
     detail: [],
-    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
     desc: '', tools: '', role: ''
   },
   {
@@ -523,7 +523,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/halfband/blue-1.webp', 'img/ai/halfband/blue-2.webp', 'img/ai/halfband/blue-3.webp' ],
     detail: [],
-    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
     desc: '', tools: '', role: ''
   },
   {
@@ -534,7 +534,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/halfband/vintage-1.webp', 'img/ai/halfband/vintage-2.webp', 'img/ai/halfband/vintage-3.webp' ],
     detail: [],
-    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
     desc: '', tools: '', role: ''
   },
   {
@@ -620,7 +620,7 @@ window.AI_WORKS = [
       'img/ai/denimshorts/6.webp'    // Black
     ],
     detail: [],   // 나중에 상세페이지 이미지를 img/ai/denimshorts/ 에 올리면 여기에 경로를 추가
-    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13848107604',
     desc: '',
     tools: '',
     role: ''
