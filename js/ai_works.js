@@ -147,7 +147,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/overhood/1.webp', 'img/ai/overhood/2.webp', 'img/ai/overhood/3.webp', 'img/ai/overhood/4.webp' ],
     detail: [],
-    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    detailUrl: 'https://www.coupang.com/vp/products/9813233639?vendorItemId=96300662538',
     desc: '', tools: '', role: ''
   },
   {
@@ -158,7 +158,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/overhood/black-1.webp', 'img/ai/overhood/black-2.webp', 'img/ai/overhood/black-3.webp', 'img/ai/overhood/black-4.webp' ],
     detail: [],
-    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    detailUrl: 'https://www.coupang.com/vp/products/9813233639?vendorItemId=96300662538',
     desc: '', tools: '', role: ''
   },
   {
@@ -169,7 +169,7 @@ window.AI_WORKS = [
     thumbPos: '50% 50%',
     models: [ 'img/ai/overhood/navy-1.webp', 'img/ai/overhood/navy-2.webp', 'img/ai/overhood/navy-3.webp', 'img/ai/overhood/navy-4.webp' ],
     detail: [],
-    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    detailUrl: 'https://www.coupang.com/vp/products/9813233639?vendorItemId=96300662538',
     desc: '', tools: '', role: ''
   },
   {
