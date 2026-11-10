@@ -1655,6 +1655,39 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '반팔티',
+    product: '부클 반팔니트',
+    title: '부클 반팔니트 Beige',
+    thumb: 'img/ai/bouclek/beige-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bouclek/beige-1.webp', 'img/ai/bouclek/beige-2.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13614810764',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '반팔티',
+    product: '부클 반팔니트',
+    title: '부클 반팔니트 Navy',
+    thumb: 'img/ai/bouclek/navy-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bouclek/navy-1.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13614810764',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '반팔티',
+    product: '부클 반팔니트',
+    title: '부클 반팔니트 Ivory',
+    thumb: 'img/ai/bouclek/ivory-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/bouclek/ivory-1.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13614810764',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '슬렉스',
     product: '9부 슬렉스',
     title: '9부 슬렉스 Brown',
