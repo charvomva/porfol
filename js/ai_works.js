@@ -1578,6 +1578,17 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '코튼 팬츠',
+    product: '카모 와이드 쇼츠',
+    title: '카모 와이드 쇼츠 Camo',
+    thumb: 'img/ai/camoshorts/thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/camoshorts/1.webp', 'img/ai/camoshorts/2.webp', 'img/ai/camoshorts/3.webp', 'img/ai/camoshorts/4.webp', 'img/ai/camoshorts/5.webp', 'img/ai/camoshorts/6.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13626414954',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '반팔티',
     product: '헨리넥 반팔티',
     title: '헨리넥 반팔티 Ivory',
