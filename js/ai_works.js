@@ -1796,5 +1796,49 @@ window.AI_WORKS = [
     detail: [],
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13466766231',
     desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '와이드 슬렉스',
+    title: '와이드 슬렉스 Black',
+    thumb: 'img/ai/widesl/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/widesl/black-1.webp', 'img/ai/widesl/black-2.webp', 'img/ai/widesl/black-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13622295560',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '와이드 슬렉스',
+    title: '와이드 슬렉스 Gray',
+    thumb: 'img/ai/widesl/gray-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/widesl/gray-1.webp', 'img/ai/widesl/gray-2.webp', 'img/ai/widesl/gray-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13622295560',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '와이드 슬렉스',
+    title: '와이드 슬렉스 Beige',
+    thumb: 'img/ai/widesl/beige-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/widesl/beige-1.webp', 'img/ai/widesl/beige-2.webp', 'img/ai/widesl/beige-3.webp', 'img/ai/widesl/beige-4.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13622295560',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '슬렉스',
+    product: '와이드 슬렉스',
+    title: '와이드 슬렉스 Navy',
+    thumb: 'img/ai/widesl/navy-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/widesl/navy-1.webp', 'img/ai/widesl/navy-2.webp', 'img/ai/widesl/navy-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13622295560',
+    desc: '', tools: '', role: ''
   }
 ];
