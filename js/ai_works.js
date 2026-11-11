@@ -1005,6 +1005,61 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '청바지',
+    product: '썸머 와이드 데님팬츠',
+    title: '썸머 와이드 데님팬츠 Indigo',
+    thumb: 'img/ai/summerwide/indigo-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/summerwide/indigo-1.webp', 'img/ai/summerwide/indigo-2.webp', 'img/ai/summerwide/indigo-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13552912505',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '썸머 와이드 데님팬츠',
+    title: '썸머 와이드 데님팬츠 Vintage Blue',
+    thumb: 'img/ai/summerwide/vintage-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/summerwide/vintage-1.webp', 'img/ai/summerwide/vintage-2.webp', 'img/ai/summerwide/vintage-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13552912505',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '썸머 와이드 데님팬츠',
+    title: '썸머 와이드 데님팬츠 Navy',
+    thumb: 'img/ai/summerwide/navy-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/summerwide/navy-1.webp', 'img/ai/summerwide/navy-2.webp', 'img/ai/summerwide/navy-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13552912505',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '썸머 와이드 데님팬츠',
+    title: '썸머 와이드 데님팬츠 Gray',
+    thumb: 'img/ai/summerwide/gray-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/summerwide/gray-1.webp', 'img/ai/summerwide/gray-2.webp', 'img/ai/summerwide/gray-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13552912505',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '썸머 와이드 데님팬츠',
+    title: '썸머 와이드 데님팬츠 Light Blue',
+    thumb: 'img/ai/summerwide/lightblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/summerwide/lightblue-1.webp', 'img/ai/summerwide/lightblue-2.webp', 'img/ai/summerwide/lightblue-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13552912505',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '아우터',
     product: '웰론 패딩 점퍼',
     title: '웰론 패딩 점퍼',
