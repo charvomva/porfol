@@ -2148,5 +2148,38 @@ window.AI_WORKS = [
     detail: [],
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13622295560',
     desc: '', tools: '', role: ''
+  },
+  {
+    category: '터틀넥 폴라',
+    product: '배색 터틀넥 기모 폴라티',
+    title: '배색 터틀넥 기모 폴라티 Black',
+    thumb: 'img/ai/turtle/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/turtle/black-1.webp', 'img/ai/turtle/black-2.webp', 'img/ai/turtle/black-3.webp', 'img/ai/turtle/black-4.webp' ],
+    detail: [],
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '터틀넥 폴라',
+    product: '배색 터틀넥 기모 폴라티',
+    title: '배색 터틀넥 기모 폴라티 Navy',
+    thumb: 'img/ai/turtle/navy-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/turtle/navy-1.webp', 'img/ai/turtle/navy-2.webp', 'img/ai/turtle/navy-3.webp' ],
+    detail: [],
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '터틀넥 폴라',
+    product: '배색 터틀넥 기모 폴라티',
+    title: '배색 터틀넥 기모 폴라티 Ivory',
+    thumb: 'img/ai/turtle/ivory-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/turtle/ivory-1.webp', 'img/ai/turtle/ivory-2.webp', 'img/ai/turtle/ivory-3.webp' ],
+    detail: [],
+    // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+    desc: '', tools: '', role: ''
   }
 ];
