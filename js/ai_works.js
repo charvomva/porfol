@@ -1060,6 +1060,50 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '청바지',
+    product: '린넨 블렌드 데님 팬츠',
+    title: '린넨 블렌드 데님 팬츠 Deep Blue',
+    thumb: 'img/ai/linenblenddenim/deepblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/linenblenddenim/deepblue-1.webp', 'img/ai/linenblenddenim/deepblue-2.webp', 'img/ai/linenblenddenim/deepblue-3.webp' ],
+    detail: [],
+    detailUrl: 'detail-denimlinen.html',   // 상세페이지 이미지는 img/ai/linenblenddenim/detail-denimlinen1, detail-denimlinen2 (새 창으로 열림, 색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '린넨 블렌드 데님 팬츠',
+    title: '린넨 블렌드 데님 팬츠 Blue',
+    thumb: 'img/ai/linenblenddenim/blue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/linenblenddenim/blue-1.webp', 'img/ai/linenblenddenim/blue-2.webp', 'img/ai/linenblenddenim/blue-3.webp' ],
+    detail: [],
+    detailUrl: 'detail-denimlinen.html',   // 상세페이지 이미지는 img/ai/linenblenddenim/detail-denimlinen1, detail-denimlinen2 (새 창으로 열림, 색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '린넨 블렌드 데님 팬츠',
+    title: '린넨 블렌드 데님 팬츠 Black',
+    thumb: 'img/ai/linenblenddenim/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/linenblenddenim/black-1.webp', 'img/ai/linenblenddenim/black-2.webp', 'img/ai/linenblenddenim/black-3.webp' ],
+    detail: [],
+    detailUrl: 'detail-denimlinen.html',   // 상세페이지 이미지는 img/ai/linenblenddenim/detail-denimlinen1, detail-denimlinen2 (새 창으로 열림, 색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '청바지',
+    product: '린넨 블렌드 데님 팬츠',
+    title: '린넨 블렌드 데님 팬츠 Light Blue',
+    thumb: 'img/ai/linenblenddenim/lightblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/linenblenddenim/lightblue-1.webp', 'img/ai/linenblenddenim/lightblue-2.webp', 'img/ai/linenblenddenim/lightblue-3.webp' ],
+    detail: [],
+    detailUrl: 'detail-denimlinen.html',   // 상세페이지 이미지는 img/ai/linenblenddenim/detail-denimlinen1, detail-denimlinen2 (새 창으로 열림, 색상 공통)
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '아우터',
     product: '웰론 패딩 점퍼',
     title: '웰론 패딩 점퍼',
