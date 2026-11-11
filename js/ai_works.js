@@ -1589,6 +1589,39 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '코튼 팬츠',
+    product: '린넨 와이드 쇼츠',
+    title: '린넨 와이드 쇼츠 Beige',
+    thumb: 'img/ai/linenshorts/beige-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/linenshorts/beige-1.webp', 'img/ai/linenshorts/beige-2.webp', 'img/ai/linenshorts/beige-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13562346446',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '린넨 와이드 쇼츠',
+    title: '린넨 와이드 쇼츠 Charcoal',
+    thumb: 'img/ai/linenshorts/charcoal-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/linenshorts/charcoal-1.webp', 'img/ai/linenshorts/charcoal-2.webp', 'img/ai/linenshorts/charcoal-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13562346446',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '린넨 와이드 쇼츠',
+    title: '린넨 와이드 쇼츠 Blue',
+    thumb: 'img/ai/linenshorts/blue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/linenshorts/blue-1.webp', 'img/ai/linenshorts/blue-2.webp', 'img/ai/linenshorts/blue-3.webp', 'img/ai/linenshorts/blue-4.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13562346446',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '반팔티',
     product: '헨리넥 반팔티',
     title: '헨리넥 반팔티 Ivory',
