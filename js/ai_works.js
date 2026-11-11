@@ -1677,6 +1677,50 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '코튼 팬츠',
+    product: '와이드 코튼팬츠',
+    title: '와이드 코튼팬츠 Khaki',
+    thumb: 'img/ai/widecotton/khaki-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/widecotton/khaki-1.webp', 'img/ai/widecotton/khaki-2.webp', 'img/ai/widecotton/khaki-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13527781682',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '와이드 코튼팬츠',
+    title: '와이드 코튼팬츠 Charcoal',
+    thumb: 'img/ai/widecotton/charcoal-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/widecotton/charcoal-1.webp', 'img/ai/widecotton/charcoal-2.webp', 'img/ai/widecotton/charcoal-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13527781682',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '와이드 코튼팬츠',
+    title: '와이드 코튼팬츠 Sand',
+    thumb: 'img/ai/widecotton/sand-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/widecotton/sand-1.webp', 'img/ai/widecotton/sand-2.webp', 'img/ai/widecotton/sand-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13527781682',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '코튼 팬츠',
+    product: '와이드 코튼팬츠',
+    title: '와이드 코튼팬츠 Ivory',
+    thumb: 'img/ai/widecotton/ivory-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/widecotton/ivory-1.webp', 'img/ai/widecotton/ivory-2.webp', 'img/ai/widecotton/ivory-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13527781682',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '반팔티',
     product: '헨리넥 반팔티',
     title: '헨리넥 반팔티 Ivory',
