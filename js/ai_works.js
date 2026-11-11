@@ -424,6 +424,28 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '셔츠',
+    product: '오버핏 반팔 데님 셔츠',
+    title: '오버핏 반팔 데님 셔츠 Navy',
+    thumb: 'img/ai/denimshirt/navy-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/denimshirt/navy-1.webp', 'img/ai/denimshirt/navy-2.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13467062568',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '셔츠',
+    product: '오버핏 반팔 데님 셔츠',
+    title: '오버핏 반팔 데님 셔츠 Black',
+    thumb: 'img/ai/denimshirt/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/denimshirt/black-1.webp', 'img/ai/denimshirt/black-2.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13467062568',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '청바지',
     product: '세미와이드 데님 팬츠',
     title: '세미와이드 데님 팬츠 Black',
