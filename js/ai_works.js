@@ -1688,6 +1688,39 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '반팔티',
+    product: '부클 카라 반팔니트',
+    title: '부클 카라 반팔니트 Beige',
+    thumb: 'img/ai/boucollar/beige-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/boucollar/beige-1.webp', 'img/ai/boucollar/beige-2.webp', 'img/ai/boucollar/beige-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13590583754',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '반팔티',
+    product: '부클 카라 반팔니트',
+    title: '부클 카라 반팔니트 Green',
+    thumb: 'img/ai/boucollar/green-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/boucollar/green-1.webp', 'img/ai/boucollar/green-2.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13590583754',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '반팔티',
+    product: '부클 카라 반팔니트',
+    title: '부클 카라 반팔니트 Ivory',
+    thumb: 'img/ai/boucollar/ivory-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/boucollar/ivory-1.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13590583754',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '슬렉스',
     product: '9부 슬렉스',
     title: '9부 슬렉스 Brown',
