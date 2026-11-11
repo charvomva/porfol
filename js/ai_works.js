@@ -446,6 +446,50 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '셔츠',
+    product: '오버핏 반팔 데님 셔츠 02',
+    title: '오버핏 반팔 데님 셔츠 02 Light Blue',
+    thumb: 'img/ai/denimshirt2/lightblue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/denimshirt2/lightblue-1.webp', 'img/ai/denimshirt2/lightblue-2.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13467369698',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '셔츠',
+    product: '오버핏 반팔 데님 셔츠 02',
+    title: '오버핏 반팔 데님 셔츠 02 White',
+    thumb: 'img/ai/denimshirt2/white-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/denimshirt2/white-1.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13467369698',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '셔츠',
+    product: '오버핏 반팔 데님 셔츠 02',
+    title: '오버핏 반팔 데님 셔츠 02 Black',
+    thumb: 'img/ai/denimshirt2/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/denimshirt2/black-1.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13467369698',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '셔츠',
+    product: '오버핏 반팔 데님 셔츠 02',
+    title: '오버핏 반팔 데님 셔츠 02 Blue',
+    thumb: 'img/ai/denimshirt2/blue-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/denimshirt2/blue-1.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13467369698',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '청바지',
     product: '세미와이드 데님 팬츠',
     title: '세미와이드 데님 팬츠 Black',
