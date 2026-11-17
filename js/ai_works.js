@@ -2181,5 +2181,61 @@ window.AI_WORKS = [
     detail: [],
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13871350318',
     desc: '', tools: '', role: ''
-  }
+  },
+  // ── 무지 폴라티 (주소 대기중: 주소가 생기면 주석 해제) ──
+  // {
+  //   category: '터틀넥 폴라',
+  //   product: '무지 폴라티',
+  //   title: '무지 폴라티 Black',
+  //   thumb: 'img/ai/polar/black-thumb.webp',
+  //   thumbPos: '50% 50%',
+  //   models: [ 'img/ai/polar/black-1.webp', 'img/ai/polar/black-2.webp', 'img/ai/polar/black-3.webp', 'img/ai/polar/black-4.webp', 'img/ai/polar/black-5.webp' ],
+  //   detail: [],
+  //   // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+  //   desc: '', tools: '', role: ''
+  // },
+  // {
+  //   category: '터틀넥 폴라',
+  //   product: '무지 폴라티',
+  //   title: '무지 폴라티 Charcoal',
+  //   thumb: 'img/ai/polar/charcoal-thumb.webp',
+  //   thumbPos: '50% 50%',
+  //   models: [ 'img/ai/polar/charcoal-1.webp', 'img/ai/polar/charcoal-2.webp', 'img/ai/polar/charcoal-3.webp' ],
+  //   detail: [],
+  //   // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+  //   desc: '', tools: '', role: ''
+  // },
+  // {
+  //   category: '터틀넥 폴라',
+  //   product: '무지 폴라티',
+  //   title: '무지 폴라티 Gray',
+  //   thumb: 'img/ai/polar/gray-thumb.webp',
+  //   thumbPos: '50% 50%',
+  //   models: [ 'img/ai/polar/gray-1.webp', 'img/ai/polar/gray-2.webp', 'img/ai/polar/gray-3.webp' ],
+  //   detail: [],
+  //   // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+  //   desc: '', tools: '', role: ''
+  // },
+  // {
+  //   category: '터틀넥 폴라',
+  //   product: '무지 폴라티',
+  //   title: '무지 폴라티 Ivory',
+  //   thumb: 'img/ai/polar/ivory-thumb.webp',
+  //   thumbPos: '50% 50%',
+  //   models: [ 'img/ai/polar/ivory-1.webp', 'img/ai/polar/ivory-2.webp', 'img/ai/polar/ivory-3.webp' ],
+  //   detail: [],
+  //   // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+  //   desc: '', tools: '', role: ''
+  // },
+  // {
+  //   category: '터틀넥 폴라',
+  //   product: '무지 폴라티',
+  //   title: '무지 폴라티 Navy',
+  //   thumb: 'img/ai/polar/navy-thumb.webp',
+  //   thumbPos: '50% 50%',
+  //   models: [ 'img/ai/polar/navy-1.webp', 'img/ai/polar/navy-2.webp', 'img/ai/polar/navy-3.webp' ],
+  //   detail: [],
+  //   // detailUrl: '',   // 상세페이지 주소가 생기면 여기에 입력
+  //   desc: '', tools: '', role: ''
+  // }
 ];
