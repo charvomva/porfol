@@ -336,6 +336,94 @@ window.AI_WORKS = [
     desc: '', tools: '', role: ''
   },
   {
+    category: '터틀넥 폴라',
+    product: '배색 터틀넥 기모 폴라티',
+    title: '배색 터틀넥 기모 폴라티 Black',
+    thumb: 'img/ai/turtle/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/turtle/black-1.webp', 'img/ai/turtle/black-2.webp', 'img/ai/turtle/black-3.webp', 'img/ai/turtle/black-4.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13871350318',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '터틀넥 폴라',
+    product: '배색 터틀넥 기모 폴라티',
+    title: '배색 터틀넥 기모 폴라티 Navy',
+    thumb: 'img/ai/turtle/navy-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/turtle/navy-1.webp', 'img/ai/turtle/navy-2.webp', 'img/ai/turtle/navy-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13871350318',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '터틀넥 폴라',
+    product: '배색 터틀넥 기모 폴라티',
+    title: '배색 터틀넥 기모 폴라티 Ivory',
+    thumb: 'img/ai/turtle/ivory-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/turtle/ivory-1.webp', 'img/ai/turtle/ivory-2.webp', 'img/ai/turtle/ivory-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13871350318',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '터틀넥 폴라',
+    product: '무지 폴라티',
+    title: '무지 폴라티 Black',
+    thumb: 'img/ai/polar/black-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/polar/black-1.webp', 'img/ai/polar/black-2.webp', 'img/ai/polar/black-3.webp', 'img/ai/polar/black-4.webp', 'img/ai/polar/black-5.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13881730212',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '터틀넥 폴라',
+    product: '무지 폴라티',
+    title: '무지 폴라티 Charcoal',
+    thumb: 'img/ai/polar/charcoal-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/polar/charcoal-1.webp', 'img/ai/polar/charcoal-2.webp', 'img/ai/polar/charcoal-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13881730212',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '터틀넥 폴라',
+    product: '무지 폴라티',
+    title: '무지 폴라티 Gray',
+    thumb: 'img/ai/polar/gray-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/polar/gray-1.webp', 'img/ai/polar/gray-2.webp', 'img/ai/polar/gray-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13881730212',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '터틀넥 폴라',
+    product: '무지 폴라티',
+    title: '무지 폴라티 Ivory',
+    thumb: 'img/ai/polar/ivory-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/polar/ivory-1.webp', 'img/ai/polar/ivory-2.webp', 'img/ai/polar/ivory-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13881730212',
+    desc: '', tools: '', role: ''
+  },
+  {
+    category: '터틀넥 폴라',
+    product: '무지 폴라티',
+    title: '무지 폴라티 Navy',
+    thumb: 'img/ai/polar/navy-thumb.webp',
+    thumbPos: '50% 50%',
+    models: [ 'img/ai/polar/navy-1.webp', 'img/ai/polar/navy-2.webp', 'img/ai/polar/navy-3.webp' ],
+    detail: [],
+    detailUrl: 'https://smartstore.naver.com/blueforce/products/13881730212',
+    desc: '', tools: '', role: ''
+  },
+  {
     category: '셔츠',
     product: '옥스포드 셔츠',
     title: '옥스포드 셔츠 Khaki',
@@ -2147,94 +2235,6 @@ window.AI_WORKS = [
     models: [ 'img/ai/widesl/navy-1.webp', 'img/ai/widesl/navy-2.webp', 'img/ai/widesl/navy-3.webp' ],
     detail: [],
     detailUrl: 'https://smartstore.naver.com/blueforce/products/13622295560',
-    desc: '', tools: '', role: ''
-  },
-  {
-    category: '터틀넥 폴라',
-    product: '배색 터틀넥 기모 폴라티',
-    title: '배색 터틀넥 기모 폴라티 Black',
-    thumb: 'img/ai/turtle/black-thumb.webp',
-    thumbPos: '50% 50%',
-    models: [ 'img/ai/turtle/black-1.webp', 'img/ai/turtle/black-2.webp', 'img/ai/turtle/black-3.webp', 'img/ai/turtle/black-4.webp' ],
-    detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13871350318',
-    desc: '', tools: '', role: ''
-  },
-  {
-    category: '터틀넥 폴라',
-    product: '배색 터틀넥 기모 폴라티',
-    title: '배색 터틀넥 기모 폴라티 Navy',
-    thumb: 'img/ai/turtle/navy-thumb.webp',
-    thumbPos: '50% 50%',
-    models: [ 'img/ai/turtle/navy-1.webp', 'img/ai/turtle/navy-2.webp', 'img/ai/turtle/navy-3.webp' ],
-    detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13871350318',
-    desc: '', tools: '', role: ''
-  },
-  {
-    category: '터틀넥 폴라',
-    product: '배색 터틀넥 기모 폴라티',
-    title: '배색 터틀넥 기모 폴라티 Ivory',
-    thumb: 'img/ai/turtle/ivory-thumb.webp',
-    thumbPos: '50% 50%',
-    models: [ 'img/ai/turtle/ivory-1.webp', 'img/ai/turtle/ivory-2.webp', 'img/ai/turtle/ivory-3.webp' ],
-    detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13871350318',
-    desc: '', tools: '', role: ''
-  },
-  {
-    category: '터틀넥 폴라',
-    product: '무지 폴라티',
-    title: '무지 폴라티 Black',
-    thumb: 'img/ai/polar/black-thumb.webp',
-    thumbPos: '50% 50%',
-    models: [ 'img/ai/polar/black-1.webp', 'img/ai/polar/black-2.webp', 'img/ai/polar/black-3.webp', 'img/ai/polar/black-4.webp', 'img/ai/polar/black-5.webp' ],
-    detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13881730212',
-    desc: '', tools: '', role: ''
-  },
-  {
-    category: '터틀넥 폴라',
-    product: '무지 폴라티',
-    title: '무지 폴라티 Charcoal',
-    thumb: 'img/ai/polar/charcoal-thumb.webp',
-    thumbPos: '50% 50%',
-    models: [ 'img/ai/polar/charcoal-1.webp', 'img/ai/polar/charcoal-2.webp', 'img/ai/polar/charcoal-3.webp' ],
-    detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13881730212',
-    desc: '', tools: '', role: ''
-  },
-  {
-    category: '터틀넥 폴라',
-    product: '무지 폴라티',
-    title: '무지 폴라티 Gray',
-    thumb: 'img/ai/polar/gray-thumb.webp',
-    thumbPos: '50% 50%',
-    models: [ 'img/ai/polar/gray-1.webp', 'img/ai/polar/gray-2.webp', 'img/ai/polar/gray-3.webp' ],
-    detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13881730212',
-    desc: '', tools: '', role: ''
-  },
-  {
-    category: '터틀넥 폴라',
-    product: '무지 폴라티',
-    title: '무지 폴라티 Ivory',
-    thumb: 'img/ai/polar/ivory-thumb.webp',
-    thumbPos: '50% 50%',
-    models: [ 'img/ai/polar/ivory-1.webp', 'img/ai/polar/ivory-2.webp', 'img/ai/polar/ivory-3.webp' ],
-    detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13881730212',
-    desc: '', tools: '', role: ''
-  },
-  {
-    category: '터틀넥 폴라',
-    product: '무지 폴라티',
-    title: '무지 폴라티 Navy',
-    thumb: 'img/ai/polar/navy-thumb.webp',
-    thumbPos: '50% 50%',
-    models: [ 'img/ai/polar/navy-1.webp', 'img/ai/polar/navy-2.webp', 'img/ai/polar/navy-3.webp' ],
-    detail: [],
-    detailUrl: 'https://smartstore.naver.com/blueforce/products/13881730212',
     desc: '', tools: '', role: ''
   }
 ];
